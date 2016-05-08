@@ -1,0 +1,8 @@
+i<>.\src\Commands.vhd
+i<>.\src\Controller.vhd
+i<>.\src\DataPath.vhd
+i<>.\src\DataRAM.vhd
+i<>.\src\MicroProcessor.vhd
+i<>.\src\MicroROM.vhd
+i<>.\src\Stack.vhd
+i<>.\src\TestBench\stack_TB.vhd

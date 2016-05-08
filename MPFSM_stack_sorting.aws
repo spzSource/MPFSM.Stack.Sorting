@@ -1,0 +1,12 @@
+[Version]
+Version=9.1
+[Designs]
+mpfsm_stack_sorting_design=.\MPFSM_stack_sorting_design\MPFSM_stack_sorting_design.adf
+[Browser]
+sort=order
+mode=none
+[Order]
+order=1
+macro=
+[Expand]
+mpfsm_stack_sorting_design=1

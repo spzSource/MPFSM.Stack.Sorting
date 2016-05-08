@@ -1,0 +1,15 @@
+acom -O3 -work MPFSM_stack_sorting_design -2002  $dsn/src/DataPath.vhd $dsn/src/DataRAM.vhd $dsn/src/Stack.vhd $dsn/src/Commands.vhd $dsn/src/Controller.vhd $dsn/src/MicroROM.vhd $dsn/src/MicroProcessor.vhd $dsn/src/TestBench/stack_TB.vhd
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
+# File: y:\Dropbox\Magistracy\POCP\practice\MPFSM_stack_sorting\MPFSM_stack_sorting_design\src\DataPath.vhd
+# Compile Entity "AccumulatorDataPath"
+# Compile Architecture "AccumulatorDataPath_Behavioural" of Entity "AccumulatorDataPath"
+# Error: VLM_0026: Cannot write data to the MGF file - possibly no space on disk or MGF file corrupted. In the second case, please use command vdel -all to empty library "mpfsm_stack_sorting_design".
+# Compile failure 1 Errors 0 Warnings  Analysis time :  0.1 [s]
+# Error: ULM_0018: Library "mpfsm_stack_sorting_design" has been created with a different version of compiler. Use the Delete Simulation Data command to remove the library contents, and then recompile all design units.
+acom -reorder -O3 -work MPFSM_stack_sorting_design -2002  $dsn/src/DataPath.vhd $dsn/src/DataRAM.vhd $dsn/src/Stack.vhd $dsn/src/Commands.vhd $dsn/src/Controller.vhd $dsn/src/MicroROM.vhd $dsn/src/MicroProcessor.vhd $dsn/src/TestBench/stack_TB.vhd
+# Compile with File Reorder...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
+# Error: VLM_0028: Library "mpfsm_stack_sorting_design" has been created with an older version of the compiler. Please empty library and recompile all source files again.
+# Compile failure 1 Errors 0 Warnings  Analysis time :  78.0 [ms]
+# Error: ULM_0018: Library "mpfsm_stack_sorting_design" has been created with a different version of compiler. Use the Delete Simulation Data command to remove the library contents, and then recompile all design units.

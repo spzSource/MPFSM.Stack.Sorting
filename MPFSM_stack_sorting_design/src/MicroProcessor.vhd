@@ -22,11 +22,11 @@ architecture Beh of MicroProcessor is
 
 	component MRAM is
 		port(
-			CLK  : in  std_logic;
-			RW   : in  std_logic;
-			ADDR : in  std_logic_vector(5 downto 0);
-			DIN  : in  std_logic_vector(7 downto 0);
-			DOUT : out std_logic_vector(7 downto 0)
+			clk  : in  std_logic;
+			read_write   : in  std_logic;
+			address : in  std_logic_vector(5 downto 0);
+			data_input  : in  std_logic_vector(7 downto 0);
+			data_output : out std_logic_vector(7 downto 0)
 		);
 	end component;
 
@@ -94,11 +94,11 @@ architecture Beh of MicroProcessor is
 begin
 	UMRAM : MRAM
 		port map(
-			CLK  => CLK,
-			RW   => ram_rw,
-			ADDR => ram_addr,
-			DIN  => ram_din,
-			DOUT => ram_dout
+			clk  => CLK,
+			read_write   => ram_rw,
+			address => ram_addr,
+			data_input  => ram_din,
+			data_output => ram_dout
 		);
 	UMROM : entity MROM(Beh_Stack)
 		port map(

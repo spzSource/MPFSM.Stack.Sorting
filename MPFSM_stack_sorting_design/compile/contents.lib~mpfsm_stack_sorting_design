@@ -1,4 +1,4 @@
-2273
+2478
 ~E 1 "./src/Controller.vhd" 6 CTRL1
 ~A 1 "./src/Controller.vhd" 33 Beh_Stack
 ~E 1 "./src/Datapath.vhd" 7 DPATH
@@ -8,7 +8,7 @@
 ~E 1 "./src/TestBench/microprocessor_TB.vhd" 9 microprocessor_tb
 ~A 1 "./src/TestBench/microprocessor_TB.vhd" 12 TB_ARCHITECTURE
 ~E 1 "./src/MRAM.vhd" 5 MRAM
-~A 1 "./src/MRAM.vhd" 15 Beh_Sorting
+~A 1 "./src/MRAM.vhd" 15 MRAM_Beh
 ~E 1 "./src/MROM.vhd" 6 MROM
 ~A 1 "./src/MROM.vhd" 14 Beh_Stack
 ~E 1 "./src/Stack.vhd" 8 Stack

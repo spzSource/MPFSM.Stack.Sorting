@@ -28,7 +28,7 @@ architecture Beh_Stack of MROM is
 	
 	constant ROM: tROM :=(
 	--  OP CODE   | RAM ADDR       |   N BIN       | N DEC  | Info	
-	PUSH_OP   & ADDR_ONE,
+	PUSH_OP   & "000001",
 	PUSH_OP   & "000000",
 	--	OP_PUSH   & ADDR_ZERO,     --  000000	   | 000    |
 --		OP_POP    & ADDR_I,        --  000001      | 001    |

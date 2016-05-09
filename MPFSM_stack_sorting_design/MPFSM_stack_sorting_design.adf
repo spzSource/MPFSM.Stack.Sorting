@@ -78,3 +78,4 @@ TestBench/microprocessor_TB_runtest.do=-1
 .\src\MicroProcessor.vhd=VHDL Source Code
 .\src\TestBench\microprocessor_TB.vhd=VHDL Test Bench
 .\src\TestBench\microprocessor_TB_runtest.do=Macro
+

@@ -50,31 +50,28 @@ architecture Beh of MicroProcessor is
 		);
 	end component;
 
-	component CTRL1 is
+	component Controller is
 		port(
-			CLK, RST, Start : in  std_logic;
-			Stop            : out std_logic;
+		clk, rst, start: in std_logic;
+		Stop: out std_logic;
+		
+		rom_read_enabled: out std_logic;
+		rom_address: out std_logic_vector(5 downto 0);
+		rom_data_output: in std_logic_vector(9 downto 0);
 
-			-- ROM
-			ROM_re          : out std_logic;
-			ROM_addr        : out std_logic_vector(5 downto 0);
-			ROM_dout        : in  std_logic_vector(9 downto 0);
-
-			-- RAM
-			RAM_rw          : out std_logic;
-			RAM_addr        : out std_logic_vector(5 downto 0);
-			RAM_din         : out std_logic_vector(7 downto 0);
-			RAM_dout        : in  std_logic_vector(7 downto 0);
-
-			--datapath
-			DP_op           : out std_logic_vector(7 downto 0);
-			DP_ot           : out std_logic_vector(3 downto 0);
-			DP_en           : out std_logic;
-			DP_res          : in  std_logic_vector(7 downto 0);
-			DP_sbf          : in  std_logic;
-			DP_zf           : in  std_logic;
-			DP_stop         : in  std_logic
-		);
+		ram_read_write: out std_logic;
+		ram_address: out std_logic_vector(5 downto 0);
+		ram_data_input: out std_logic_vector(7 downto 0);
+		ram_data_output: in std_logic_vector(7 downto 0);
+		
+		datapath_operand: out std_logic_vector(7 downto 0);
+		datapath_operation: out std_logic_vector(3 downto 0);
+		datapath_enabled: out std_logic;
+		datapath_result: in std_logic_vector(7 downto 0);
+		datapath_sign_bit_set: in std_logic;
+		datapath_zero_flag: in std_logic;
+		datapath_stop: in std_logic
+	);
 	end component;
 
 	signal rom_read_enabled : std_logic;
@@ -117,25 +114,25 @@ begin
 			SBF  => dp_sbf,
 			STOP => dp_stop
 		);
-	UCTRL1 : CTRL1
+	UCTRL1 : Controller
 		port map(
-			CLK      => CLK,
-			RST      => RST,
-			START    => Start,
-			STOP     => STOP,
-			ROM_re   => rom_read_enabled,
-			ROM_addr => rom_address,
-			ROM_dout => rom_data_out,
-			RAM_rw   => ram_rw,
-			RAM_addr => ram_addr,
-			RAM_din  => ram_din,
-			RAM_dout => ram_dout,
-			DP_en    => dp_en,
-			DP_ot    => dp_ot,
-			DP_op    => dp_op,
-			DP_res   => dp_res,
-			DP_zf    => dp_zf,
-			DP_sbf   => dp_sbf,
-			DP_stop  => dp_stop
+			clk      => CLK,
+			rst      => RST,
+			start    => Start,
+			Stop     => STOP,
+			rom_read_enabled   => rom_read_enabled,
+			rom_address => rom_address,
+			rom_data_output => rom_data_out,
+			ram_read_write   => ram_rw,
+			ram_address => ram_addr,
+			ram_data_input  => ram_din,
+			ram_data_output => ram_dout,
+			datapath_enabled    => dp_en,
+			datapath_operation    => dp_ot,
+			datapath_operand    => dp_op,
+			datapath_result   => dp_res,
+			datapath_zero_flag    => dp_zf,
+			datapath_sign_bit_set   => dp_sbf,
+			datapath_stop  => dp_stop
 		);
 end Beh;

@@ -1,6 +1,6 @@
-2478
-~E 1 "./src/Controller.vhd" 6 CTRL1
-~A 1 "./src/Controller.vhd" 33 Beh_Stack
+2748
+~E 1 "./src/Controller.vhd" 6 Controller
+~A 1 "./src/Controller.vhd" 30 Controller_Beh
 ~E 1 "./src/Datapath.vhd" 7 DPATH
 ~A 1 "./src/Datapath.vhd" 21 Beh_Stack
 ~E 1 "./src/MicroProcessor.vhd" 5 MicroProcessor

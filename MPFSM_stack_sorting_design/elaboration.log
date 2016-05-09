@@ -1,4 +1,4 @@
-Active-HDL 9.1.2353.4205  2016-05-09 18:59:38
+Active-HDL 9.1.2353.4205  2016-05-09 19:16:47
 
 Elaboration top modules:
 Architecture                  TB_ARCHITECTURE(microprocessor_tb)
@@ -12,7 +12,7 @@ MicroProcessor    | beh               | mpfsm_stack_sorting_design |      | 9.1.
 MRAM              | mram_beh          | mpfsm_stack_sorting_design |      | 9.1.2353.4205  (Windows) | -O3
 MROM              | beh_stack         | mpfsm_stack_sorting_design |      | 9.1.2353.4205  (Windows) | -O3
 DPATH             | beh_stack         | mpfsm_stack_sorting_design |      | 9.1.2353.4205  (Windows) | -O3
-CTRL1             | beh_stack         | mpfsm_stack_sorting_design |      | 9.1.2353.4205  (Windows) | -O3
+Controller        | controller_beh    | mpfsm_stack_sorting_design |      | 9.1.2353.4205  (Windows) | -O3
 Stack             | stack_behavioural | mpfsm_stack_sorting_design |      | 9.1.2353.4205  (Windows) | -O3
 ---------------------------------------------------------------------------------------------------------------------------
 

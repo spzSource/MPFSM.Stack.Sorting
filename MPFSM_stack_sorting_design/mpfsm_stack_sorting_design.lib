@@ -1,51 +1,51 @@
-timestamp=1462810601137
+timestamp=1462811560972
 
 [commands]
 E=1*6199
-I=0*5547
-M=3|0|v98|1462810600690|./src/Commands.vhd|0*4903*0xb4e2aaf3a9bf47c9ee8403ca3ccaad6bf37cd83a|0*5470*0xab32bc1a2daf049573e14469f634e0e6
+I=0*6323
+M=3|0|v98|1462811560566|./src/Commands.vhd|0*5679*0xb4e2aaf3a9bf47c9ee8403ca3ccaad6bf37cd83a|0*6246*0xab32bc1a2daf049573e14469f634e0e6
 R=./src/Commands.vhd|8
 Version=9.1.2353.4205  (Windows)|00000003789cd3f5370600015b00b0
 
 [controller]
 A/controller_beh=A/Controller_Beh 21|./src/Controller.vhd|30|1*7488
 BinI32/controller_beh=3*2026
-I=0*7525
-I/controller_beh=I/Controller_Beh 0*11307
-M=11|0|v98|1462810600696|./src/Controller.vhd|0*6591*0x1c27623111d54fcda78a57939e5f6feea5705a5a|0*7444*0xab32bc1a2daf049573e14469f634e0e6
-M/controller_beh=M/Controller_Beh 21|0|v98|1462810600698|./src/Controller.vhd|0*7753*0x945d24c1c4866ce66ebc6d7778e2d555a44c9d19|0*11208*0xb33770ff1c10522f9491560174ac8e6c
+I=0*8301
+I/controller_beh=I/Controller_Beh 0*12083
+M=11|0|v98|1462811560569|./src/Controller.vhd|0*7367*0x1c27623111d54fcda78a57939e5f6feea5705a5a|0*8220*0xab32bc1a2daf049573e14469f634e0e6
+M/controller_beh=M/Controller_Beh 21|0|v98|1462811560571|./src/Controller.vhd|0*8529*0x945d24c1c4866ce66ebc6d7778e2d555a44c9d19|0*11984*0xb33770ff1c10522f9491560174ac8e6c
 R=./src/Controller.vhd|6
 Version=9.1.2353.4205  (Windows)|00000003789cd3f5370600015b00b0
 Version/controller_beh=9.1.2353.4205  (Windows)|00000003789cd3f5370600015b00b0
 
-[dpath]
-A/beh_stack=A/Beh_Stack 21|./src/Datapath.vhd|21|1*19408
-BinI32/beh_stack=3*5611
-I=0*14436
-I/beh_stack=I/Beh_Stack 0*17750
-M=11|0|v98|1462810600826|./src/Datapath.vhd|0*13923*0xadec28cc938355e46f13af229c43f45a433679c4|0*14362*0xab32bc1a2daf049573e14469f634e0e6
-M/beh_stack=M/Beh_Stack 21|0|v98|1462810600828|./src/Datapath.vhd|0*14724*0x61f1c4ed9192bd2335a1fb0abd2f283ee9fd78ad|0*17663*0xb33770ff1c10522f9491560174ac8e6c
+[datapath]
+A/datapath_beh=A/Datapath_Beh 21|./src/Datapath.vhd|20|1*19408
+BinI32/datapath_beh=3*5611
+I=0*15331
+I/datapath_beh=I/Datapath_Beh 0*19557
+M=11|0|v98|1462811560738|./src/Datapath.vhd|0*14757*0x16b09c04db7ac7f84d35f051d376fecb509a2ef6|0*15254*0xab32bc1a2daf049573e14469f634e0e6
+M/datapath_beh=M/Datapath_Beh 21|0|v98|1462811560754|./src/Datapath.vhd|0*15622*0x485fd8c25d0a1163c90c9d2857a847de52328822|0*19464*0xb33770ff1c10522f9491560174ac8e6c
 R=./src/Datapath.vhd|7
 Version=9.1.2353.4205  (Windows)|00000003789cd3f5370600015b00b0
-Version/beh_stack=9.1.2353.4205  (Windows)|00000003789cd3f5370600015b00b0
+Version/datapath_beh=9.1.2353.4205  (Windows)|00000003789cd3f5370600015b00b0
 
 [microprocessor]
-A/beh=A/Beh 21|./src/MicroProcessor.vhd|14|1*26312
-I=0*18699
-I/beh=I/Beh 0*21750
-M=11|0|v98|1462810600881|./src/MicroProcessor.vhd|0*18304*0xc6871a83d269c7fd51e90277dda76fc09cd3cb5d|0*18610*0xab32bc1a2daf049573e14469f634e0e6
-M/beh=M/Beh 21|0|v98|1462810600884|./src/MicroProcessor.vhd|0*18876*0x20f6e8ebac5314c9ee5f31efe0732d6fac6aef18|0*21654*0xb33770ff1c10522f9491560174ac8e6c
+A/beh=A/Beh 21|./src/MicroProcessor.vhd|14|1*26652
+I=0*599
+I/beh=I/Beh 0*22891
+M=11|0|v98|1462811556405|./src/MicroProcessor.vhd|0*204*0xc6871a83d269c7fd51e90277dda76fc09cd3cb5d|0*510*0xab32bc1a2daf049573e14469f634e0e6
+M/beh=M/Beh 21|0|v98|1462811560849|./src/MicroProcessor.vhd|0*19913*0x35c086352023c202ebe34512ad310a450f4424c4|0*22795*0xb33770ff1c10522f9491560174ac8e6c
 R=./src/MicroProcessor.vhd|5
 Version=9.1.2353.4205  (Windows)|00000003789cd3f5370600015b00b0
 Version/beh=9.1.2353.4205  (Windows)|00000003789cd3f5370600015b00b0
 
 [microprocessor_tb]
-A/tb_architecture=A/TB_ARCHITECTURE 21|./src/TestBench/microprocessor_TB.vhd|12|1*35668
-BinI32/tb_architecture=3*8031
-I=0*22634
-I/tb_architecture=I/TB_ARCHITECTURE 0*23780
-M=11|0|v98|1462810600890|./src/TestBench/microprocessor_TB.vhd|0*22239*0x35245cc67f13aa7f766b1f18d35849032bc7c6c5|0*22529*0xab32bc1a2daf049573e14469f634e0e6
-M/tb_architecture=M/TB_ARCHITECTURE 21|0|v98|1462810600892|./src/TestBench/microprocessor_TB.vhd|0*22940*0x4d80d909aa37877c8912290232fde9cc5f291392|0*23656*0xb33770ff1c10522f9491560174ac8e6c
+A/tb_architecture=A/TB_ARCHITECTURE 21|./src/TestBench/microprocessor_TB.vhd|12|1*36113
+BinI32/tb_architecture=3*8035
+I=0*23778
+I/tb_architecture=I/TB_ARCHITECTURE 0*24924
+M=11|0|v98|1462811560863|./src/TestBench/microprocessor_TB.vhd|0*23383*0x35245cc67f13aa7f766b1f18d35849032bc7c6c5|0*23673*0xab32bc1a2daf049573e14469f634e0e6
+M/tb_architecture=M/TB_ARCHITECTURE 21|0|v98|1462811560865|./src/TestBench/microprocessor_TB.vhd|0*24084*0x4d80d909aa37877c8912290232fde9cc5f291392|0*24800*0xb33770ff1c10522f9491560174ac8e6c
 R=./src/TestBench/microprocessor_TB.vhd|9
 Version=9.1.2353.4205  (Windows)|00000003789cd3f5370600015b00b0
 Version/tb_architecture=9.1.2353.4205  (Windows)|00000003789cd3f5370600015b00b0
@@ -53,10 +53,10 @@ Version/tb_architecture=9.1.2353.4205  (Windows)|00000003789cd3f5370600015b00b0
 [mram]
 A/mram_beh=A/MRAM_Beh 21|./src/MRAM.vhd|15|1*2830
 BinI32/mram_beh=3*1211
-I=0*3195
-I/mram_beh=I/MRAM_Beh 0*4266
-M=11|0|v98|1462810600642|./src/MRAM.vhd|0*2774*0x0c89d9a488d3f5f3fb5ef44ee0e7b63731fa7f5c|0*3126*0xab32bc1a2daf049573e14469f634e0e6
-M/mram_beh=M/MRAM_Beh 21|0|v98|1462810600644|./src/MRAM.vhd|0*3362*0x09eb96ed09eecb8764227e0a56f031de1750cf06|0*4185*0xb33770ff1c10522f9491560174ac8e6c
+I=0*3971
+I/mram_beh=I/MRAM_Beh 0*5042
+M=11|0|v98|1462811560535|./src/MRAM.vhd|0*3550*0x0c89d9a488d3f5f3fb5ef44ee0e7b63731fa7f5c|0*3902*0xab32bc1a2daf049573e14469f634e0e6
+M/mram_beh=M/MRAM_Beh 21|0|v98|1462811560537|./src/MRAM.vhd|0*4138*0x09eb96ed09eecb8764227e0a56f031de1750cf06|0*4961*0xb33770ff1c10522f9491560174ac8e6c
 R=./src/MRAM.vhd|5
 Version=9.1.2353.4205  (Windows)|00000003789cd3f5370600015b00b0
 Version/mram_beh=9.1.2353.4205  (Windows)|00000003789cd3f5370600015b00b0
@@ -64,10 +64,10 @@ Version/mram_beh=9.1.2353.4205  (Windows)|00000003789cd3f5370600015b00b0
 [mrom]
 A/beh_stack=A/Beh_Stack 21|./src/MROM.vhd|14|1*14848
 BinI32/beh_stack=3*4738
-I=0*12116
-I/beh_stack=I/Beh_Stack 0*13401
-M=11|0|v98|1462810600773|./src/MROM.vhd|0*11743*0x96762d275d56ba12763b1c454dfa903ad7c0c9c9|0*12047*0xab32bc1a2daf049573e14469f634e0e6
-M/beh_stack=M/Beh_Stack 21|0|v98|1462810600775|./src/MROM.vhd|0*12338*0x2b6ed6677eb6d33c49cf87409ac2d4792734ac50|0*13319*0xb33770ff1c10522f9491560174ac8e6c
+I=0*12892
+I/beh_stack=I/Beh_Stack 0*14177
+M=11|0|v98|1462811560644|./src/MROM.vhd|0*12519*0x96762d275d56ba12763b1c454dfa903ad7c0c9c9|0*12823*0xab32bc1a2daf049573e14469f634e0e6
+M/beh_stack=M/Beh_Stack 21|0|v98|1462811560646|./src/MROM.vhd|0*13114*0x2b6ed6677eb6d33c49cf87409ac2d4792734ac50|0*14095*0xb33770ff1c10522f9491560174ac8e6c
 R=./src/MROM.vhd|6
 Version=9.1.2353.4205  (Windows)|00000003789cd3f5370600015b00b0
 Version/beh_stack=9.1.2353.4205  (Windows)|00000003789cd3f5370600015b00b0
@@ -75,39 +75,39 @@ Version/beh_stack=9.1.2353.4205  (Windows)|00000003789cd3f5370600015b00b0
 [stack]
 A/stack_behavioural=A/Stack_behavioural 21|./src/Stack.vhd|26|1*0
 BinI32/stack_behavioural=3*0
-I=0*906
-I/stack_behavioural=I/Stack_behavioural 0*2209
-M=11|0|v98|1462810600584|./src/Stack.vhd|0*340*0x1220f0a7fcdf28c0c264f51c1e24a79f020f83a8|0*835*0xab32bc1a2daf049573e14469f634e0e6
-M/stack_behavioural=M/Stack_behavioural 21|0|v98|1462810600586|./src/Stack.vhd|0*1200*0x66288cb79a02c0b5b20745b771f976f2d4937b5f|0*2117*0xb33770ff1c10522f9491560174ac8e6c
+I=0*1682
+I/stack_behavioural=I/Stack_behavioural 0*2985
+M=11|0|v98|1462811560472|./src/Stack.vhd|0*1116*0x1220f0a7fcdf28c0c264f51c1e24a79f020f83a8|0*1611*0xab32bc1a2daf049573e14469f634e0e6
+M/stack_behavioural=M/Stack_behavioural 21|0|v98|1462811560474|./src/Stack.vhd|0*1976*0x66288cb79a02c0b5b20745b771f976f2d4937b5f|0*2893*0xb33770ff1c10522f9491560174ac8e6c
 R=./src/Stack.vhd|8
 Version=9.1.2353.4205  (Windows)|00000003789cd3f5370600015b00b0
 Version/stack_behavioural=9.1.2353.4205  (Windows)|00000003789cd3f5370600015b00b0
 
 [testbench_for_microprocessor]
 Configures=microprocessor_tb.TB_ARCHITECTURE
-E=1*37857
-I=0*24624
-M=2|0|v98|1462810600896|./src/TestBench/microprocessor_TB.vhd|0*24163*0x7e596cc0a6523a12a06fcd72430113cac5fb1950|0*24488*0xb33770ff1c10522f9491560174ac8e6c
+E=1*38302
+I=0*25768
+M=2|0|v98|1462811560879|./src/TestBench/microprocessor_TB.vhd|0*25307*0x7e596cc0a6523a12a06fcd72430113cac5fb1950|0*25632*0xb33770ff1c10522f9491560174ac8e6c
 R=./src/TestBench/microprocessor_TB.vhd|62
 Version=9.1.2353.4205  (Windows)|00000003789cd3f5370600015b00b0
 
 [~A]
-ModifyID=2748
+ModifyID=2904
 Version=73
 
 [~MFT]
-0=56|0MPFSM_stack_sorting_design.mgf|24624|0
-1=8|1MPFSM_stack_sorting_design.mgf|37857|0
-3=5|3MPFSM_stack_sorting_design.mgf|8031|0
+0=56|0MPFSM_stack_sorting_design.mgf|25768|0
+1=8|1MPFSM_stack_sorting_design.mgf|38302|0
+3=5|3MPFSM_stack_sorting_design.mgf|8035|0
 
 [~U]
-commands=3|0*4442|0*4577
-controller=Controller 11|0*5844|
-dpath=DPATH 11|0*13633|
-microprocessor=MicroProcessor 11|0*18100|
-microprocessor_tb=11|0*22142|
-mram=MRAM 11|0*2521|
-mrom=MROM 11|0*11550|
-stack=Stack 11|0*0|
+commands=3|0*5218|0*5353
+controller=Controller 11|0*6620|
+datapath=Datapath 11|0*14409|
+microprocessor=MicroProcessor 11|0*0|
+microprocessor_tb=11|0*23286|
+mram=MRAM 11|0*3297|
+mrom=MROM 11|0*12326|
+stack=Stack 11|0*776|
 testbench_for_microprocessor=TESTBENCH_FOR_microprocessor 2||
 

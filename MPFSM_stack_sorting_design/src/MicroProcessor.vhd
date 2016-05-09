@@ -30,24 +30,17 @@ architecture Beh of MicroProcessor is
 		);
 	end component;
 
-	component DPATH is
+	component Datapath is
 		port(
-			EN   : in  std_logic;
-			-- synchronization
-			CLK  : in  std_logic;
-			-- operation type
-			OT   : in  std_logic_vector(3 downto 0);
-			-- operand
-			OP   : in  std_logic_vector(7 downto 0);
-			-- result
-			RES  : out std_logic_vector(7 downto 0);
-			-- zero flag
-			ZF   : out std_logic;
-			-- significant bit set flag
-			SBF  : out std_logic;
-			-- stop - the processing is finished
-			Stop : out std_logic
-		);
+		enabled: in std_logic;
+		clk: in std_logic;
+		operation: in std_logic_vector(3 downto 0);
+		operation_parameter: in std_logic_vector(7 downto 0);
+		result: out std_logic_vector(7 downto 0);
+		zero_flag: out std_logic;
+		sign_bit_flag: out std_logic;
+		Stop: out std_logic
+	);
 	end component;
 
 	component Controller is
@@ -103,16 +96,16 @@ begin
 			address      => rom_address,
 			data_out     => rom_data_out
 		);
-	UDPATH : DPATH
+	UDPATH : Datapath
 		port map(
-			EN   => dp_en,
-			CLK  => CLK,
-			OT   => dp_ot,
-			OP   => dp_op,
-			RES  => dp_res,
-			ZF   => dp_zf,
-			SBF  => dp_sbf,
-			STOP => dp_stop
+			enabled   => dp_en,
+			clk  => CLK,
+			operation   => dp_ot,
+			operation_parameter   => dp_op,
+			result  => dp_res,
+			zero_flag   => dp_zf,
+			sign_bit_flag  => dp_sbf,
+			Stop => dp_stop
 		);
 	UCTRL1 : Controller
 		port map(

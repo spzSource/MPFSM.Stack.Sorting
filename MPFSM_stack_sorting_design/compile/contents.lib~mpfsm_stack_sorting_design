@@ -1,8 +1,8 @@
-2748
+2904
 ~E 1 "./src/Controller.vhd" 6 Controller
 ~A 1 "./src/Controller.vhd" 30 Controller_Beh
-~E 1 "./src/Datapath.vhd" 7 DPATH
-~A 1 "./src/Datapath.vhd" 21 Beh_Stack
+~E 1 "./src/Datapath.vhd" 7 Datapath
+~A 1 "./src/Datapath.vhd" 20 Datapath_Beh
 ~E 1 "./src/MicroProcessor.vhd" 5 MicroProcessor
 ~A 1 "./src/MicroProcessor.vhd" 14 Beh
 ~E 1 "./src/TestBench/microprocessor_TB.vhd" 9 microprocessor_tb

@@ -57,8 +57,8 @@ architecture Beh_Stack of MROM is
 		PUSHI_OP & I_ADDR,        
 		POP_OP    & TEMP_2_ADDR,    
 			
-		PUSH_OP   & TEMP_1_ADDR,    
 		PUSH_OP   & TEMP_2_ADDR,    
+		PUSH_OP   & TEMP_1_ADDR,    
 		SUB_OP    & Z_ADDR,    
 		JNSB_OP   & "011110",      
 	

@@ -1,4 +1,4 @@
-3163
+3240
 ~E 1 "./src/Controller.vhd" 6 Controller
 ~A 1 "./src/Controller.vhd" 30 Controller_Beh
 ~E 1 "./src/Datapath.vhd" 7 Datapath

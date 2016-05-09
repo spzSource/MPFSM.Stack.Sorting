@@ -16,36 +16,19 @@ architecture MRAM_Beh of MRAM is
 	subtype byte is std_logic_vector(7 downto 0);
 	type tRAM is array (0 to 63) of byte;
 	signal RAM: tRAM:= (
-		"00000101",                     -- 5	a[0]  
-		
+		"00000101",                     -- 5	a[0]  	
 		"00000011",                     -- 3	a[1]
-		
 		"00000001",                     -- 1	a[2]
-		
 		"00000100",                     -- 4	a[3]
-
-		
 		"00000000",                     -- 0	a[4]  [-]
-		
 		"00000011",                     -- 3    a[5]  outer loop: max index value
-		
 		"00000100",                     -- 4	a[6]  inner loop: max index value
-
-		
 		"00000000",                     -- 0	a[7]  outer loop: current index
-		
 		"00000000",                     -- 0	a[8]  inner loop: current index    
-
-		
 		"00000001",                     -- 1	a[9]  constant one = 1	  
-		
 		"00000000",                     -- 0    a[10] constant zero = 0
-
-		
 		"00000000",                     -- 0    a[11] reserved cell (temp 1)
-		
 		"00000000",                     -- 0   	a[12] reserved cell (temp 2) 
-		
 		"00000000",						-- 0    a[13] reserved cell (temp 3)
 		others => "00000000"
 	);

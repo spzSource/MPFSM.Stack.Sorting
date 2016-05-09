@@ -32,7 +32,7 @@ ON_SERVERFARM_IMPL=0
 ON_SERVERFARM_SIM=0
 DVM_DISPLAY=NO
 FAMILY=<none>
-fileopenfolder=Y:\Dropbox\Magistracy\POCP\practice\MPFSM_stack_sorting\MPFSM_stack_sorting_design\src
+fileopenfolder=F:\Dropbox\Magistracy\POCP\practice\MPFSM_stack_sorting\MPFSM_stack_sorting_design\src
 
 [LocalVerilogSets]
 EnableSLP=1
@@ -53,29 +53,28 @@ TestBench=1
 
 [HierarchyViewer]
 SortInfo=u
-HierarchyInformation=
+HierarchyInformation=microprocessor_tb|TB_ARCHITECTURE|0
 ShowHide=ShowTopLevel
 Selected=
 
 [Files]
-/DataPath.vhd=-1
-/DataRAM.vhd=-1
 /Stack.vhd=-1
+/MRAM.vhd=-1
 /Commands.vhd=-1
 /Controller.vhd=-1
-/MicroROM.vhd=-1
+/MROM.vhd=-1
+/Datapath.vhd=-1
 /MicroProcessor.vhd=-1
-TestBench/stack_TB.vhd=-1
-TestBench/stack_TB_runtest.do=-1
+TestBench/microprocessor_TB.vhd=-1
+TestBench/microprocessor_TB_runtest.do=-1
 
 [Files.Data]
-.\src\DataPath.vhd=VHDL Source Code
-.\src\DataRAM.vhd=VHDL Source Code
 .\src\Stack.vhd=VHDL Source Code
+.\src\MRAM.vhd=VHDL Source Code
 .\src\Commands.vhd=VHDL Source Code
 .\src\Controller.vhd=VHDL Source Code
-.\src\MicroROM.vhd=VHDL Source Code
+.\src\MROM.vhd=VHDL Source Code
+.\src\Datapath.vhd=VHDL Source Code
 .\src\MicroProcessor.vhd=VHDL Source Code
-.\src\TestBench\stack_TB.vhd=VHDL Test Bench
-.\src\TestBench\stack_TB_runtest.do=Macro
-
+.\src\TestBench\microprocessor_TB.vhd=VHDL Test Bench
+.\src\TestBench\microprocessor_TB_runtest.do=Macro

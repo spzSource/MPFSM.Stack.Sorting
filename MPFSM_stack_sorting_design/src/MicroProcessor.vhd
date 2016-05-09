@@ -1,9 +1,6 @@
-library ieee;
-
-use ieee.std_logic_1164.all;
-use ieee.numeric_std.all;
-use ieee.std_logic_arith.all;
-use ieee.std_logic_unsigned.all;
+library IEEE;
+use IEEE.STD_LOGIC_1164.all;
+use IEEE.STD_LOGIC_UNSIGNED.all;
 
 entity MicroProcessor is
 	port(
@@ -14,114 +11,131 @@ entity MicroProcessor is
 	);
 end MicroProcessor;
 
-architecture MicroProcessor_Behavioural of MicroProcessor is
-	component MicroROM is
+architecture Beh of MicroProcessor is
+	component MROM is
 		port(
-			read_enable : in  std_logic;
-			address     : in  std_logic_vector(5 downto 0);
-			data_output : out std_logic_vector(9 downto 0)
+			read_enabled : in  std_logic;
+			address      : in  std_logic_vector(5 downto 0);
+			data_out     : out std_logic_vector(9 downto 0)
 		);
 	end component;
 
-	--component DataRAM is
-	--		port(
-	--			read_write  : in  std_logic;
-	--			address     : in  std_logic_vector(5 downto 0);
-	--			data_input  : in  std_logic_vector(7 downto 0);
-	--			data_output : out std_logic_vector(7 downto 0)
-	--		);
-	--	end component;
-
-	component DataPath is
+	component MRAM is
 		port(
-			enabled              : in  std_logic;
-			operation_code       : in  std_logic_vector(3 downto 0);
-			operand              : in  std_logic_vector(7 downto 0);
-			result               : out std_logic_vector(7 downto 0);
-			zero_flag            : out std_logic;
-			significant_bit_flag : out std_logic
+			CLK  : in  std_logic;
+			RW   : in  std_logic;
+			ADDR : in  std_logic_vector(5 downto 0);
+			DIN  : in  std_logic_vector(7 downto 0);
+			DOUT : out std_logic_vector(7 downto 0)
 		);
 	end component;
 
-	component Controller is
+	component DPATH is
 		port(
-			clk                     : in  std_logic;
-			rst                     : in  std_logic;
-			start                   : in  std_logic;
-			stop                    : out std_logic;
-			rom_enabled             : out std_logic;
-			rom_address             : out std_logic_vector(5 downto 0);
-			rom_data_output         : in  std_logic_vector(9 downto 0);
-			ram_read_write          : out std_logic;
-			ram_address             : out std_logic_vector(5 downto 0);
-			ram_data_input          : out std_logic_vector(7 downto 0);
-			ram_data_output         : in  std_logic_vector(7 downto 0);
-			datapath_operand        : out std_logic_vector(7 downto 0);
-			datapath_operation_code : out std_logic_vector(3 downto 0);
-			datapath_enabled        : out std_logic;
-			datapath_result         : in  std_logic_vector(7 downto 0);
-			datapath_zero_flag      : in  std_logic;
-			datapath_sign_bit_flag  : in  std_logic
+			EN   : in  std_logic;
+			-- synchronization
+			CLK  : in  std_logic;
+			-- operation type
+			OT   : in  std_logic_vector(3 downto 0);
+			-- operand
+			OP   : in  std_logic_vector(7 downto 0);
+			-- result
+			RES  : out std_logic_vector(7 downto 0);
+			-- zero flag
+			ZF   : out std_logic;
+			-- significant bit set flag
+			SBF  : out std_logic;
+			-- stop - the processing is finished
+			Stop : out std_logic
 		);
 	end component;
 
-	signal mp_ram_read_write  : std_logic;
-	signal mp_ram_address     : std_logic_vector(5 downto 0);
-	signal mp_ram_data_input  : std_logic_vector(7 downto 0);
-	signal mp_ram_data_output : std_logic_vector(7 downto 0);
+	component CTRL1 is
+		port(
+			CLK, RST, Start : in  std_logic;
+			Stop            : out std_logic;
 
-	signal mp_rom_read_enable : std_logic;
-	signal mp_rom_address     : std_logic_vector(5 downto 0);
-	signal mp_rom_data_output : std_logic_vector(9 downto 0);
+			-- ROM
+			ROM_re          : out std_logic;
+			ROM_addr        : out std_logic_vector(5 downto 0);
+			ROM_dout        : in  std_logic_vector(9 downto 0);
 
-	signal mp_datapath_enabled              : std_logic;
-	signal mp_datapath_operation_code       : std_logic_vector(3 downto 0);
-	signal mp_datapath_operand              : std_logic_vector(7 downto 0);
-	signal mp_datapath_result               : std_logic_vector(7 downto 0);
-	signal mp_datapath_zero_flag            : std_logic;
-	signal mp_datapath_significant_bit_flag : std_logic;
+			-- RAM
+			RAM_rw          : out std_logic;
+			RAM_addr        : out std_logic_vector(5 downto 0);
+			RAM_din         : out std_logic_vector(7 downto 0);
+			RAM_dout        : in  std_logic_vector(7 downto 0);
 
+			--datapath
+			DP_op           : out std_logic_vector(7 downto 0);
+			DP_ot           : out std_logic_vector(3 downto 0);
+			DP_en           : out std_logic;
+			DP_res          : in  std_logic_vector(7 downto 0);
+			DP_sbf          : in  std_logic;
+			DP_zf           : in  std_logic;
+			DP_stop         : in  std_logic
+		);
+	end component;
+
+	signal rom_read_enabled : std_logic;
+	signal rom_address      : std_logic_vector(5 downto 0);
+	signal rom_data_out     : std_logic_vector(9 downto 0);
+	signal ram_rw           : std_logic;
+	signal ram_addr         : std_logic_vector(5 downto 0);
+	signal ram_din          : std_logic_vector(7 downto 0);
+	signal ram_dout         : std_logic_vector(7 downto 0);
+	signal dp_op            : std_logic_vector(7 downto 0);
+	signal dp_ot            : std_logic_vector(3 downto 0);
+	signal dp_en            : std_logic;
+	signal dp_res           : std_logic_vector(7 downto 0);
+	signal dp_zf            : std_logic;
+	signal dp_sbf           : std_logic;
+	signal dp_stop          : std_logic;
 begin
-	U_RAM : entity DataRAM port map(
-			read_write  => mp_ram_read_write,
-			address     => mp_ram_address,
-			data_input  => mp_ram_data_input,
-			data_output => mp_ram_data_output
+	UMRAM : MRAM
+		port map(
+			CLK  => CLK,
+			RW   => ram_rw,
+			ADDR => ram_addr,
+			DIN  => ram_din,
+			DOUT => ram_dout
 		);
-
-	U_ROM : entity MicroROM port map(
-			read_enable => mp_rom_read_enable,
-			address     => mp_rom_address,
-			data_output => mp_rom_data_output
+	UMROM : entity MROM(Beh_Stack)
+		port map(
+			read_enabled => rom_read_enabled,
+			address      => rom_address,
+			data_out     => rom_data_out
 		);
-	U_DATAPATH : DataPath port map(
-			enabled              => mp_datapath_enabled,
-			operation_code       => mp_datapath_operation_code,
-			operand              => mp_datapath_operand,
-			result               => mp_datapath_result,
-			zero_flag            => mp_datapath_zero_flag,
-			significant_bit_flag => mp_datapath_significant_bit_flag
+	UDPATH : DPATH
+		port map(
+			EN   => dp_en,
+			CLK  => CLK,
+			OT   => dp_ot,
+			OP   => dp_op,
+			RES  => dp_res,
+			ZF   => dp_zf,
+			SBF  => dp_sbf,
+			STOP => dp_stop
 		);
-	U_CONTROLLER : Controller port map(
-			clk                     => clk,
-			rst                     => rst,
-			start                   => start,
-			stop                    => stop,
-			rom_enabled             => mp_rom_read_enable,
-			rom_address             => mp_rom_address,
-			rom_data_output         => mp_rom_data_output,
-			ram_read_write          => mp_ram_read_write,
-			ram_address             => mp_ram_address,
-			ram_data_input          => mp_ram_data_input,
-			ram_data_output         => mp_ram_data_output,
-			datapath_operand        => mp_datapath_operand,
-			datapath_operation_code => mp_datapath_operation_code,
-			datapath_enabled        => mp_datapath_enabled,
-			datapath_result         => mp_datapath_result,
-			datapath_zero_flag      => mp_datapath_zero_flag,
-			datapath_sign_bit_flag  => mp_datapath_significant_bit_flag
+	UCTRL1 : CTRL1
+		port map(
+			CLK      => CLK,
+			RST      => RST,
+			START    => Start,
+			STOP     => STOP,
+			ROM_re   => rom_read_enabled,
+			ROM_addr => rom_address,
+			ROM_dout => rom_data_out,
+			RAM_rw   => ram_rw,
+			RAM_addr => ram_addr,
+			RAM_din  => ram_din,
+			RAM_dout => ram_dout,
+			DP_en    => dp_en,
+			DP_ot    => dp_ot,
+			DP_op    => dp_op,
+			DP_res   => dp_res,
+			DP_zf    => dp_zf,
+			DP_sbf   => dp_sbf,
+			DP_stop  => dp_stop
 		);
-
-end MicroProcessor_Behavioural;
-
-		
+end Beh;

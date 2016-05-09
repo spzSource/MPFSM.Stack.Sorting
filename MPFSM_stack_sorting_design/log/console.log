@@ -1,745 +1,7 @@
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
 acom -O3 -work MPFSM_stack_sorting_design -2002  $dsn/src/Stack.vhd $dsn/src/MRAM.vhd $dsn/src/Commands.vhd $dsn/src/Controller.vhd $dsn/src/MROM.vhd $dsn/src/Datapath.vhd $dsn/src/MicroProcessor.vhd $dsn/src/TestBench/microprocessor_TB.vhd
 # Compile...
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
-# File: F:\Dropbox\Magistracy\POCP\practice\MPFSM_stack_sorting\MPFSM_stack_sorting_design\src\Stack.vhd
-# Compile Entity "Stack"
-# Compile Architecture "Stack_behavioural" of Entity "Stack"
-# File: F:\Dropbox\Magistracy\POCP\practice\MPFSM_stack_sorting\MPFSM_stack_sorting_design\src\MRAM.vhd
-# Compile Entity "MRAM"
-# Compile Architecture "Beh_Sorting" of Entity "MRAM"
-# File: F:\Dropbox\Magistracy\POCP\practice\MPFSM_stack_sorting\MPFSM_stack_sorting_design\src\Commands.vhd
-# Compile Package "commands"
-# File: F:\Dropbox\Magistracy\POCP\practice\MPFSM_stack_sorting\MPFSM_stack_sorting_design\src\Controller.vhd
-# Compile Entity "CTRL1"
-# Compile Architecture "Beh_Stack" of Entity "CTRL1"
-# File: F:\Dropbox\Magistracy\POCP\practice\MPFSM_stack_sorting\MPFSM_stack_sorting_design\src\MROM.vhd
-# Compile Entity "MROM"
-# Compile Architecture "Beh_Stack" of Entity "MROM"
-# File: F:\Dropbox\Magistracy\POCP\practice\MPFSM_stack_sorting\MPFSM_stack_sorting_design\src\Datapath.vhd
-# Compile Entity "DPATH"
-# Compile Architecture "Beh_Stack" of Entity "DPATH"
-# File: F:\Dropbox\Magistracy\POCP\practice\MPFSM_stack_sorting\MPFSM_stack_sorting_design\src\MicroProcessor.vhd
-# Compile Entity "MicroProcessor"
-# Compile Architecture "Beh" of Entity "MicroProcessor"
-# File: F:\Dropbox\Magistracy\POCP\practice\MPFSM_stack_sorting\MPFSM_stack_sorting_design\src\TestBench\microprocessor_TB.vhd
-# Compile Entity "microprocessor_tb"
-# Compile Architecture "TB_ARCHITECTURE" of Entity "microprocessor_tb"
-# Compile Configuration "TESTBENCH_FOR_microprocessor"
-# Error: VLM_0026: Cannot write data to the MGF file - possibly no space on disk or MGF file corrupted. In the second case, please use command vdel -all to empty library "mpfsm_stack_sorting_design".
-# Too many errors - compilation terminated
-# Compile failure 1 Errors 0 Warnings  Analysis time :  0.2 [s]
-# Library Manager: Library "mpfsm_stack_sorting_design" contents cleared.
-acom -reorder -O3 -work MPFSM_stack_sorting_design -2002  $dsn/src/Stack.vhd $dsn/src/MRAM.vhd $dsn/src/Commands.vhd $dsn/src/Controller.vhd $dsn/src/MROM.vhd $dsn/src/Datapath.vhd $dsn/src/MicroProcessor.vhd $dsn/src/TestBench/microprocessor_TB.vhd
-# Compile with File Reorder...
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
-# File: F:\Dropbox\Magistracy\POCP\practice\MPFSM_stack_sorting\MPFSM_stack_sorting_design\src\Stack.vhd
-# Compile Entity "Stack"
-# Compile Architecture "Stack_behavioural" of Entity "Stack"
-# File: F:\Dropbox\Magistracy\POCP\practice\MPFSM_stack_sorting\MPFSM_stack_sorting_design\src\MRAM.vhd
-# Compile Entity "MRAM"
-# Compile Architecture "Beh_Sorting" of Entity "MRAM"
-# File: F:\Dropbox\Magistracy\POCP\practice\MPFSM_stack_sorting\MPFSM_stack_sorting_design\src\Commands.vhd
-# Compile Package "commands"
-# File: F:\Dropbox\Magistracy\POCP\practice\MPFSM_stack_sorting\MPFSM_stack_sorting_design\src\Controller.vhd
-# Compile Entity "CTRL1"
-# Compile Architecture "Beh_Stack" of Entity "CTRL1"
-# File: F:\Dropbox\Magistracy\POCP\practice\MPFSM_stack_sorting\MPFSM_stack_sorting_design\src\MROM.vhd
-# Compile Entity "MROM"
-# Compile Architecture "Beh_Stack" of Entity "MROM"
-# File: F:\Dropbox\Magistracy\POCP\practice\MPFSM_stack_sorting\MPFSM_stack_sorting_design\src\Datapath.vhd
-# Compile Entity "DPATH"
-# Compile Architecture "Beh_Stack" of Entity "DPATH"
-# File: F:\Dropbox\Magistracy\POCP\practice\MPFSM_stack_sorting\MPFSM_stack_sorting_design\src\MicroProcessor.vhd
-# Compile Entity "MicroProcessor"
-# Compile Architecture "Beh" of Entity "MicroProcessor"
-# File: F:\Dropbox\Magistracy\POCP\practice\MPFSM_stack_sorting\MPFSM_stack_sorting_design\src\TestBench\microprocessor_TB.vhd
-# Compile Entity "microprocessor_tb"
-# Compile Architecture "TB_ARCHITECTURE" of Entity "microprocessor_tb"
-# Compile Configuration "TESTBENCH_FOR_microprocessor"
-# Top-level unit(s) detected:
-# Configuration => TESTBENCH_FOR_microprocessor
-# Entity => microprocessor_tb
-# Compile success 0 Errors 0 Warnings  Analysis time :  0.6 [s]
-# ELBREAD: Elaboration process.
-# ELBREAD: Elaboration time 0.0 [s].
-# Library Manager: Library "mpfsm_stack_sorting_design" contents cleared.
-acom -reorder -O3 -work MPFSM_stack_sorting_design -2002  $dsn/src/Stack.vhd $dsn/src/MRAM.vhd $dsn/src/Commands.vhd $dsn/src/Controller.vhd $dsn/src/MROM.vhd $dsn/src/Datapath.vhd $dsn/src/MicroProcessor.vhd $dsn/src/TestBench/microprocessor_TB.vhd
-# Compile with File Reorder...
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
-# File: F:\Dropbox\Magistracy\POCP\practice\MPFSM_stack_sorting\MPFSM_stack_sorting_design\src\Stack.vhd
-# Compile Entity "Stack"
-# Compile Architecture "Stack_behavioural" of Entity "Stack"
-# File: F:\Dropbox\Magistracy\POCP\practice\MPFSM_stack_sorting\MPFSM_stack_sorting_design\src\MRAM.vhd
-# Compile Entity "MRAM"
-# Compile Architecture "Beh_Sorting" of Entity "MRAM"
-# File: F:\Dropbox\Magistracy\POCP\practice\MPFSM_stack_sorting\MPFSM_stack_sorting_design\src\Commands.vhd
-# Compile Package "commands"
-# File: F:\Dropbox\Magistracy\POCP\practice\MPFSM_stack_sorting\MPFSM_stack_sorting_design\src\Controller.vhd
-# Compile Entity "CTRL1"
-# Compile Architecture "Beh_Stack" of Entity "CTRL1"
-# File: F:\Dropbox\Magistracy\POCP\practice\MPFSM_stack_sorting\MPFSM_stack_sorting_design\src\MROM.vhd
-# Compile Entity "MROM"
-# Compile Architecture "Beh_Stack" of Entity "MROM"
-# File: F:\Dropbox\Magistracy\POCP\practice\MPFSM_stack_sorting\MPFSM_stack_sorting_design\src\Datapath.vhd
-# Compile Entity "DPATH"
-# Compile Architecture "Beh_Stack" of Entity "DPATH"
-# File: F:\Dropbox\Magistracy\POCP\practice\MPFSM_stack_sorting\MPFSM_stack_sorting_design\src\MicroProcessor.vhd
-# Compile Entity "MicroProcessor"
-# Compile Architecture "Beh" of Entity "MicroProcessor"
-# File: F:\Dropbox\Magistracy\POCP\practice\MPFSM_stack_sorting\MPFSM_stack_sorting_design\src\TestBench\microprocessor_TB.vhd
-# Compile Entity "microprocessor_tb"
-# Compile Architecture "TB_ARCHITECTURE" of Entity "microprocessor_tb"
-# Compile Configuration "TESTBENCH_FOR_microprocessor"
-# Top-level unit(s) detected:
-# Configuration => TESTBENCH_FOR_microprocessor
-# Entity => microprocessor_tb
-# Compile success 0 Errors 0 Warnings  Analysis time :  0.4 [s]
-# ELBREAD: Elaboration process.
-# ELBREAD: Elaboration time 0.0 [s].
-# ELBREAD: Elaboration process.
-# ELBREAD: Elaboration time 0.0 [s].
-asim -O5 +access +r +m+microprocessor_tb microprocessor_tb TB_ARCHITECTURE
-# ELBREAD: Elaboration process.
-# ELBREAD: Elaboration time 0.0 [s].
-# asim: Stack memory: 32MB
-# asim: Retval memory: 32MB
-# KERNEL: Main thread initiated.
-# KERNEL: Kernel process initialization phase.
-# KERNEL: Time resolution set to 1ps.
-# ELAB2: Elaboration final pass...
-# ELAB2: Create instances ...
-# ELAB2: Create instances complete.
-# SLP: Started
-# SLP: Elaboration phase ...
-# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
-# SLP: Finished : 0.0 [s]
-# ELAB2: Elaboration final pass complete - time: 0.2 [s].
-# KERNEL: Kernel process initialization done.
-# Allocation: Simulator allocated 6206 kB (elbread=1023 elab2=5089 kernel=93 sdf=0)
-# KERNEL: ASDB file was created in location F:\Dropbox\Magistracy\POCP\practice\MPFSM_stack_sorting\MPFSM_stack_sorting_design\src\wave.asdb
-#  18:36, Monday, May 9, 2016
-#  Simulation has been initialized
-#  Selected Top-Level: microprocessor_tb (TB_ARCHITECTURE)
-# 89 signal(s) traced.
-# wave -rec *
-run 100 ns
-# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /microprocessor_tb/UUT/UMRAM,  Process: line__55.
-# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /microprocessor_tb/UUT/UMROM,  Process: line__95.
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /microprocessor_tb/UUT/UDPATH,  Process: FLAGS.
-# KERNEL: stopped at time: 100 ns
-run 100 ns
-# KERNEL: stopped at time: 200 ns
-run 100 ns
-# KERNEL: stopped at time: 300 ns
-run 100 ns
-# KERNEL: stopped at time: 400 ns
-endsim
-#  Simulation has been stopped
-acom -O3 -work MPFSM_stack_sorting_design -2002  $dsn/src/MRAM.vhd
-# Compile...
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
-# File: F:\Dropbox\Magistracy\POCP\practice\MPFSM_stack_sorting\MPFSM_stack_sorting_design\src\MRAM.vhd
-# Compile Entity "MRAM"
-# Compile Architecture "MRAM_Beh" of Entity "MRAM"
-# Error: COMP96_0078: MRAM.vhd : (44, 2): Unknown identifier "data_in".
-# Error: COMP96_0133: MRAM.vhd : (44, 2): Cannot find object declaration.
-# Compile failure 2 Errors 0 Warnings  Analysis time :  31.0 [ms]
-acom -O3 -work MPFSM_stack_sorting_design -2002  $dsn/src/MRAM.vhd
-# Compile...
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
-# File: F:\Dropbox\Magistracy\POCP\practice\MPFSM_stack_sorting\MPFSM_stack_sorting_design\src\MRAM.vhd
-# Compile Entity "MRAM"
-# Compile Architecture "MRAM_Beh" of Entity "MRAM"
-# Compile success 0 Errors 0 Warnings  Analysis time :  78.0 [ms]
-acom -O3 -work MPFSM_stack_sorting_design -2002  $dsn/src/Stack.vhd $dsn/src/MRAM.vhd $dsn/src/Commands.vhd $dsn/src/Controller.vhd $dsn/src/MROM.vhd $dsn/src/Datapath.vhd $dsn/src/MicroProcessor.vhd $dsn/src/TestBench/microprocessor_TB.vhd
-# Compile...
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
-# File: F:\Dropbox\Magistracy\POCP\practice\MPFSM_stack_sorting\MPFSM_stack_sorting_design\src\Stack.vhd
-# Compile Entity "Stack"
-# Compile Architecture "Stack_behavioural" of Entity "Stack"
-# File: F:\Dropbox\Magistracy\POCP\practice\MPFSM_stack_sorting\MPFSM_stack_sorting_design\src\MRAM.vhd
-# Compile Entity "MRAM"
-# Compile Architecture "MRAM_Beh" of Entity "MRAM"
-# File: F:\Dropbox\Magistracy\POCP\practice\MPFSM_stack_sorting\MPFSM_stack_sorting_design\src\Commands.vhd
-# Compile Package "commands"
-# File: F:\Dropbox\Magistracy\POCP\practice\MPFSM_stack_sorting\MPFSM_stack_sorting_design\src\Controller.vhd
-# Compile Entity "CTRL1"
-# Compile Architecture "Beh_Stack" of Entity "CTRL1"
-# File: F:\Dropbox\Magistracy\POCP\practice\MPFSM_stack_sorting\MPFSM_stack_sorting_design\src\MROM.vhd
-# Compile Entity "MROM"
-# Compile Architecture "Beh_Stack" of Entity "MROM"
-# File: F:\Dropbox\Magistracy\POCP\practice\MPFSM_stack_sorting\MPFSM_stack_sorting_design\src\Datapath.vhd
-# Compile Entity "DPATH"
-# Compile Architecture "Beh_Stack" of Entity "DPATH"
-# File: F:\Dropbox\Magistracy\POCP\practice\MPFSM_stack_sorting\MPFSM_stack_sorting_design\src\MicroProcessor.vhd
-# Compile Entity "MicroProcessor"
-# Compile Architecture "Beh" of Entity "MicroProcessor"
-# Warning: ELAB1_0026: MicroProcessor.vhd : (95, 0): There is no default binding for component "MRAM". (Port "RW" is not on the entity).
-# File: F:\Dropbox\Magistracy\POCP\practice\MPFSM_stack_sorting\MPFSM_stack_sorting_design\src\TestBench\microprocessor_TB.vhd
-# Compile Entity "microprocessor_tb"
-# Compile Architecture "TB_ARCHITECTURE" of Entity "microprocessor_tb"
-# Compile Configuration "TESTBENCH_FOR_microprocessor"
-# Compile success 0 Errors 1 Warnings  Analysis time :  0.3 [s]
-acom -O3 -work MPFSM_stack_sorting_design -2002  $dsn/src/MicroProcessor.vhd
-# Compile...
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
-# File: F:\Dropbox\Magistracy\POCP\practice\MPFSM_stack_sorting\MPFSM_stack_sorting_design\src\MicroProcessor.vhd
-# Compile Entity "MicroProcessor"
-# Compile Architecture "Beh" of Entity "MicroProcessor"
-# Error: COMP96_0078: MicroProcessor.vhd : (98, 4): Unknown identifier "RW".
-# Error: COMP96_0078: MicroProcessor.vhd : (99, 4): Unknown identifier "ADDR".
-# Error: COMP96_0078: MicroProcessor.vhd : (100, 4): Unknown identifier "DIN".
-# Error: COMP96_0078: MicroProcessor.vhd : (101, 4): Unknown identifier "DOUT".
-# Error: COMP96_0133: MicroProcessor.vhd : (98, 4): Cannot find object declaration.
-# Error: COMP96_0112: MicroProcessor.vhd : (98, 4): "RW" does not match the formal name.
-# Error: COMP96_0207: MicroProcessor.vhd : (95, 0): No actual specified for local port "read_write".
-# Error: COMP96_0207: MicroProcessor.vhd : (95, 0): No actual specified for local port "address".
-# Error: COMP96_0207: MicroProcessor.vhd : (95, 0): No actual specified for local port "data_input".
-# Compile failure 9 Errors 0 Warnings  Analysis time :  32.0 [ms]
-acom -O3 -work MPFSM_stack_sorting_design -2002  $dsn/src/Stack.vhd $dsn/src/MRAM.vhd $dsn/src/Commands.vhd $dsn/src/Controller.vhd $dsn/src/MROM.vhd $dsn/src/Datapath.vhd $dsn/src/MicroProcessor.vhd $dsn/src/TestBench/microprocessor_TB.vhd
-# Compile...
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
-# File: F:\Dropbox\Magistracy\POCP\practice\MPFSM_stack_sorting\MPFSM_stack_sorting_design\src\Stack.vhd
-# Compile Entity "Stack"
-# Compile Architecture "Stack_behavioural" of Entity "Stack"
-# File: F:\Dropbox\Magistracy\POCP\practice\MPFSM_stack_sorting\MPFSM_stack_sorting_design\src\MRAM.vhd
-# Compile Entity "MRAM"
-# Compile Architecture "MRAM_Beh" of Entity "MRAM"
-# File: F:\Dropbox\Magistracy\POCP\practice\MPFSM_stack_sorting\MPFSM_stack_sorting_design\src\Commands.vhd
-# Compile Package "commands"
-# File: F:\Dropbox\Magistracy\POCP\practice\MPFSM_stack_sorting\MPFSM_stack_sorting_design\src\Controller.vhd
-# Compile Entity "CTRL1"
-# Compile Architecture "Beh_Stack" of Entity "CTRL1"
-# File: F:\Dropbox\Magistracy\POCP\practice\MPFSM_stack_sorting\MPFSM_stack_sorting_design\src\MROM.vhd
-# Compile Entity "MROM"
-# Compile Architecture "Beh_Stack" of Entity "MROM"
-# File: F:\Dropbox\Magistracy\POCP\practice\MPFSM_stack_sorting\MPFSM_stack_sorting_design\src\Datapath.vhd
-# Compile Entity "DPATH"
-# Compile Architecture "Beh_Stack" of Entity "DPATH"
-# File: F:\Dropbox\Magistracy\POCP\practice\MPFSM_stack_sorting\MPFSM_stack_sorting_design\src\MicroProcessor.vhd
-# Compile Entity "MicroProcessor"
-# Compile Architecture "Beh" of Entity "MicroProcessor"
-# File: F:\Dropbox\Magistracy\POCP\practice\MPFSM_stack_sorting\MPFSM_stack_sorting_design\src\TestBench\microprocessor_TB.vhd
-# Compile Entity "microprocessor_tb"
-# Compile Architecture "TB_ARCHITECTURE" of Entity "microprocessor_tb"
-# Compile Configuration "TESTBENCH_FOR_microprocessor"
-# Compile success 0 Errors 0 Warnings  Analysis time :  0.3 [s]
-acom -O3 -work MPFSM_stack_sorting_design -2002  $dsn/src/Stack.vhd $dsn/src/MRAM.vhd $dsn/src/Commands.vhd $dsn/src/Controller.vhd $dsn/src/MROM.vhd $dsn/src/Datapath.vhd $dsn/src/MicroProcessor.vhd $dsn/src/TestBench/microprocessor_TB.vhd
-# Compile...
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
-# File: F:\Dropbox\Magistracy\POCP\practice\MPFSM_stack_sorting\MPFSM_stack_sorting_design\src\Stack.vhd
-# Compile Entity "Stack"
-# Compile Architecture "Stack_behavioural" of Entity "Stack"
-# File: F:\Dropbox\Magistracy\POCP\practice\MPFSM_stack_sorting\MPFSM_stack_sorting_design\src\MRAM.vhd
-# Compile Entity "MRAM"
-# Compile Architecture "MRAM_Beh" of Entity "MRAM"
-# File: F:\Dropbox\Magistracy\POCP\practice\MPFSM_stack_sorting\MPFSM_stack_sorting_design\src\Commands.vhd
-# Compile Package "commands"
-# File: F:\Dropbox\Magistracy\POCP\practice\MPFSM_stack_sorting\MPFSM_stack_sorting_design\src\Controller.vhd
-# Compile Entity "CTRL1"
-# Compile Architecture "Beh_Stack" of Entity "CTRL1"
-# File: F:\Dropbox\Magistracy\POCP\practice\MPFSM_stack_sorting\MPFSM_stack_sorting_design\src\MROM.vhd
-# Compile Entity "MROM"
-# Compile Architecture "Beh_Stack" of Entity "MROM"
-# File: F:\Dropbox\Magistracy\POCP\practice\MPFSM_stack_sorting\MPFSM_stack_sorting_design\src\Datapath.vhd
-# Compile Entity "DPATH"
-# Compile Architecture "Beh_Stack" of Entity "DPATH"
-# File: F:\Dropbox\Magistracy\POCP\practice\MPFSM_stack_sorting\MPFSM_stack_sorting_design\src\MicroProcessor.vhd
-# Compile Entity "MicroProcessor"
-# Compile Architecture "Beh" of Entity "MicroProcessor"
-# File: F:\Dropbox\Magistracy\POCP\practice\MPFSM_stack_sorting\MPFSM_stack_sorting_design\src\TestBench\microprocessor_TB.vhd
-# Compile Entity "microprocessor_tb"
-# Compile Architecture "TB_ARCHITECTURE" of Entity "microprocessor_tb"
-# Compile Configuration "TESTBENCH_FOR_microprocessor"
-# Compile success 0 Errors 0 Warnings  Analysis time :  0.2 [s]
-# Library Manager: Library "mpfsm_stack_sorting_design" contents cleared.
-acom -reorder -O3 -work MPFSM_stack_sorting_design -2002  $dsn/src/Stack.vhd $dsn/src/MRAM.vhd $dsn/src/Commands.vhd $dsn/src/Controller.vhd $dsn/src/MROM.vhd $dsn/src/Datapath.vhd $dsn/src/MicroProcessor.vhd $dsn/src/TestBench/microprocessor_TB.vhd
-# Compile with File Reorder...
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
-# File: F:\Dropbox\Magistracy\POCP\practice\MPFSM_stack_sorting\MPFSM_stack_sorting_design\src\Stack.vhd
-# Compile Entity "Stack"
-# Compile Architecture "Stack_behavioural" of Entity "Stack"
-# File: F:\Dropbox\Magistracy\POCP\practice\MPFSM_stack_sorting\MPFSM_stack_sorting_design\src\MRAM.vhd
-# Compile Entity "MRAM"
-# Compile Architecture "MRAM_Beh" of Entity "MRAM"
-# File: F:\Dropbox\Magistracy\POCP\practice\MPFSM_stack_sorting\MPFSM_stack_sorting_design\src\Commands.vhd
-# Compile Package "commands"
-# File: F:\Dropbox\Magistracy\POCP\practice\MPFSM_stack_sorting\MPFSM_stack_sorting_design\src\Controller.vhd
-# Compile Entity "CTRL1"
-# Compile Architecture "Beh_Stack" of Entity "CTRL1"
-# File: F:\Dropbox\Magistracy\POCP\practice\MPFSM_stack_sorting\MPFSM_stack_sorting_design\src\MROM.vhd
-# Compile Entity "MROM"
-# Compile Architecture "Beh_Stack" of Entity "MROM"
-# File: F:\Dropbox\Magistracy\POCP\practice\MPFSM_stack_sorting\MPFSM_stack_sorting_design\src\Datapath.vhd
-# Compile Entity "DPATH"
-# Compile Architecture "Beh_Stack" of Entity "DPATH"
-# File: F:\Dropbox\Magistracy\POCP\practice\MPFSM_stack_sorting\MPFSM_stack_sorting_design\src\MicroProcessor.vhd
-# Compile Entity "MicroProcessor"
-# Compile Architecture "Beh" of Entity "MicroProcessor"
-# File: F:\Dropbox\Magistracy\POCP\practice\MPFSM_stack_sorting\MPFSM_stack_sorting_design\src\TestBench\microprocessor_TB.vhd
-# Compile Entity "microprocessor_tb"
-# Compile Architecture "TB_ARCHITECTURE" of Entity "microprocessor_tb"
-# Compile Configuration "TESTBENCH_FOR_microprocessor"
-# Top-level unit(s) detected:
-# Configuration => TESTBENCH_FOR_microprocessor
-# Entity => microprocessor_tb
-# Compile success 0 Errors 0 Warnings  Analysis time :  0.5 [s]
-# ELBREAD: Elaboration process.
-# ELBREAD: Elaboration time 0.0 [s].
-# ELBREAD: Elaboration process.
-# ELBREAD: Elaboration time 0.0 [s].
-asim -O5 +access +r +m+microprocessor_tb microprocessor_tb TB_ARCHITECTURE
-# ELBREAD: Elaboration process.
-# ELBREAD: Elaboration time 0.0 [s].
-# asim: Stack memory: 32MB
-# asim: Retval memory: 32MB
-# KERNEL: Main thread initiated.
-# KERNEL: Kernel process initialization phase.
-# KERNEL: Time resolution set to 1ps.
-# ELAB2: Elaboration final pass...
-# ELAB2: Create instances ...
-# ELAB2: Create instances complete.
-# SLP: Started
-# SLP: Elaboration phase ...
-# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
-# SLP: Finished : 0.0 [s]
-# ELAB2: Elaboration final pass complete - time: 0.1 [s].
-# KERNEL: Kernel process initialization done.
-# Allocation: Simulator allocated 6206 kB (elbread=1023 elab2=5089 kernel=93 sdf=0)
-# KERNEL: ASDB file was created in location F:\Dropbox\Magistracy\POCP\practice\MPFSM_stack_sorting\MPFSM_stack_sorting_design\src\wave.asdb
-#  18:47, Monday, May 9, 2016
-#  Simulation has been initialized
-#  Selected Top-Level: microprocessor_tb (TB_ARCHITECTURE)
-# 89 signal(s) traced.
-# wave -rec *
-run 100 ns
-# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /microprocessor_tb/UUT/UMRAM,  Process: line__66.
-# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /microprocessor_tb/UUT/UMROM,  Process: line__95.
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /microprocessor_tb/UUT/UDPATH,  Process: FLAGS.
-# KERNEL: stopped at time: 100 ns
-run 100 ns
-# KERNEL: stopped at time: 200 ns
-run 100 ns
-# KERNEL: stopped at time: 300 ns
-acom -O3 -work MPFSM_stack_sorting_design -2002  $dsn/src/Stack.vhd $dsn/src/MRAM.vhd $dsn/src/Commands.vhd $dsn/src/Controller.vhd $dsn/src/MROM.vhd $dsn/src/Datapath.vhd $dsn/src/MicroProcessor.vhd $dsn/src/TestBench/microprocessor_TB.vhd
-# Compile...
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
-# File: F:\Dropbox\Magistracy\POCP\practice\MPFSM_stack_sorting\MPFSM_stack_sorting_design\src\Stack.vhd
-# Compile Entity "Stack"
-# Compile Architecture "Stack_behavioural" of Entity "Stack"
-# File: F:\Dropbox\Magistracy\POCP\practice\MPFSM_stack_sorting\MPFSM_stack_sorting_design\src\MRAM.vhd
-# Compile Entity "MRAM"
-# Compile Architecture "MRAM_Beh" of Entity "MRAM"
-# File: F:\Dropbox\Magistracy\POCP\practice\MPFSM_stack_sorting\MPFSM_stack_sorting_design\src\Commands.vhd
-# Compile Package "commands"
-# File: F:\Dropbox\Magistracy\POCP\practice\MPFSM_stack_sorting\MPFSM_stack_sorting_design\src\Controller.vhd
-# Compile Entity "CTRL1"
-# Compile Architecture "Beh_Stack" of Entity "CTRL1"
-# File: F:\Dropbox\Magistracy\POCP\practice\MPFSM_stack_sorting\MPFSM_stack_sorting_design\src\MROM.vhd
-# Compile Entity "MROM"
-# Compile Architecture "Beh_Stack" of Entity "MROM"
-# File: F:\Dropbox\Magistracy\POCP\practice\MPFSM_stack_sorting\MPFSM_stack_sorting_design\src\Datapath.vhd
-# Compile Entity "DPATH"
-# Compile Architecture "Beh_Stack" of Entity "DPATH"
-# File: F:\Dropbox\Magistracy\POCP\practice\MPFSM_stack_sorting\MPFSM_stack_sorting_design\src\MicroProcessor.vhd
-# Compile Entity "MicroProcessor"
-# Compile Architecture "Beh" of Entity "MicroProcessor"
-# File: F:\Dropbox\Magistracy\POCP\practice\MPFSM_stack_sorting\MPFSM_stack_sorting_design\src\TestBench\microprocessor_TB.vhd
-# Compile Entity "microprocessor_tb"
-# Compile Architecture "TB_ARCHITECTURE" of Entity "microprocessor_tb"
-# Compile Configuration "TESTBENCH_FOR_microprocessor"
-# Compile success 0 Errors 0 Warnings  Analysis time :  0.3 [s]
-#  Simulation has been stopped
-# ELBREAD: Elaboration process.
-# ELBREAD: Elaboration time 0.0 [s].
-asim -O5 +access +r +m+microprocessor_tb microprocessor_tb TB_ARCHITECTURE
-# ELBREAD: Elaboration process.
-# ELBREAD: Elaboration time 0.0 [s].
-# asim: Stack memory: 32MB
-# asim: Retval memory: 32MB
-# KERNEL: Main thread initiated.
-# KERNEL: Kernel process initialization phase.
-# KERNEL: Time resolution set to 1ps.
-# ELAB2: Elaboration final pass...
-# ELAB2: Create instances ...
-# ELAB2: Create instances complete.
-# SLP: Started
-# SLP: Elaboration phase ...
-# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
-# SLP: Finished : 0.0 [s]
-# ELAB2: Elaboration final pass complete - time: 0.1 [s].
-# KERNEL: Kernel process initialization done.
-# Allocation: Simulator allocated 6206 kB (elbread=1023 elab2=5089 kernel=93 sdf=0)
-# KERNEL: ASDB file was created in location F:\Dropbox\Magistracy\POCP\practice\MPFSM_stack_sorting\MPFSM_stack_sorting_design\src\wave.asdb
-#  18:59, Monday, May 9, 2016
-#  Simulation has been initialized
-#  Selected Top-Level: microprocessor_tb (TB_ARCHITECTURE)
-# 89 signal(s) traced.
-# wave -rec *
-run 100 ns
-# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /microprocessor_tb/UUT/UMRAM,  Process: line__66.
-# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /microprocessor_tb/UUT/UMROM,  Process: line__95.
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /microprocessor_tb/UUT/UDPATH,  Process: FLAGS.
-# KERNEL: stopped at time: 100 ns
-run 100 ns
-# KERNEL: stopped at time: 200 ns
-acom -O3 -work MPFSM_stack_sorting_design -2002  $dsn/src/Controller.vhd
-# Compile...
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
-# File: F:\Dropbox\Magistracy\POCP\practice\MPFSM_stack_sorting\MPFSM_stack_sorting_design\src\Controller.vhd
-# Compile Entity "Controller"
-# Compile Architecture "Controller_Beh" of Entity "Controller"
-# Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]
-acom -O3 -work MPFSM_stack_sorting_design -2002  $dsn/src/Stack.vhd $dsn/src/MRAM.vhd $dsn/src/Commands.vhd $dsn/src/Controller.vhd $dsn/src/MROM.vhd $dsn/src/Datapath.vhd $dsn/src/MicroProcessor.vhd $dsn/src/TestBench/microprocessor_TB.vhd
-# Compile...
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
-# File: F:\Dropbox\Magistracy\POCP\practice\MPFSM_stack_sorting\MPFSM_stack_sorting_design\src\Stack.vhd
-# Compile Entity "Stack"
-# Compile Architecture "Stack_behavioural" of Entity "Stack"
-# File: F:\Dropbox\Magistracy\POCP\practice\MPFSM_stack_sorting\MPFSM_stack_sorting_design\src\MRAM.vhd
-# Compile Entity "MRAM"
-# Compile Architecture "MRAM_Beh" of Entity "MRAM"
-# File: F:\Dropbox\Magistracy\POCP\practice\MPFSM_stack_sorting\MPFSM_stack_sorting_design\src\Commands.vhd
-# Compile Package "commands"
-# File: F:\Dropbox\Magistracy\POCP\practice\MPFSM_stack_sorting\MPFSM_stack_sorting_design\src\Controller.vhd
-# Compile Entity "Controller"
-# Compile Architecture "Controller_Beh" of Entity "Controller"
-# File: F:\Dropbox\Magistracy\POCP\practice\MPFSM_stack_sorting\MPFSM_stack_sorting_design\src\MROM.vhd
-# Compile Entity "MROM"
-# Compile Architecture "Beh_Stack" of Entity "MROM"
-# File: F:\Dropbox\Magistracy\POCP\practice\MPFSM_stack_sorting\MPFSM_stack_sorting_design\src\Datapath.vhd
-# Compile Entity "DPATH"
-# Compile Architecture "Beh_Stack" of Entity "DPATH"
-# File: F:\Dropbox\Magistracy\POCP\practice\MPFSM_stack_sorting\MPFSM_stack_sorting_design\src\MicroProcessor.vhd
-# Compile Entity "MicroProcessor"
-# Compile Architecture "Beh" of Entity "MicroProcessor"
-# File: F:\Dropbox\Magistracy\POCP\practice\MPFSM_stack_sorting\MPFSM_stack_sorting_design\src\TestBench\microprocessor_TB.vhd
-# Compile Entity "microprocessor_tb"
-# Compile Architecture "TB_ARCHITECTURE" of Entity "microprocessor_tb"
-# Compile Configuration "TESTBENCH_FOR_microprocessor"
-# Compile success 0 Errors 0 Warnings  Analysis time :  0.4 [s]
-# Library Manager: Library "mpfsm_stack_sorting_design" contents cleared.
-acom -reorder -O3 -work MPFSM_stack_sorting_design -2002  $dsn/src/Stack.vhd $dsn/src/MRAM.vhd $dsn/src/Commands.vhd $dsn/src/Controller.vhd $dsn/src/MROM.vhd $dsn/src/Datapath.vhd $dsn/src/MicroProcessor.vhd $dsn/src/TestBench/microprocessor_TB.vhd
-# Compile with File Reorder...
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
-# File: F:\Dropbox\Magistracy\POCP\practice\MPFSM_stack_sorting\MPFSM_stack_sorting_design\src\Stack.vhd
-# Compile Entity "Stack"
-# Compile Architecture "Stack_behavioural" of Entity "Stack"
-# File: F:\Dropbox\Magistracy\POCP\practice\MPFSM_stack_sorting\MPFSM_stack_sorting_design\src\MRAM.vhd
-# Compile Entity "MRAM"
-# Compile Architecture "MRAM_Beh" of Entity "MRAM"
-# File: F:\Dropbox\Magistracy\POCP\practice\MPFSM_stack_sorting\MPFSM_stack_sorting_design\src\Commands.vhd
-# Compile Package "commands"
-# File: F:\Dropbox\Magistracy\POCP\practice\MPFSM_stack_sorting\MPFSM_stack_sorting_design\src\Controller.vhd
-# Compile Entity "Controller"
-# Compile Architecture "Controller_Beh" of Entity "Controller"
-# File: F:\Dropbox\Magistracy\POCP\practice\MPFSM_stack_sorting\MPFSM_stack_sorting_design\src\MROM.vhd
-# Compile Entity "MROM"
-# Compile Architecture "Beh_Stack" of Entity "MROM"
-# File: F:\Dropbox\Magistracy\POCP\practice\MPFSM_stack_sorting\MPFSM_stack_sorting_design\src\Datapath.vhd
-# Compile Entity "DPATH"
-# Compile Architecture "Beh_Stack" of Entity "DPATH"
-# File: F:\Dropbox\Magistracy\POCP\practice\MPFSM_stack_sorting\MPFSM_stack_sorting_design\src\MicroProcessor.vhd
-# Compile Entity "MicroProcessor"
-# Compile Architecture "Beh" of Entity "MicroProcessor"
-# File: F:\Dropbox\Magistracy\POCP\practice\MPFSM_stack_sorting\MPFSM_stack_sorting_design\src\TestBench\microprocessor_TB.vhd
-# Compile Entity "microprocessor_tb"
-# Compile Architecture "TB_ARCHITECTURE" of Entity "microprocessor_tb"
-# Compile Configuration "TESTBENCH_FOR_microprocessor"
-# Top-level unit(s) detected:
-# Configuration => TESTBENCH_FOR_microprocessor
-# Entity => microprocessor_tb
-# Entity => Controller
-# Compile success 0 Errors 0 Warnings  Analysis time :  0.5 [s]
-#  Simulation has been stopped
-# ELBREAD: Elaboration process.
-# ELBREAD: Warning: Component /microprocessor_tb/UUT/UCTRL1 : CTRL1 not bound.
-# ELBREAD: Elaboration time 0.2 [s].
-# ELBREAD: Elaboration process.
-# ELBREAD: Warning: Component /microprocessor_tb/UUT/UCTRL1 : CTRL1 not bound.
-# ELBREAD: Elaboration time 0.2 [s].
-asim -O5 +access +r +m+microprocessor_tb microprocessor_tb TB_ARCHITECTURE
-# ELBREAD: Elaboration process.
-# ELBREAD: Warning: Component /microprocessor_tb/UUT/UCTRL1 : CTRL1 not bound.
-# ELBREAD: Elaboration time 0.2 [s].
-# asim: Stack memory: 32MB
-# asim: Retval memory: 32MB
-# KERNEL: Main thread initiated.
-# KERNEL: Kernel process initialization phase.
-# KERNEL: Time resolution set to 1ps.
-# ELAB2: Elaboration final pass...
-# ELAB2: Create instances ...
-# ELAB2: Create instances complete.
-# SLP: Started
-# SLP: Elaboration phase ...
-# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
-# SLP: Finished : 0.0 [s]
-# ELAB2: Elaboration final pass complete - time: 0.1 [s].
-# KERNEL: Kernel process initialization done.
-# Allocation: Simulator allocated 6194 kB (elbread=1023 elab2=5077 kernel=92 sdf=0)
-# KERNEL: ASDB file was created in location F:\Dropbox\Magistracy\POCP\practice\MPFSM_stack_sorting\MPFSM_stack_sorting_design\src\wave.asdb
-#  19:11, Monday, May 9, 2016
-#  Simulation has been initialized
-#  Selected Top-Level: microprocessor_tb (TB_ARCHITECTURE)
-# 64 signal(s) traced.
-# wave -rec *
-run 100 ns
-# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /microprocessor_tb/UUT/UMRAM,  Process: line__66.
-# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /microprocessor_tb/UUT/UMROM,  Process: line__95.
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /microprocessor_tb/UUT/UDPATH,  Process: FLAGS.
-# KERNEL: stopped at time: 100 ns
-run 100 ns
-# KERNEL: stopped at time: 200 ns
-run 100 ns
-# KERNEL: stopped at time: 300 ns
-run 100 ns
-# KERNEL: stopped at time: 400 ns
-# Library Manager: Library "mpfsm_stack_sorting_design" contents cleared.
-acom -reorder -O3 -work MPFSM_stack_sorting_design -2002  $dsn/src/MicroProcessor.vhd
-# Compile with File Reorder...
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
-# File: F:\Dropbox\Magistracy\POCP\practice\MPFSM_stack_sorting\MPFSM_stack_sorting_design\src\MicroProcessor.vhd
-# Compile Entity "MicroProcessor"
-# Compile Architecture "Beh" of Entity "MicroProcessor"
-# Incorrect order of units detected.
-# Automatic reorder and incremental recompilation of required units in progress.
-# Top-level unit(s) detected:
-# Entity => MicroProcessor
-# File: F:\Dropbox\Magistracy\POCP\practice\MPFSM_stack_sorting\MPFSM_stack_sorting_design\src\MicroProcessor.vhd
-# Compile Architecture "Beh" of Entity "MicroProcessor"
-# Warning: ELAB1_0026: MicroProcessor.vhd : (95, 0): There is no default binding for component "MRAM". (No entity named "MRAM" was found).
-# Error: COMP96_0056: MicroProcessor.vhd : (103, 17): Cannot find referenced entity declaration "MROM".
-# Error: COMP96_0055: MicroProcessor.vhd : (103, 17): Cannot find referenced context element.
-# Compile failure 2 Errors 1 Warnings  Analysis time :  0.1 [s]
-acom -O3 -work MPFSM_stack_sorting_design -2002  $dsn/src/Stack.vhd $dsn/src/MRAM.vhd $dsn/src/Commands.vhd $dsn/src/Controller.vhd $dsn/src/MROM.vhd $dsn/src/Datapath.vhd $dsn/src/MicroProcessor.vhd $dsn/src/TestBench/microprocessor_TB.vhd
-# Compile...
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
-# File: F:\Dropbox\Magistracy\POCP\practice\MPFSM_stack_sorting\MPFSM_stack_sorting_design\src\Stack.vhd
-# Compile Entity "Stack"
-# Compile Architecture "Stack_behavioural" of Entity "Stack"
-# File: F:\Dropbox\Magistracy\POCP\practice\MPFSM_stack_sorting\MPFSM_stack_sorting_design\src\MRAM.vhd
-# Compile Entity "MRAM"
-# Compile Architecture "MRAM_Beh" of Entity "MRAM"
-# File: F:\Dropbox\Magistracy\POCP\practice\MPFSM_stack_sorting\MPFSM_stack_sorting_design\src\Commands.vhd
-# Compile Package "commands"
-# File: F:\Dropbox\Magistracy\POCP\practice\MPFSM_stack_sorting\MPFSM_stack_sorting_design\src\Controller.vhd
-# Compile Entity "Controller"
-# Compile Architecture "Controller_Beh" of Entity "Controller"
-# File: F:\Dropbox\Magistracy\POCP\practice\MPFSM_stack_sorting\MPFSM_stack_sorting_design\src\MROM.vhd
-# Compile Entity "MROM"
-# Compile Architecture "Beh_Stack" of Entity "MROM"
-# File: F:\Dropbox\Magistracy\POCP\practice\MPFSM_stack_sorting\MPFSM_stack_sorting_design\src\Datapath.vhd
-# Compile Entity "DPATH"
-# Compile Architecture "Beh_Stack" of Entity "DPATH"
-# File: F:\Dropbox\Magistracy\POCP\practice\MPFSM_stack_sorting\MPFSM_stack_sorting_design\src\MicroProcessor.vhd
-# Compile Entity "MicroProcessor"
-# Compile Architecture "Beh" of Entity "MicroProcessor"
-# Warning: ELAB1_0026: MicroProcessor.vhd : (120, 0): There is no default binding for component "CTRL1". (No entity named "CTRL1" was found).
-# File: F:\Dropbox\Magistracy\POCP\practice\MPFSM_stack_sorting\MPFSM_stack_sorting_design\src\TestBench\microprocessor_TB.vhd
-# Compile Entity "microprocessor_tb"
-# Compile Architecture "TB_ARCHITECTURE" of Entity "microprocessor_tb"
-# Compile Configuration "TESTBENCH_FOR_microprocessor"
-# Compile success 0 Errors 1 Warnings  Analysis time :  0.2 [s]
-acom -O3 -work MPFSM_stack_sorting_design -2002  $dsn/src/Stack.vhd $dsn/src/MRAM.vhd $dsn/src/Commands.vhd $dsn/src/Controller.vhd $dsn/src/MROM.vhd $dsn/src/Datapath.vhd $dsn/src/MicroProcessor.vhd $dsn/src/TestBench/microprocessor_TB.vhd
-# Compile...
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
-# File: F:\Dropbox\Magistracy\POCP\practice\MPFSM_stack_sorting\MPFSM_stack_sorting_design\src\Stack.vhd
-# Compile Entity "Stack"
-# Compile Architecture "Stack_behavioural" of Entity "Stack"
-# File: F:\Dropbox\Magistracy\POCP\practice\MPFSM_stack_sorting\MPFSM_stack_sorting_design\src\MRAM.vhd
-# Compile Entity "MRAM"
-# Compile Architecture "MRAM_Beh" of Entity "MRAM"
-# File: F:\Dropbox\Magistracy\POCP\practice\MPFSM_stack_sorting\MPFSM_stack_sorting_design\src\Commands.vhd
-# Compile Package "commands"
-# File: F:\Dropbox\Magistracy\POCP\practice\MPFSM_stack_sorting\MPFSM_stack_sorting_design\src\Controller.vhd
-# Compile Entity "Controller"
-# Compile Architecture "Controller_Beh" of Entity "Controller"
-# File: F:\Dropbox\Magistracy\POCP\practice\MPFSM_stack_sorting\MPFSM_stack_sorting_design\src\MROM.vhd
-# Compile Entity "MROM"
-# Compile Architecture "Beh_Stack" of Entity "MROM"
-# File: F:\Dropbox\Magistracy\POCP\practice\MPFSM_stack_sorting\MPFSM_stack_sorting_design\src\Datapath.vhd
-# Compile Entity "DPATH"
-# Compile Architecture "Beh_Stack" of Entity "DPATH"
-# File: F:\Dropbox\Magistracy\POCP\practice\MPFSM_stack_sorting\MPFSM_stack_sorting_design\src\MicroProcessor.vhd
-# Compile Entity "MicroProcessor"
-# Compile Architecture "Beh" of Entity "MicroProcessor"
-# Error: COMP96_0134: MicroProcessor.vhd : (117, 11): Cannot find component declaration.
-# File: F:\Dropbox\Magistracy\POCP\practice\MPFSM_stack_sorting\MPFSM_stack_sorting_design\src\TestBench\microprocessor_TB.vhd
-# Compile Entity "microprocessor_tb"
-# Compile Architecture "TB_ARCHITECTURE" of Entity "microprocessor_tb"
-# Compile Configuration "TESTBENCH_FOR_microprocessor"
-# Compile failure 1 Errors 0 Warnings  Analysis time :  0.3 [s]
-acom -O3 -work MPFSM_stack_sorting_design -2002  $dsn/src/Stack.vhd $dsn/src/MRAM.vhd $dsn/src/Commands.vhd $dsn/src/Controller.vhd $dsn/src/MROM.vhd $dsn/src/Datapath.vhd $dsn/src/MicroProcessor.vhd $dsn/src/TestBench/microprocessor_TB.vhd
-# Compile...
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
-# File: F:\Dropbox\Magistracy\POCP\practice\MPFSM_stack_sorting\MPFSM_stack_sorting_design\src\Stack.vhd
-# Compile Entity "Stack"
-# Compile Architecture "Stack_behavioural" of Entity "Stack"
-# File: F:\Dropbox\Magistracy\POCP\practice\MPFSM_stack_sorting\MPFSM_stack_sorting_design\src\MRAM.vhd
-# Compile Entity "MRAM"
-# Compile Architecture "MRAM_Beh" of Entity "MRAM"
-# File: F:\Dropbox\Magistracy\POCP\practice\MPFSM_stack_sorting\MPFSM_stack_sorting_design\src\Commands.vhd
-# Compile Package "commands"
-# File: F:\Dropbox\Magistracy\POCP\practice\MPFSM_stack_sorting\MPFSM_stack_sorting_design\src\Controller.vhd
-# Compile Entity "Controller"
-# Compile Architecture "Controller_Beh" of Entity "Controller"
-# File: F:\Dropbox\Magistracy\POCP\practice\MPFSM_stack_sorting\MPFSM_stack_sorting_design\src\MROM.vhd
-# Compile Entity "MROM"
-# Compile Architecture "Beh_Stack" of Entity "MROM"
-# File: F:\Dropbox\Magistracy\POCP\practice\MPFSM_stack_sorting\MPFSM_stack_sorting_design\src\Datapath.vhd
-# Compile Entity "DPATH"
-# Compile Architecture "Beh_Stack" of Entity "DPATH"
-# File: F:\Dropbox\Magistracy\POCP\practice\MPFSM_stack_sorting\MPFSM_stack_sorting_design\src\MicroProcessor.vhd
-# Compile Entity "MicroProcessor"
-# Compile Architecture "Beh" of Entity "MicroProcessor"
-# Error: COMP96_0078: MicroProcessor.vhd : (131, 4): Unknown identifier "datapath_opeation".
-# Error: COMP96_0078: MicroProcessor.vhd : (135, 4): Unknown identifier "datapath_sign_bit_flag".
-# Error: COMP96_0133: MicroProcessor.vhd : (131, 4): Cannot find object declaration.
-# Error: COMP96_0112: MicroProcessor.vhd : (131, 4): "datapath_opeation" does not match the formal name.
-# Error: COMP96_0207: MicroProcessor.vhd : (117, 0): No actual specified for local port "datapath_result".
-# Error: COMP96_0207: MicroProcessor.vhd : (117, 0): No actual specified for local port "datapath_sign_bit_set".
-# Error: COMP96_0207: MicroProcessor.vhd : (117, 0): No actual specified for local port "datapath_zero_flag".
-# Error: COMP96_0207: MicroProcessor.vhd : (117, 0): No actual specified for local port "datapath_stop".
-# File: F:\Dropbox\Magistracy\POCP\practice\MPFSM_stack_sorting\MPFSM_stack_sorting_design\src\TestBench\microprocessor_TB.vhd
-# Compile Entity "microprocessor_tb"
-# Compile Architecture "TB_ARCHITECTURE" of Entity "microprocessor_tb"
-# Compile Configuration "TESTBENCH_FOR_microprocessor"
-# Compile failure 8 Errors 0 Warnings  Analysis time :  0.2 [s]
-acom -O3 -work MPFSM_stack_sorting_design -2002  $dsn/src/Stack.vhd $dsn/src/MRAM.vhd $dsn/src/Commands.vhd $dsn/src/Controller.vhd $dsn/src/MROM.vhd $dsn/src/Datapath.vhd $dsn/src/MicroProcessor.vhd $dsn/src/TestBench/microprocessor_TB.vhd
-# Compile...
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
-# File: F:\Dropbox\Magistracy\POCP\practice\MPFSM_stack_sorting\MPFSM_stack_sorting_design\src\Stack.vhd
-# Compile Entity "Stack"
-# Compile Architecture "Stack_behavioural" of Entity "Stack"
-# File: F:\Dropbox\Magistracy\POCP\practice\MPFSM_stack_sorting\MPFSM_stack_sorting_design\src\MRAM.vhd
-# Compile Entity "MRAM"
-# Compile Architecture "MRAM_Beh" of Entity "MRAM"
-# File: F:\Dropbox\Magistracy\POCP\practice\MPFSM_stack_sorting\MPFSM_stack_sorting_design\src\Commands.vhd
-# Compile Package "commands"
-# File: F:\Dropbox\Magistracy\POCP\practice\MPFSM_stack_sorting\MPFSM_stack_sorting_design\src\Controller.vhd
-# Compile Entity "Controller"
-# Compile Architecture "Controller_Beh" of Entity "Controller"
-# File: F:\Dropbox\Magistracy\POCP\practice\MPFSM_stack_sorting\MPFSM_stack_sorting_design\src\MROM.vhd
-# Compile Entity "MROM"
-# Compile Architecture "Beh_Stack" of Entity "MROM"
-# File: F:\Dropbox\Magistracy\POCP\practice\MPFSM_stack_sorting\MPFSM_stack_sorting_design\src\Datapath.vhd
-# Compile Entity "DPATH"
-# Compile Architecture "Beh_Stack" of Entity "DPATH"
-# File: F:\Dropbox\Magistracy\POCP\practice\MPFSM_stack_sorting\MPFSM_stack_sorting_design\src\MicroProcessor.vhd
-# Compile Entity "MicroProcessor"
-# Compile Architecture "Beh" of Entity "MicroProcessor"
-# File: F:\Dropbox\Magistracy\POCP\practice\MPFSM_stack_sorting\MPFSM_stack_sorting_design\src\TestBench\microprocessor_TB.vhd
-# Compile Entity "microprocessor_tb"
-# Compile Architecture "TB_ARCHITECTURE" of Entity "microprocessor_tb"
-# Compile Configuration "TESTBENCH_FOR_microprocessor"
-# Compile success 0 Errors 0 Warnings  Analysis time :  0.2 [s]
-# Library Manager: Library "mpfsm_stack_sorting_design" contents cleared.
-acom -reorder -O3 -work MPFSM_stack_sorting_design -2002  $dsn/src/Stack.vhd $dsn/src/MRAM.vhd $dsn/src/Commands.vhd $dsn/src/Controller.vhd $dsn/src/MROM.vhd $dsn/src/Datapath.vhd $dsn/src/MicroProcessor.vhd $dsn/src/TestBench/microprocessor_TB.vhd
-# Compile with File Reorder...
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
-# File: F:\Dropbox\Magistracy\POCP\practice\MPFSM_stack_sorting\MPFSM_stack_sorting_design\src\Stack.vhd
-# Compile Entity "Stack"
-# Compile Architecture "Stack_behavioural" of Entity "Stack"
-# File: F:\Dropbox\Magistracy\POCP\practice\MPFSM_stack_sorting\MPFSM_stack_sorting_design\src\MRAM.vhd
-# Compile Entity "MRAM"
-# Compile Architecture "MRAM_Beh" of Entity "MRAM"
-# File: F:\Dropbox\Magistracy\POCP\practice\MPFSM_stack_sorting\MPFSM_stack_sorting_design\src\Commands.vhd
-# Compile Package "commands"
-# File: F:\Dropbox\Magistracy\POCP\practice\MPFSM_stack_sorting\MPFSM_stack_sorting_design\src\Controller.vhd
-# Compile Entity "Controller"
-# Compile Architecture "Controller_Beh" of Entity "Controller"
-# File: F:\Dropbox\Magistracy\POCP\practice\MPFSM_stack_sorting\MPFSM_stack_sorting_design\src\MROM.vhd
-# Compile Entity "MROM"
-# Compile Architecture "Beh_Stack" of Entity "MROM"
-# File: F:\Dropbox\Magistracy\POCP\practice\MPFSM_stack_sorting\MPFSM_stack_sorting_design\src\Datapath.vhd
-# Compile Entity "DPATH"
-# Compile Architecture "Beh_Stack" of Entity "DPATH"
-# File: F:\Dropbox\Magistracy\POCP\practice\MPFSM_stack_sorting\MPFSM_stack_sorting_design\src\MicroProcessor.vhd
-# Compile Entity "MicroProcessor"
-# Compile Architecture "Beh" of Entity "MicroProcessor"
-# File: F:\Dropbox\Magistracy\POCP\practice\MPFSM_stack_sorting\MPFSM_stack_sorting_design\src\TestBench\microprocessor_TB.vhd
-# Compile Entity "microprocessor_tb"
-# Compile Architecture "TB_ARCHITECTURE" of Entity "microprocessor_tb"
-# Compile Configuration "TESTBENCH_FOR_microprocessor"
-# Top-level unit(s) detected:
-# Configuration => TESTBENCH_FOR_microprocessor
-# Entity => microprocessor_tb
-# Compile success 0 Errors 0 Warnings  Analysis time :  0.5 [s]
-#  Simulation has been stopped
-# ELBREAD: Elaboration process.
-# ELBREAD: Elaboration time 0.0 [s].
-# ELBREAD: Elaboration process.
-# ELBREAD: Elaboration time 0.0 [s].
-asim -O5 +access +r +m+microprocessor_tb microprocessor_tb TB_ARCHITECTURE
-# ELBREAD: Elaboration process.
-# ELBREAD: Elaboration time 0.0 [s].
-# asim: Stack memory: 32MB
-# asim: Retval memory: 32MB
-# KERNEL: Main thread initiated.
-# KERNEL: Kernel process initialization phase.
-# KERNEL: Time resolution set to 1ps.
-# ELAB2: Elaboration final pass...
-# ELAB2: Create instances ...
-# ELAB2: Create instances complete.
-# SLP: Started
-# SLP: Elaboration phase ...
-# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
-# SLP: Finished : 0.0 [s]
-# ELAB2: Elaboration final pass complete - time: 0.1 [s].
-# KERNEL: Kernel process initialization done.
-# Allocation: Simulator allocated 6206 kB (elbread=1023 elab2=5089 kernel=93 sdf=0)
-# KERNEL: ASDB file was created in location F:\Dropbox\Magistracy\POCP\practice\MPFSM_stack_sorting\MPFSM_stack_sorting_design\src\wave.asdb
-#  19:16, Monday, May 9, 2016
-#  Simulation has been initialized
-#  Selected Top-Level: microprocessor_tb (TB_ARCHITECTURE)
-# 89 signal(s) traced.
-# wave -rec *
-run 100 ns
-# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /microprocessor_tb/UUT/UMRAM,  Process: line__66.
-# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /microprocessor_tb/UUT/UMROM,  Process: line__95.
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /microprocessor_tb/UUT/UDPATH,  Process: FLAGS.
-# KERNEL: stopped at time: 100 ns
-run 100 ns
-# KERNEL: stopped at time: 200 ns
-run 100 ns
-# KERNEL: stopped at time: 300 ns
-run 100 ns
-# KERNEL: stopped at time: 400 ns
-acom -O3 -work MPFSM_stack_sorting_design -2002  $dsn/src/Datapath.vhd
-# Compile...
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
-# File: F:\Dropbox\Magistracy\POCP\practice\MPFSM_stack_sorting\MPFSM_stack_sorting_design\src\Datapath.vhd
-# Compile Entity "Datapath"
-# Compile Architecture "Datapath_Beh" of Entity "Datapath"
-# Error: COMP96_0078: Datapath.vhd : (191, 26): Unknown identifier "res_op".
-# Error: COMP96_0133: Datapath.vhd : (191, 26): Cannot find object declaration.
-# Error: COMP96_0124: Datapath.vhd : (191, 32): Illegal prefix for attribute 'range.
-# Compile failure 3 Errors 0 Warnings  Analysis time :  31.0 [ms]
-acom -O3 -work MPFSM_stack_sorting_design -2002  $dsn/src/Datapath.vhd
-# Compile...
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
-# File: F:\Dropbox\Magistracy\POCP\practice\MPFSM_stack_sorting\MPFSM_stack_sorting_design\src\Datapath.vhd
-# Compile Entity "Datapath"
-# Compile Architecture "Datapath_Beh" of Entity "Datapath"
-# Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]
-# Library Manager: Library "mpfsm_stack_sorting_design" contents cleared.
-acom -reorder -O3 -work MPFSM_stack_sorting_design -2002  $dsn/src/Stack.vhd $dsn/src/MRAM.vhd $dsn/src/Commands.vhd $dsn/src/Controller.vhd $dsn/src/MROM.vhd $dsn/src/Datapath.vhd $dsn/src/MicroProcessor.vhd $dsn/src/TestBench/microprocessor_TB.vhd
-# Compile with File Reorder...
 # Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
 # File: F:\Dropbox\Magistracy\POCP\practice\MPFSM_stack_sorting\MPFSM_stack_sorting_design\src\Stack.vhd
 # Compile Entity "Stack"
@@ -765,22 +27,12 @@ acom -reorder -O3 -work MPFSM_stack_sorting_design -2002  $dsn/src/Stack.vhd $ds
 # Compile Entity "microprocessor_tb"
 # Compile Architecture "TB_ARCHITECTURE" of Entity "microprocessor_tb"
 # Compile Configuration "TESTBENCH_FOR_microprocessor"
-# Top-level unit(s) detected:
-# Configuration => TESTBENCH_FOR_microprocessor
-# Entity => microprocessor_tb
-# Entity => Datapath
-# Compile success 0 Errors 0 Warnings  Analysis time :  0.6 [s]
-#  Simulation has been stopped
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.7 [s]
 # ELBREAD: Elaboration process.
-# ELBREAD: Warning: Component /microprocessor_tb/UUT/UDPATH : DPATH not bound.
-# ELBREAD: Elaboration time 0.2 [s].
-# ELBREAD: Elaboration process.
-# ELBREAD: Warning: Component /microprocessor_tb/UUT/UDPATH : DPATH not bound.
-# ELBREAD: Elaboration time 0.2 [s].
+# ELBREAD: Elaboration time 0.0 [s].
 asim -O5 +access +r +m+microprocessor_tb microprocessor_tb TB_ARCHITECTURE
 # ELBREAD: Elaboration process.
-# ELBREAD: Warning: Component /microprocessor_tb/UUT/UDPATH : DPATH not bound.
-# ELBREAD: Elaboration time 0.2 [s].
+# ELBREAD: Elaboration time 0.0 [s].
 # asim: Stack memory: 32MB
 # asim: Retval memory: 32MB
 # KERNEL: Main thread initiated.
@@ -795,162 +47,18 @@ asim -O5 +access +r +m+microprocessor_tb microprocessor_tb TB_ARCHITECTURE
 # SLP: Finished : 0.0 [s]
 # ELAB2: Elaboration final pass complete - time: 0.0 [s].
 # KERNEL: Kernel process initialization done.
-# Allocation: Simulator allocated 6187 kB (elbread=1023 elab2=5070 kernel=92 sdf=0)
+# Allocation: Simulator allocated 6214 kB (elbread=1023 elab2=5097 kernel=93 sdf=0)
 # KERNEL: ASDB file was created in location F:\Dropbox\Magistracy\POCP\practice\MPFSM_stack_sorting\MPFSM_stack_sorting_design\src\wave.asdb
-#  19:28, Monday, May 9, 2016
+#  20:42, Monday, May 9, 2016
 #  Simulation has been initialized
 #  Selected Top-Level: microprocessor_tb (TB_ARCHITECTURE)
-# 59 signal(s) traced.
+# 89 signal(s) traced.
 # wave -rec *
 run 100 ns
 # KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
 # KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /microprocessor_tb/UUT/UMRAM,  Process: line__66.
 # KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /microprocessor_tb/UUT/UMROM,  Process: line__95.
-# KERNEL: stopped at time: 100 ns
-run 100 ns
-# KERNEL: stopped at time: 200 ns
-run 100 ns
-# KERNEL: stopped at time: 300 ns
-run 100 ns
-# KERNEL: stopped at time: 400 ns
-acom -O3 -work MPFSM_stack_sorting_design -2002  $dsn/src/Stack.vhd $dsn/src/MRAM.vhd $dsn/src/Commands.vhd $dsn/src/Controller.vhd $dsn/src/MROM.vhd $dsn/src/Datapath.vhd $dsn/src/MicroProcessor.vhd $dsn/src/TestBench/microprocessor_TB.vhd
-# Compile...
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
-# File: F:\Dropbox\Magistracy\POCP\practice\MPFSM_stack_sorting\MPFSM_stack_sorting_design\src\Stack.vhd
-# Compile Entity "Stack"
-# Compile Architecture "Stack_behavioural" of Entity "Stack"
-# File: F:\Dropbox\Magistracy\POCP\practice\MPFSM_stack_sorting\MPFSM_stack_sorting_design\src\MRAM.vhd
-# Compile Entity "MRAM"
-# Compile Architecture "MRAM_Beh" of Entity "MRAM"
-# File: F:\Dropbox\Magistracy\POCP\practice\MPFSM_stack_sorting\MPFSM_stack_sorting_design\src\Commands.vhd
-# Compile Package "commands"
-# File: F:\Dropbox\Magistracy\POCP\practice\MPFSM_stack_sorting\MPFSM_stack_sorting_design\src\Controller.vhd
-# Compile Entity "Controller"
-# Compile Architecture "Controller_Beh" of Entity "Controller"
-# File: F:\Dropbox\Magistracy\POCP\practice\MPFSM_stack_sorting\MPFSM_stack_sorting_design\src\MROM.vhd
-# Compile Entity "MROM"
-# Compile Architecture "Beh_Stack" of Entity "MROM"
-# File: F:\Dropbox\Magistracy\POCP\practice\MPFSM_stack_sorting\MPFSM_stack_sorting_design\src\Datapath.vhd
-# Compile Entity "Datapath"
-# Compile Architecture "Datapath_Beh" of Entity "Datapath"
-# File: F:\Dropbox\Magistracy\POCP\practice\MPFSM_stack_sorting\MPFSM_stack_sorting_design\src\MicroProcessor.vhd
-# Compile Entity "MicroProcessor"
-# Compile Architecture "Beh" of Entity "MicroProcessor"
-# Error: COMP96_0078: MicroProcessor.vhd : (104, 4): Unknown identifier "operand".
-# Error: COMP96_0133: MicroProcessor.vhd : (104, 4): Cannot find object declaration.
-# Error: COMP96_0112: MicroProcessor.vhd : (104, 4): "operand" does not match the formal name.
-# Error: COMP96_0207: MicroProcessor.vhd : (99, 0): No actual specified for local port "operation_parameter".
-# File: F:\Dropbox\Magistracy\POCP\practice\MPFSM_stack_sorting\MPFSM_stack_sorting_design\src\TestBench\microprocessor_TB.vhd
-# Compile Entity "microprocessor_tb"
-# Compile Architecture "TB_ARCHITECTURE" of Entity "microprocessor_tb"
-# Compile Configuration "TESTBENCH_FOR_microprocessor"
-# Compile failure 4 Errors 0 Warnings  Analysis time :  0.3 [s]
-acom -O3 -work MPFSM_stack_sorting_design -2002  $dsn/src/Stack.vhd $dsn/src/MRAM.vhd $dsn/src/Commands.vhd $dsn/src/Controller.vhd $dsn/src/MROM.vhd $dsn/src/Datapath.vhd $dsn/src/MicroProcessor.vhd $dsn/src/TestBench/microprocessor_TB.vhd
-# Compile...
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
-# File: F:\Dropbox\Magistracy\POCP\practice\MPFSM_stack_sorting\MPFSM_stack_sorting_design\src\Stack.vhd
-# Compile Entity "Stack"
-# Compile Architecture "Stack_behavioural" of Entity "Stack"
-# File: F:\Dropbox\Magistracy\POCP\practice\MPFSM_stack_sorting\MPFSM_stack_sorting_design\src\MRAM.vhd
-# Compile Entity "MRAM"
-# Compile Architecture "MRAM_Beh" of Entity "MRAM"
-# File: F:\Dropbox\Magistracy\POCP\practice\MPFSM_stack_sorting\MPFSM_stack_sorting_design\src\Commands.vhd
-# Compile Package "commands"
-# File: F:\Dropbox\Magistracy\POCP\practice\MPFSM_stack_sorting\MPFSM_stack_sorting_design\src\Controller.vhd
-# Compile Entity "Controller"
-# Compile Architecture "Controller_Beh" of Entity "Controller"
-# File: F:\Dropbox\Magistracy\POCP\practice\MPFSM_stack_sorting\MPFSM_stack_sorting_design\src\MROM.vhd
-# Compile Entity "MROM"
-# Compile Architecture "Beh_Stack" of Entity "MROM"
-# File: F:\Dropbox\Magistracy\POCP\practice\MPFSM_stack_sorting\MPFSM_stack_sorting_design\src\Datapath.vhd
-# Compile Entity "Datapath"
-# Compile Architecture "Datapath_Beh" of Entity "Datapath"
-# File: F:\Dropbox\Magistracy\POCP\practice\MPFSM_stack_sorting\MPFSM_stack_sorting_design\src\MicroProcessor.vhd
-# Compile Entity "MicroProcessor"
-# Compile Architecture "Beh" of Entity "MicroProcessor"
-# File: F:\Dropbox\Magistracy\POCP\practice\MPFSM_stack_sorting\MPFSM_stack_sorting_design\src\TestBench\microprocessor_TB.vhd
-# Compile Entity "microprocessor_tb"
-# Compile Architecture "TB_ARCHITECTURE" of Entity "microprocessor_tb"
-# Compile Configuration "TESTBENCH_FOR_microprocessor"
-# Compile success 0 Errors 0 Warnings  Analysis time :  0.3 [s]
-# Library Manager: Library "mpfsm_stack_sorting_design" contents cleared.
-acom -reorder -O3 -work MPFSM_stack_sorting_design -2002  $dsn/src/MicroProcessor.vhd
-# Compile with File Reorder...
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
-# File: F:\Dropbox\Magistracy\POCP\practice\MPFSM_stack_sorting\MPFSM_stack_sorting_design\src\MicroProcessor.vhd
-# Compile Entity "MicroProcessor"
-# Compile Architecture "Beh" of Entity "MicroProcessor"
-# Incorrect order of units detected.
-# Automatic reorder and incremental recompilation of required units in progress.
-# Top-level unit(s) detected:
-# Entity => MicroProcessor
-# File: F:\Dropbox\Magistracy\POCP\practice\MPFSM_stack_sorting\MPFSM_stack_sorting_design\src\MicroProcessor.vhd
-# Compile Architecture "Beh" of Entity "MicroProcessor"
-# Warning: ELAB1_0026: MicroProcessor.vhd : (85, 0): There is no default binding for component "MRAM". (No entity named "MRAM" was found).
-# Error: COMP96_0056: MicroProcessor.vhd : (93, 17): Cannot find referenced entity declaration "MROM".
-# Error: COMP96_0055: MicroProcessor.vhd : (93, 17): Cannot find referenced context element.
-# Compile failure 2 Errors 1 Warnings  Analysis time :  0.2 [s]
-acom -O3 -work MPFSM_stack_sorting_design -2002  $dsn/src/Stack.vhd $dsn/src/MRAM.vhd $dsn/src/Commands.vhd $dsn/src/Controller.vhd $dsn/src/MROM.vhd $dsn/src/Datapath.vhd $dsn/src/MicroProcessor.vhd $dsn/src/TestBench/microprocessor_TB.vhd
-# Compile...
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
-# File: F:\Dropbox\Magistracy\POCP\practice\MPFSM_stack_sorting\MPFSM_stack_sorting_design\src\Stack.vhd
-# Compile Entity "Stack"
-# Compile Architecture "Stack_behavioural" of Entity "Stack"
-# File: F:\Dropbox\Magistracy\POCP\practice\MPFSM_stack_sorting\MPFSM_stack_sorting_design\src\MRAM.vhd
-# Compile Entity "MRAM"
-# Compile Architecture "MRAM_Beh" of Entity "MRAM"
-# File: F:\Dropbox\Magistracy\POCP\practice\MPFSM_stack_sorting\MPFSM_stack_sorting_design\src\Commands.vhd
-# Compile Package "commands"
-# File: F:\Dropbox\Magistracy\POCP\practice\MPFSM_stack_sorting\MPFSM_stack_sorting_design\src\Controller.vhd
-# Compile Entity "Controller"
-# Compile Architecture "Controller_Beh" of Entity "Controller"
-# File: F:\Dropbox\Magistracy\POCP\practice\MPFSM_stack_sorting\MPFSM_stack_sorting_design\src\MROM.vhd
-# Compile Entity "MROM"
-# Compile Architecture "Beh_Stack" of Entity "MROM"
-# File: F:\Dropbox\Magistracy\POCP\practice\MPFSM_stack_sorting\MPFSM_stack_sorting_design\src\Datapath.vhd
-# Compile Entity "Datapath"
-# Compile Architecture "Datapath_Beh" of Entity "Datapath"
-# File: F:\Dropbox\Magistracy\POCP\practice\MPFSM_stack_sorting\MPFSM_stack_sorting_design\src\MicroProcessor.vhd
-# Compile Entity "MicroProcessor"
-# Compile Architecture "Beh" of Entity "MicroProcessor"
-# File: F:\Dropbox\Magistracy\POCP\practice\MPFSM_stack_sorting\MPFSM_stack_sorting_design\src\TestBench\microprocessor_TB.vhd
-# Compile Entity "microprocessor_tb"
-# Compile Architecture "TB_ARCHITECTURE" of Entity "microprocessor_tb"
-# Compile Configuration "TESTBENCH_FOR_microprocessor"
-# Compile success 0 Errors 0 Warnings  Analysis time :  0.5 [s]
-#  Simulation has been stopped
-# ELBREAD: Elaboration process.
-# ELBREAD: Elaboration time 0.0 [s].
-asim -O5 +access +r +m+microprocessor_tb microprocessor_tb TB_ARCHITECTURE
-# ELBREAD: Elaboration process.
-# ELBREAD: Elaboration time 0.0 [s].
-# asim: Stack memory: 32MB
-# asim: Retval memory: 32MB
-# KERNEL: Main thread initiated.
-# KERNEL: Kernel process initialization phase.
-# KERNEL: Time resolution set to 1ps.
-# ELAB2: Elaboration final pass...
-# ELAB2: Create instances ...
-# ELAB2: Create instances complete.
-# SLP: Started
-# SLP: Elaboration phase ...
-# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
-# SLP: Finished : 0.0 [s]
-# ELAB2: Elaboration final pass complete - time: 0.1 [s].
-# KERNEL: Kernel process initialization done.
-# Allocation: Simulator allocated 6206 kB (elbread=1023 elab2=5089 kernel=93 sdf=0)
-# KERNEL: ASDB file was created in location F:\Dropbox\Magistracy\POCP\practice\MPFSM_stack_sorting\MPFSM_stack_sorting_design\src\wave.asdb
-#  19:32, Monday, May 9, 2016
-#  Simulation has been initialized
-#  Selected Top-Level: microprocessor_tb (TB_ARCHITECTURE)
-# 85 signal(s) traced.
-# wave -rec *
-run 100 ns
-# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /microprocessor_tb/UUT/UMRAM,  Process: line__66.
-# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /microprocessor_tb/UUT/UMROM,  Process: line__95.
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /microprocessor_tb/UUT/UMROM,  Process: line__98.
 # KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
 # KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /microprocessor_tb/UUT/UDPATH,  Process: FLAGS.
 # KERNEL: stopped at time: 100 ns
@@ -960,106 +68,164 @@ run 100 ns
 # KERNEL: stopped at time: 300 ns
 run 100 ns
 # KERNEL: stopped at time: 400 ns
-acom -O3 -work MPFSM_stack_sorting_design -2002  $dsn/src/Stack.vhd $dsn/src/MRAM.vhd $dsn/src/Commands.vhd $dsn/src/Controller.vhd $dsn/src/MROM.vhd $dsn/src/Datapath.vhd $dsn/src/MicroProcessor.vhd $dsn/src/TestBench/microprocessor_TB.vhd
-# Compile...
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
-# File: F:\Dropbox\Magistracy\POCP\practice\MPFSM_stack_sorting\MPFSM_stack_sorting_design\src\Stack.vhd
-# Compile Entity "Stack"
-# Compile Architecture "Stack_behavioural" of Entity "Stack"
-# File: F:\Dropbox\Magistracy\POCP\practice\MPFSM_stack_sorting\MPFSM_stack_sorting_design\src\MRAM.vhd
-# Compile Entity "MRAM"
-# Compile Architecture "MRAM_Beh" of Entity "MRAM"
-# File: F:\Dropbox\Magistracy\POCP\practice\MPFSM_stack_sorting\MPFSM_stack_sorting_design\src\Commands.vhd
-# Compile Package "commands"
-# File: F:\Dropbox\Magistracy\POCP\practice\MPFSM_stack_sorting\MPFSM_stack_sorting_design\src\Controller.vhd
-# Compile Entity "Controller"
-# Compile Architecture "Controller_Beh" of Entity "Controller"
-# File: F:\Dropbox\Magistracy\POCP\practice\MPFSM_stack_sorting\MPFSM_stack_sorting_design\src\MROM.vhd
-# Compile Entity "MROM"
-# Compile Architecture "Beh_Stack" of Entity "MROM"
-# Error: COMP96_0078: MROM.vhd : (18, 29): Unknown identifier "ram_address".
-# Error: COMP96_0064: MROM.vhd : (18, 29): Unknown type.
-# Error: COMP96_0078: MROM.vhd : (19, 29): Unknown identifier "ram_address".
-# Error: COMP96_0064: MROM.vhd : (19, 29): Unknown type.
-# Error: COMP96_0078: MROM.vhd : (20, 29): Unknown identifier "ram_address".
-# Error: COMP96_0064: MROM.vhd : (20, 29): Unknown type.
-# Error: COMP96_0078: MROM.vhd : (21, 29): Unknown identifier "ram_address".
-# Error: COMP96_0064: MROM.vhd : (21, 29): Unknown type.
-# Error: COMP96_0078: MROM.vhd : (23, 29): Unknown identifier "ram_address".
-# Error: COMP96_0064: MROM.vhd : (23, 29): Unknown type.
-# Error: COMP96_0078: MROM.vhd : (24, 29): Unknown identifier "ram_address".
-# Error: COMP96_0064: MROM.vhd : (24, 29): Unknown type.
-# Error: COMP96_0078: MROM.vhd : (26, 29): Unknown identifier "ram_address".
-# Error: COMP96_0064: MROM.vhd : (26, 29): Unknown type.
-# Error: COMP96_0078: MROM.vhd : (27, 29): Unknown identifier "ram_address".
-# Error: COMP96_0064: MROM.vhd : (27, 29): Unknown type.
-# Error: COMP96_0078: MROM.vhd : (28, 29): Unknown identifier "ram_address".
-# Error: COMP96_0064: MROM.vhd : (28, 29): Unknown type.
-# Error: COMP96_0078: MROM.vhd : (30, 29): Unknown identifier "ram_address".
-# Error: COMP96_0064: MROM.vhd : (30, 29): Unknown type.
-# Error: COMP96_0078: MROM.vhd : (37, 15): Unknown identifier "inst".
-# Error: COMP96_0064: MROM.vhd : (37, 15): Unknown type.
-# Error: COMP96_0150: MROM.vhd : (41, 32): Signal name on sensitivity list is not static.
-# Error: COMP96_0077: MROM.vhd : (44, 16): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
-# File: F:\Dropbox\Magistracy\POCP\practice\MPFSM_stack_sorting\MPFSM_stack_sorting_design\src\Datapath.vhd
-# Compile Entity "Datapath"
-# Compile Architecture "Datapath_Beh" of Entity "Datapath"
-# File: F:\Dropbox\Magistracy\POCP\practice\MPFSM_stack_sorting\MPFSM_stack_sorting_design\src\MicroProcessor.vhd
-# Compile Entity "MicroProcessor"
-# Compile Architecture "Beh" of Entity "MicroProcessor"
-# File: F:\Dropbox\Magistracy\POCP\practice\MPFSM_stack_sorting\MPFSM_stack_sorting_design\src\TestBench\microprocessor_TB.vhd
-# Compile Entity "microprocessor_tb"
-# Compile Architecture "TB_ARCHITECTURE" of Entity "microprocessor_tb"
-# Compile Configuration "TESTBENCH_FOR_microprocessor"
-# Compile failure 24 Errors 0 Warnings  Analysis time :  0.2 [s]
-acom -O3 -work MPFSM_stack_sorting_design -2002  $dsn/src/Stack.vhd $dsn/src/MRAM.vhd $dsn/src/Commands.vhd $dsn/src/Controller.vhd $dsn/src/MROM.vhd $dsn/src/Datapath.vhd $dsn/src/MicroProcessor.vhd $dsn/src/TestBench/microprocessor_TB.vhd
-# Compile...
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
-# File: F:\Dropbox\Magistracy\POCP\practice\MPFSM_stack_sorting\MPFSM_stack_sorting_design\src\Stack.vhd
-# Compile Entity "Stack"
-# Compile Architecture "Stack_behavioural" of Entity "Stack"
-# File: F:\Dropbox\Magistracy\POCP\practice\MPFSM_stack_sorting\MPFSM_stack_sorting_design\src\MRAM.vhd
-# Compile Entity "MRAM"
-# Compile Architecture "MRAM_Beh" of Entity "MRAM"
-# File: F:\Dropbox\Magistracy\POCP\practice\MPFSM_stack_sorting\MPFSM_stack_sorting_design\src\Commands.vhd
-# Compile Package "commands"
-# File: F:\Dropbox\Magistracy\POCP\practice\MPFSM_stack_sorting\MPFSM_stack_sorting_design\src\Controller.vhd
-# Compile Entity "Controller"
-# Compile Architecture "Controller_Beh" of Entity "Controller"
-# File: F:\Dropbox\Magistracy\POCP\practice\MPFSM_stack_sorting\MPFSM_stack_sorting_design\src\MROM.vhd
-# Compile Entity "MROM"
-# Compile Architecture "Beh_Stack" of Entity "MROM"
-# Error: COMP96_0078: MROM.vhd : (39, 15): Unknown identifier "inst".
-# Error: COMP96_0064: MROM.vhd : (39, 15): Unknown type.
-# Error: COMP96_0150: MROM.vhd : (43, 32): Signal name on sensitivity list is not static.
-# Error: COMP96_0077: MROM.vhd : (46, 16): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
-# File: F:\Dropbox\Magistracy\POCP\practice\MPFSM_stack_sorting\MPFSM_stack_sorting_design\src\Datapath.vhd
-# Compile Entity "Datapath"
-# Compile Architecture "Datapath_Beh" of Entity "Datapath"
-# File: F:\Dropbox\Magistracy\POCP\practice\MPFSM_stack_sorting\MPFSM_stack_sorting_design\src\MicroProcessor.vhd
-# Compile Entity "MicroProcessor"
-# Compile Architecture "Beh" of Entity "MicroProcessor"
-# File: F:\Dropbox\Magistracy\POCP\practice\MPFSM_stack_sorting\MPFSM_stack_sorting_design\src\TestBench\microprocessor_TB.vhd
-# Compile Entity "microprocessor_tb"
-# Compile Architecture "TB_ARCHITECTURE" of Entity "microprocessor_tb"
-# Compile Configuration "TESTBENCH_FOR_microprocessor"
-# Compile failure 4 Errors 0 Warnings  Analysis time :  0.3 [s]
-acom -O3 -work MPFSM_stack_sorting_design -2002  $dsn/src/Stack.vhd $dsn/src/MRAM.vhd $dsn/src/Commands.vhd $dsn/src/Controller.vhd $dsn/src/MROM.vhd $dsn/src/Datapath.vhd $dsn/src/MicroProcessor.vhd $dsn/src/TestBench/microprocessor_TB.vhd
-# Compile...
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
-# File: F:\Dropbox\Magistracy\POCP\practice\MPFSM_stack_sorting\MPFSM_stack_sorting_design\src\Stack.vhd
-# Compile Entity "Stack"
-# Compile Architecture "Stack_behavioural" of Entity "Stack"
-# File: F:\Dropbox\Magistracy\POCP\practice\MPFSM_stack_sorting\MPFSM_stack_sorting_design\src\MRAM.vhd
-# Compile Entity "MRAM"
-# Compile Architecture "MRAM_Beh" of Entity "MRAM"
-# File: F:\Dropbox\Magistracy\POCP\practice\MPFSM_stack_sorting\MPFSM_stack_sorting_design\src\Commands.vhd
-# Compile Package "commands"
-# File: F:\Dropbox\Magistracy\POCP\practice\MPFSM_stack_sorting\MPFSM_stack_sorting_design\src\Controller.vhd
-# Compile Entity "Controller"
-# Compile Architecture "Controller_Beh" of Entity "Controller"
-# File: F:\Dropbox\Magistracy\POCP\practice\MPFSM_stack_sorting\MPFSM_stack_sorting_design\src\MROM.vhd
-# Compile Entity "MROM"
-# Compile Architecture "Beh_Stack" of Entity "MROM"
-# File: F:\Dropbox\Magistracy\POCP\practice\MPFSM_stack_sorting\MPFSM_stack_sorting_design\src\Datapath.vhd
-# Compile Entity "Datapath"
+run 100 ns
+# KERNEL: stopped at time: 500 ns
+run 100 ns
+# KERNEL: stopped at time: 600 ns
+run 100 ns
+# KERNEL: stopped at time: 700 ns
+run 100 ns
+# KERNEL: stopped at time: 800 ns
+run 100 ns
+# KERNEL: stopped at time: 900 ns
+run 100 ns
+# KERNEL: stopped at time: 1 us
+run 100 ns
+# KERNEL: stopped at time: 1100 ns
+run 100 ns
+# KERNEL: stopped at time: 1200 ns
+run 100 ns
+# KERNEL: stopped at time: 1300 ns
+run 100 ns
+# KERNEL: stopped at time: 1400 ns
+run 100 ns
+# KERNEL: stopped at time: 1500 ns
+run 100 ns
+# KERNEL: stopped at time: 1600 ns
+run 100 ns
+# KERNEL: stopped at time: 1700 ns
+run 100 ns
+# KERNEL: stopped at time: 1800 ns
+run 100 ns
+# KERNEL: stopped at time: 1900 ns
+run 100 ns
+# KERNEL: stopped at time: 2 us
+run 100 ns
+# KERNEL: stopped at time: 2100 ns
+run 100 ns
+# KERNEL: stopped at time: 2200 ns
+run 100 ns
+# KERNEL: stopped at time: 2300 ns
+run 100 ns
+# KERNEL: stopped at time: 2400 ns
+run 100 ns
+# KERNEL: stopped at time: 2500 ns
+run 100 ns
+# KERNEL: stopped at time: 2600 ns
+run 100 ns
+# KERNEL: stopped at time: 2700 ns
+run 100 ns
+# KERNEL: stopped at time: 2800 ns
+run 100 ns
+# KERNEL: stopped at time: 2900 ns
+run 100 ns
+# KERNEL: stopped at time: 3 us
+run 100 ns
+# KERNEL: stopped at time: 3100 ns
+run 100 ns
+# KERNEL: stopped at time: 3200 ns
+run 100 ns
+# KERNEL: stopped at time: 3300 ns
+run 100 ns
+# KERNEL: stopped at time: 3400 ns
+run 100 ns
+# KERNEL: stopped at time: 3500 ns
+run 100 ns
+# KERNEL: stopped at time: 3600 ns
+run 100 ns
+# KERNEL: stopped at time: 3700 ns
+run 100 ns
+# KERNEL: stopped at time: 3800 ns
+run 100 ns
+# KERNEL: stopped at time: 3900 ns
+run 100 ns
+# KERNEL: stopped at time: 4 us
+run 100 ns
+# KERNEL: stopped at time: 4100 ns
+run 100 ns
+# KERNEL: stopped at time: 4200 ns
+run 100 ns
+# KERNEL: stopped at time: 4300 ns
+run 100 ns
+# KERNEL: stopped at time: 4400 ns
+run 100 ns
+# KERNEL: stopped at time: 4500 ns
+run 100 ns
+# KERNEL: stopped at time: 4600 ns
+run 100 ns
+# KERNEL: stopped at time: 4700 ns
+run 100 ns
+# KERNEL: stopped at time: 4800 ns
+run 100 ns
+# KERNEL: stopped at time: 4900 ns
+run 100 ns
+# KERNEL: stopped at time: 5 us
+run 100 ns
+# KERNEL: stopped at time: 5100 ns
+run 100 ns
+# KERNEL: stopped at time: 5200 ns
+run 100 ns
+# KERNEL: stopped at time: 5300 ns
+run 100 ns
+# KERNEL: stopped at time: 5400 ns
+run 100 ns
+# KERNEL: stopped at time: 5500 ns
+run 100 ns
+# KERNEL: stopped at time: 5600 ns
+run 100 ns
+# KERNEL: stopped at time: 5700 ns
+run 100 ns
+# KERNEL: stopped at time: 5800 ns
+run 100 ns
+# KERNEL: stopped at time: 5900 ns
+run 100 ns
+# KERNEL: stopped at time: 6 us
+run 100 ns
+# KERNEL: stopped at time: 6100 ns
+run 100 ns
+# KERNEL: stopped at time: 6200 ns
+run 100 ns
+# KERNEL: stopped at time: 6300 ns
+run 100 ns
+# KERNEL: stopped at time: 6400 ns
+run 100 ns
+# KERNEL: stopped at time: 6500 ns
+run 100 ns
+# KERNEL: stopped at time: 6600 ns
+run 100 ns
+# KERNEL: stopped at time: 6700 ns
+run 100 ns
+# KERNEL: stopped at time: 6800 ns
+run 100 ns
+# KERNEL: stopped at time: 6900 ns
+run 100 ns
+# KERNEL: stopped at time: 7 us
+run 100 ns
+# KERNEL: stopped at time: 7100 ns
+run 100 ns
+# KERNEL: stopped at time: 7200 ns
+run 100 ns
+# KERNEL: stopped at time: 7300 ns
+run 100 ns
+# KERNEL: stopped at time: 7400 ns
+run 100 ns
+# KERNEL: stopped at time: 7500 ns
+run 100 ns
+# KERNEL: stopped at time: 7600 ns
+run 100 ns
+# KERNEL: stopped at time: 7700 ns
+run 100 ns
+# KERNEL: stopped at time: 7800 ns
+run 100 ns
+# KERNEL: stopped at time: 7900 ns
+run 100 ns
+# KERNEL: stopped at time: 8 us
+run 100 ns
+# KERNEL: stopped at time: 8100 ns
+run 100 ns
+# KERNEL: stopped at time: 8200 ns
+run 100 ns
+# KERNEL: stopped at time: 8300 ns
+endsim
+# KERNEL: stopped at time: 8300 ns
+#  Simulation has been stopped

@@ -32,8 +32,65 @@ architecture Beh_Stack of MROM is
 	constant Z_ADDR          : ram_address := "111111";
 	
 	constant ROM: ROM_t :=(
-		PUSH_OP   & "000001",
-		PUSH_OP   & "000000",
+		PUSH_OP   & ZERO_ADDR,
+		POP_OP    & I_ADDR,
+		PUSH_OP   & ZERO_ADDR,
+		POP_OP    & J_ADDR,
+
+		PUSH_OP   & I_ADDR,
+		PUSH_OP   & I_ADDR_MAX,
+		SUB_OP    & Z_ADDR,
+		JZ_OP     & "101110",
+
+		PUSH_OP   & ONE_ADDR,
+		PUSH_OP   & I_ADDR,
+		ADD_OP    & Z_ADDR,
+		POP_OP    & J_ADDR,
+		PUSH_OP   & J_ADDR,
+		PUSH_OP   & J_ADDR_MAX,
+		SUB_OP    & Z_ADDR,
+		JZ_OP     & "101000",
+
+
+		PUSHI_OP & J_ADDR,        
+		POP_OP    & TEMP_1_ADDR,    
+		PUSHI_OP & I_ADDR,        
+		POP_OP    & TEMP_2_ADDR,    
+			
+		PUSH_OP   & TEMP_1_ADDR,    
+		PUSH_OP   & TEMP_2_ADDR,    
+		SUB_OP    & Z_ADDR,    
+		JNSB_OP   & "011110",      
+	
+	    PUSH_OP   & TEMP_1_ADDR,    
+		POP_OP    & TEMP_3_ADDR,   
+		PUSH_OP   & TEMP_2_ADDR,    
+		POP_OP    & TEMP_1_ADDR,    
+		PUSH_OP   & TEMP_3_ADDR,    
+		POP_OP    & TEMP_2_ADDR,    
+	
+		PUSH_OP   & TEMP_1_ADDR,    
+		POPI_OP  & J_ADDR,        
+		PUSH_OP   & TEMP_2_ADDR,    
+		POPI_OP  & I_ADDR,        
+		
+		PUSH_OP   & ONE_ADDR,      
+		PUSH_OP   & J_ADDR,        
+		ADD_OP    & Z_ADDR,    
+		POP_OP    & J_ADDR,        
+		
+		PUSH_OP   & ZERO_ADDR,     
+		JZ_OP     & "001100",      
+	
+		PUSH_OP   & ONE_ADDR,      
+		PUSH_OP   & I_ADDR,        
+		ADD_OP    & Z_ADDR,   
+	    POP_OP    & I_ADDR,        
+	
+		PUSH_OP   & ZERO_ADDR,     
+		JZ_OP     & "000100",      
+	
+		PUSH_OP   & I_ADDR,       
 		others => HALT_OP & "000000"
 	);
 	signal data: instrunction_t;

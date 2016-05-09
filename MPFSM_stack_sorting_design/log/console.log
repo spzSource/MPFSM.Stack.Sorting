@@ -948,4 +948,118 @@ asim -O5 +access +r +m+microprocessor_tb microprocessor_tb TB_ARCHITECTURE
 # wave -rec *
 run 100 ns
 # KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-# K
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /microprocessor_tb/UUT/UMRAM,  Process: line__66.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /microprocessor_tb/UUT/UMROM,  Process: line__95.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /microprocessor_tb/UUT/UDPATH,  Process: FLAGS.
+# KERNEL: stopped at time: 100 ns
+run 100 ns
+# KERNEL: stopped at time: 200 ns
+run 100 ns
+# KERNEL: stopped at time: 300 ns
+run 100 ns
+# KERNEL: stopped at time: 400 ns
+acom -O3 -work MPFSM_stack_sorting_design -2002  $dsn/src/Stack.vhd $dsn/src/MRAM.vhd $dsn/src/Commands.vhd $dsn/src/Controller.vhd $dsn/src/MROM.vhd $dsn/src/Datapath.vhd $dsn/src/MicroProcessor.vhd $dsn/src/TestBench/microprocessor_TB.vhd
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
+# File: F:\Dropbox\Magistracy\POCP\practice\MPFSM_stack_sorting\MPFSM_stack_sorting_design\src\Stack.vhd
+# Compile Entity "Stack"
+# Compile Architecture "Stack_behavioural" of Entity "Stack"
+# File: F:\Dropbox\Magistracy\POCP\practice\MPFSM_stack_sorting\MPFSM_stack_sorting_design\src\MRAM.vhd
+# Compile Entity "MRAM"
+# Compile Architecture "MRAM_Beh" of Entity "MRAM"
+# File: F:\Dropbox\Magistracy\POCP\practice\MPFSM_stack_sorting\MPFSM_stack_sorting_design\src\Commands.vhd
+# Compile Package "commands"
+# File: F:\Dropbox\Magistracy\POCP\practice\MPFSM_stack_sorting\MPFSM_stack_sorting_design\src\Controller.vhd
+# Compile Entity "Controller"
+# Compile Architecture "Controller_Beh" of Entity "Controller"
+# File: F:\Dropbox\Magistracy\POCP\practice\MPFSM_stack_sorting\MPFSM_stack_sorting_design\src\MROM.vhd
+# Compile Entity "MROM"
+# Compile Architecture "Beh_Stack" of Entity "MROM"
+# Error: COMP96_0078: MROM.vhd : (18, 29): Unknown identifier "ram_address".
+# Error: COMP96_0064: MROM.vhd : (18, 29): Unknown type.
+# Error: COMP96_0078: MROM.vhd : (19, 29): Unknown identifier "ram_address".
+# Error: COMP96_0064: MROM.vhd : (19, 29): Unknown type.
+# Error: COMP96_0078: MROM.vhd : (20, 29): Unknown identifier "ram_address".
+# Error: COMP96_0064: MROM.vhd : (20, 29): Unknown type.
+# Error: COMP96_0078: MROM.vhd : (21, 29): Unknown identifier "ram_address".
+# Error: COMP96_0064: MROM.vhd : (21, 29): Unknown type.
+# Error: COMP96_0078: MROM.vhd : (23, 29): Unknown identifier "ram_address".
+# Error: COMP96_0064: MROM.vhd : (23, 29): Unknown type.
+# Error: COMP96_0078: MROM.vhd : (24, 29): Unknown identifier "ram_address".
+# Error: COMP96_0064: MROM.vhd : (24, 29): Unknown type.
+# Error: COMP96_0078: MROM.vhd : (26, 29): Unknown identifier "ram_address".
+# Error: COMP96_0064: MROM.vhd : (26, 29): Unknown type.
+# Error: COMP96_0078: MROM.vhd : (27, 29): Unknown identifier "ram_address".
+# Error: COMP96_0064: MROM.vhd : (27, 29): Unknown type.
+# Error: COMP96_0078: MROM.vhd : (28, 29): Unknown identifier "ram_address".
+# Error: COMP96_0064: MROM.vhd : (28, 29): Unknown type.
+# Error: COMP96_0078: MROM.vhd : (30, 29): Unknown identifier "ram_address".
+# Error: COMP96_0064: MROM.vhd : (30, 29): Unknown type.
+# Error: COMP96_0078: MROM.vhd : (37, 15): Unknown identifier "inst".
+# Error: COMP96_0064: MROM.vhd : (37, 15): Unknown type.
+# Error: COMP96_0150: MROM.vhd : (41, 32): Signal name on sensitivity list is not static.
+# Error: COMP96_0077: MROM.vhd : (44, 16): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# File: F:\Dropbox\Magistracy\POCP\practice\MPFSM_stack_sorting\MPFSM_stack_sorting_design\src\Datapath.vhd
+# Compile Entity "Datapath"
+# Compile Architecture "Datapath_Beh" of Entity "Datapath"
+# File: F:\Dropbox\Magistracy\POCP\practice\MPFSM_stack_sorting\MPFSM_stack_sorting_design\src\MicroProcessor.vhd
+# Compile Entity "MicroProcessor"
+# Compile Architecture "Beh" of Entity "MicroProcessor"
+# File: F:\Dropbox\Magistracy\POCP\practice\MPFSM_stack_sorting\MPFSM_stack_sorting_design\src\TestBench\microprocessor_TB.vhd
+# Compile Entity "microprocessor_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "microprocessor_tb"
+# Compile Configuration "TESTBENCH_FOR_microprocessor"
+# Compile failure 24 Errors 0 Warnings  Analysis time :  0.2 [s]
+acom -O3 -work MPFSM_stack_sorting_design -2002  $dsn/src/Stack.vhd $dsn/src/MRAM.vhd $dsn/src/Commands.vhd $dsn/src/Controller.vhd $dsn/src/MROM.vhd $dsn/src/Datapath.vhd $dsn/src/MicroProcessor.vhd $dsn/src/TestBench/microprocessor_TB.vhd
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
+# File: F:\Dropbox\Magistracy\POCP\practice\MPFSM_stack_sorting\MPFSM_stack_sorting_design\src\Stack.vhd
+# Compile Entity "Stack"
+# Compile Architecture "Stack_behavioural" of Entity "Stack"
+# File: F:\Dropbox\Magistracy\POCP\practice\MPFSM_stack_sorting\MPFSM_stack_sorting_design\src\MRAM.vhd
+# Compile Entity "MRAM"
+# Compile Architecture "MRAM_Beh" of Entity "MRAM"
+# File: F:\Dropbox\Magistracy\POCP\practice\MPFSM_stack_sorting\MPFSM_stack_sorting_design\src\Commands.vhd
+# Compile Package "commands"
+# File: F:\Dropbox\Magistracy\POCP\practice\MPFSM_stack_sorting\MPFSM_stack_sorting_design\src\Controller.vhd
+# Compile Entity "Controller"
+# Compile Architecture "Controller_Beh" of Entity "Controller"
+# File: F:\Dropbox\Magistracy\POCP\practice\MPFSM_stack_sorting\MPFSM_stack_sorting_design\src\MROM.vhd
+# Compile Entity "MROM"
+# Compile Architecture "Beh_Stack" of Entity "MROM"
+# Error: COMP96_0078: MROM.vhd : (39, 15): Unknown identifier "inst".
+# Error: COMP96_0064: MROM.vhd : (39, 15): Unknown type.
+# Error: COMP96_0150: MROM.vhd : (43, 32): Signal name on sensitivity list is not static.
+# Error: COMP96_0077: MROM.vhd : (46, 16): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# File: F:\Dropbox\Magistracy\POCP\practice\MPFSM_stack_sorting\MPFSM_stack_sorting_design\src\Datapath.vhd
+# Compile Entity "Datapath"
+# Compile Architecture "Datapath_Beh" of Entity "Datapath"
+# File: F:\Dropbox\Magistracy\POCP\practice\MPFSM_stack_sorting\MPFSM_stack_sorting_design\src\MicroProcessor.vhd
+# Compile Entity "MicroProcessor"
+# Compile Architecture "Beh" of Entity "MicroProcessor"
+# File: F:\Dropbox\Magistracy\POCP\practice\MPFSM_stack_sorting\MPFSM_stack_sorting_design\src\TestBench\microprocessor_TB.vhd
+# Compile Entity "microprocessor_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "microprocessor_tb"
+# Compile Configuration "TESTBENCH_FOR_microprocessor"
+# Compile failure 4 Errors 0 Warnings  Analysis time :  0.3 [s]
+acom -O3 -work MPFSM_stack_sorting_design -2002  $dsn/src/Stack.vhd $dsn/src/MRAM.vhd $dsn/src/Commands.vhd $dsn/src/Controller.vhd $dsn/src/MROM.vhd $dsn/src/Datapath.vhd $dsn/src/MicroProcessor.vhd $dsn/src/TestBench/microprocessor_TB.vhd
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
+# File: F:\Dropbox\Magistracy\POCP\practice\MPFSM_stack_sorting\MPFSM_stack_sorting_design\src\Stack.vhd
+# Compile Entity "Stack"
+# Compile Architecture "Stack_behavioural" of Entity "Stack"
+# File: F:\Dropbox\Magistracy\POCP\practice\MPFSM_stack_sorting\MPFSM_stack_sorting_design\src\MRAM.vhd
+# Compile Entity "MRAM"
+# Compile Architecture "MRAM_Beh" of Entity "MRAM"
+# File: F:\Dropbox\Magistracy\POCP\practice\MPFSM_stack_sorting\MPFSM_stack_sorting_design\src\Commands.vhd
+# Compile Package "commands"
+# File: F:\Dropbox\Magistracy\POCP\practice\MPFSM_stack_sorting\MPFSM_stack_sorting_design\src\Controller.vhd
+# Compile Entity "Controller"
+# Compile Architecture "Controller_Beh" of Entity "Controller"
+# File: F:\Dropbox\Magistracy\POCP\practice\MPFSM_stack_sorting\MPFSM_stack_sorting_design\src\MROM.vhd
+# Compile Entity "MROM"
+# Compile Architecture "Beh_Stack" of Entity "MROM"
+# File: F:\Dropbox\Magistracy\POCP\practice\MPFSM_stack_sorting\MPFSM_stack_sorting_design\src\Datapath.vhd
+# Compile Entity "Datapath"

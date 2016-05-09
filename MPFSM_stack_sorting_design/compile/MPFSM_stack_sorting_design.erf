@@ -23,4 +23,4 @@ MESSAGE "File: F:\Dropbox\Magistracy\POCP\practice\MPFSM_stack_sorting\MPFSM_sta
 MESSAGE "Compile Entity "microprocessor_tb"" 
 MESSAGE "Compile Architecture "TB_ARCHITECTURE" of Entity "microprocessor_tb"" 
 MESSAGE "Compile Configuration "TESTBENCH_FOR_microprocessor"" 
-SUCCESS "Compile success 0 Errors 0 Warnings  Analysis time :  0.5 [s]" 
+SUCCESS "Compile success 0 Errors 0 Warnings  Analysis time :  0.3 [s]" 

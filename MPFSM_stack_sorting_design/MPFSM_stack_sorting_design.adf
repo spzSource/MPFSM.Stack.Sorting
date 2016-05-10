@@ -65,6 +65,7 @@ Selected=
 /MROM.vhd=-1
 /Datapath.vhd=-1
 /MicroProcessor.vhd=-1
+/FSM.asf=-1
 TestBench/microprocessor_TB.vhd=-1
 TestBench/microprocessor_TB_runtest.do=-1
 
@@ -76,5 +77,10 @@ TestBench/microprocessor_TB_runtest.do=-1
 .\src\MROM.vhd=VHDL Source Code
 .\src\Datapath.vhd=VHDL Source Code
 .\src\MicroProcessor.vhd=VHDL Source Code
+.\src\FSM.asf=State Diagram
 .\src\TestBench\microprocessor_TB.vhd=VHDL Test Bench
 .\src\TestBench\microprocessor_TB_runtest.do=Macro
+
+[file_out:/FSM.asf]
+/..\compile\FSM.vhd=-1
+

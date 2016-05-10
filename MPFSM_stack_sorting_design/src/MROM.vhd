@@ -15,7 +15,7 @@ architecture Beh_Stack of MROM is
 	subtype ram_address is std_logic_vector(5 downto 0);
 
 	subtype instrunction_t is std_logic_vector(9 downto 0);
-	type ROM_t is array (0 to 63) of instrunction_t;
+	type ROM_t is array (0 to 255) of instrunction_t;
 	
 	constant I_ADDR_MAX      : ram_address := "000101";
 	constant J_ADDR_MAX      : ram_address := "000110";

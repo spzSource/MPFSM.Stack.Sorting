@@ -19,8 +19,23 @@ MESSAGE "Compile Architecture "Datapath_Beh" of Entity "Datapath""
 MESSAGE "File: F:\Dropbox\Magistracy\POCP\practice\MPFSM_stack_sorting\MPFSM_stack_sorting_design\src\MicroProcessor.vhd" 
 MESSAGE "Compile Entity "MicroProcessor"" 
 MESSAGE "Compile Architecture "Beh" of Entity "MicroProcessor"" 
+MESSAGE "File: .\FSM.vhd" 
+ERROR COMP96_0010: "Invalid literal." "F:\Dropbox\Magistracy\POCP\practice\MPFSM_stack_sorting\MPFSM_stack_sorting_design\compile\FSM.vhd" 62 11
+ERROR COMP96_0010: "Invalid literal." "F:\Dropbox\Magistracy\POCP\practice\MPFSM_stack_sorting\MPFSM_stack_sorting_design\compile\FSM.vhd" 63 11
+ERROR COMP96_0010: "Invalid literal." "F:\Dropbox\Magistracy\POCP\practice\MPFSM_stack_sorting\MPFSM_stack_sorting_design\compile\FSM.vhd" 97 11
+MESSAGE "Compile Entity "FSM"" 
+MESSAGE "Compile Architecture "FSM_arch" of Entity "FSM"" 
+ERROR COMP96_0022: "Identifier or character literal expected." "F:\Dropbox\Magistracy\POCP\practice\MPFSM_stack_sorting\MPFSM_stack_sorting_design\compile\FSM.vhd" 35 105
+ERROR COMP96_0015: "'<=' expected." "F:\Dropbox\Magistracy\POCP\practice\MPFSM_stack_sorting\MPFSM_stack_sorting_design\compile\FSM.vhd" 58 16
+ERROR COMP96_0015: "'<=' expected." "F:\Dropbox\Magistracy\POCP\practice\MPFSM_stack_sorting\MPFSM_stack_sorting_design\compile\FSM.vhd" 61 7
+ERROR COMP96_0019: "Keyword 'then' expected." "F:\Dropbox\Magistracy\POCP\practice\MPFSM_stack_sorting\MPFSM_stack_sorting_design\compile\FSM.vhd" 70 17
+ERROR COMP96_0019: "Keyword 'end' expected." "F:\Dropbox\Magistracy\POCP\practice\MPFSM_stack_sorting\MPFSM_stack_sorting_design\compile\FSM.vhd" 72 5
+ERROR COMP96_0019: "Keyword 'case' expected." "F:\Dropbox\Magistracy\POCP\practice\MPFSM_stack_sorting\MPFSM_stack_sorting_design\compile\FSM.vhd" 73 6
+ERROR COMP96_0019: "Keyword 'end' expected." "F:\Dropbox\Magistracy\POCP\practice\MPFSM_stack_sorting\MPFSM_stack_sorting_design\compile\FSM.vhd" 75 4
+ERROR COMP96_0019: "Keyword 'end' expected." "F:\Dropbox\Magistracy\POCP\practice\MPFSM_stack_sorting\MPFSM_stack_sorting_design\compile\FSM.vhd" 81 5
+ERROR COMP96_0016: "Design unit declaration expected." "F:\Dropbox\Magistracy\POCP\practice\MPFSM_stack_sorting\MPFSM_stack_sorting_design\compile\FSM.vhd" 81 11
 MESSAGE "File: F:\Dropbox\Magistracy\POCP\practice\MPFSM_stack_sorting\MPFSM_stack_sorting_design\src\TestBench\microprocessor_TB.vhd" 
 MESSAGE "Compile Entity "microprocessor_tb"" 
 MESSAGE "Compile Architecture "TB_ARCHITECTURE" of Entity "microprocessor_tb"" 
 MESSAGE "Compile Configuration "TESTBENCH_FOR_microprocessor"" 
-SUCCESS "Compile success 0 Errors 0 Warnings  Analysis time :  0.2 [s]" 
+FAILURE "Compile failure 12 Errors 0 Warnings  Analysis time :  0.3 [s]" 

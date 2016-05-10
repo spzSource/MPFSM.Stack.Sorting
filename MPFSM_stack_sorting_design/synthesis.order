@@ -6,3 +6,4 @@ i<>.\src\MRAM.vhd
 i<>.\src\MROM.vhd
 i<>.\src\SortManager.vhd
 i<>.\src\LIFO.vhd
+i<>.\src\FSM.asf

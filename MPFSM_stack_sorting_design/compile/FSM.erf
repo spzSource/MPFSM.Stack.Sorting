@@ -1,0 +1,8 @@
+MESSAGE "Loading State Diagram data..."
+MESSAGE "Generating F:\Dropbox\Magistracy\POCP\practice\MPFSM_stack_sorting\MPFSM_stack_sorting_design\compile\FSM.vhd from F:\Dropbox\Magistracy\POCP\practice\MPFSM_stack_sorting\MPFSM_stack_sorting_design\src\FSM.asf"
+MESSAGE "Synthesis attributes will be generated for Synopsys FPGA Express"
+FSM2VHDL_WARNING FSM2HDL_4028 "Attribute ENUM_ENCODING is not supported for Symbolic encoding." "F:\Dropbox\Magistracy\POCP\practice\MPFSM_stack_sorting\MPFSM_stack_sorting_design\src\FSM.asf" 5
+FSM2VHDL_WARNING FSM2HDL_3027 "There is no exit from state HALT" "F:\Dropbox\Magistracy\POCP\practice\MPFSM_stack_sorting\MPFSM_stack_sorting_design\src\FSM.asf" 31
+MESSAGE "Generating interface file..."
+MESSAGE "HDL code generation completed. 0 error(s), 2 warning(s)"
+MESSAGE "Double-click on error/warning line to see the source of error/warning."

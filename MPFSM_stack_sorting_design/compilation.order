@@ -5,4 +5,5 @@
 .\src\MROM.vhd
 .\src\Datapath.vhd
 .\src\MicroProcessor.vhd
+.\src\FSM.asf
 .\src\TestBench\microprocessor_TB.vhd

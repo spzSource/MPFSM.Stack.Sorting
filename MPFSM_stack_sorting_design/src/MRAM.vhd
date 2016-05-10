@@ -14,7 +14,7 @@ end MRAM;
 
 architecture MRAM_Beh of MRAM is
 	subtype byte is std_logic_vector(7 downto 0);
-	type tRAM is array (0 to 63) of byte;
+	type tRAM is array (0 to 255) of byte;
 	signal RAM: tRAM:= (
 		"00000101",                     -- 5	a[0]  	
 		"00000011",                     -- 3	a[1]

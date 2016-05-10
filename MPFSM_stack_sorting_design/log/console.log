@@ -1,7 +1,362 @@
 # ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.1 [s].
+# ELBREAD: Elaboration process.
 # ELBREAD: Elaboration time 0.0 [s].
-acom -O3 -work MPFSM_stack_sorting_design -2002  $dsn/src/Stack.vhd $dsn/src/MRAM.vhd $dsn/src/Commands.vhd $dsn/src/Controller.vhd $dsn/src/MROM.vhd $dsn/src/Datapath.vhd $dsn/src/MicroProcessor.vhd $dsn/src/TestBench/microprocessor_TB.vhd
+asim -O5 +access +r +m+microprocessor_tb microprocessor_tb TB_ARCHITECTURE
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# asim: Stack memory: 32MB
+# asim: Retval memory: 32MB
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.1 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6214 kB (elbread=1023 elab2=5097 kernel=93 sdf=0)
+# KERNEL: ASDB file was created in location F:\Dropbox\Magistracy\POCP\practice\MPFSM_stack_sorting\MPFSM_stack_sorting_design\src\wave.asdb
+#  23:22, Tuesday, May 10, 2016
+#  Simulation has been initialized
+#  Selected Top-Level: microprocessor_tb (TB_ARCHITECTURE)
+# 85 signal(s) traced.
+# wave -rec *
+run 100 ns
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /microprocessor_tb/UUT/UMRAM,  Process: line__49.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /microprocessor_tb/UUT/UMROM,  Process: line__98.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /microprocessor_tb/UUT/UDPATH,  Process: FLAGS.
+# KERNEL: stopped at time: 100 ns
+run 100 ns
+# KERNEL: stopped at time: 200 ns
+run 100 ns
+# KERNEL: stopped at time: 300 ns
+run 100 ns
+# KERNEL: stopped at time: 400 ns
+run 100 ns
+# KERNEL: stopped at time: 500 ns
+run 100 ns
+# KERNEL: stopped at time: 600 ns
+run 100 ns
+# KERNEL: stopped at time: 700 ns
+run 100 ns
+# KERNEL: stopped at time: 800 ns
+run 100 ns
+# KERNEL: stopped at time: 900 ns
+run 100 ns
+# KERNEL: stopped at time: 1 us
+run 100 ns
+# KERNEL: stopped at time: 1100 ns
+run 100 ns
+# KERNEL: stopped at time: 1200 ns
+run 100 ns
+# KERNEL: stopped at time: 1300 ns
+run 100 ns
+run 100 ns
+# KERNEL: stopped at time: 1400 ns
+run 100 ns
+# KERNEL: stopped at time: 1500 ns
+run 100 ns
+# KERNEL: stopped at time: 1600 ns
+run 100 ns
+# KERNEL: stopped at time: 1700 ns
+run 100 ns
+# KERNEL: stopped at time: 1800 ns
+run 100 ns
+# KERNEL: stopped at time: 1900 ns
+run 100 ns
+# KERNEL: stopped at time: 2 us
+run 100 ns
+# KERNEL: stopped at time: 2100 ns
+run 100 ns
+# KERNEL: stopped at time: 2200 ns
+run 100 ns
+# KERNEL: stopped at time: 2300 ns
+run 100 ns
+# KERNEL: stopped at time: 2400 ns
+run 100 ns
+# KERNEL: stopped at time: 2500 ns
+run 100 ns
+# KERNEL: stopped at time: 2600 ns
+run 100 ns
+# KERNEL: stopped at time: 2700 ns
+run 100 ns
+# KERNEL: stopped at time: 2800 ns
+run 100 ns
+# KERNEL: stopped at time: 2900 ns
+run 100 ns
+# KERNEL: stopped at time: 3 us
+run 100 ns
+run 100 ns
+# KERNEL: stopped at time: 3100 ns
+run 100 ns
+run 100 ns
+# KERNEL: stopped at time: 3200 ns
+run 100 ns
+# KERNEL: stopped at time: 3300 ns
+run 100 ns
+# KERNEL: stopped at time: 3400 ns
+run 100 ns
+# KERNEL: stopped at time: 3500 ns
+run 100 ns
+# KERNEL: stopped at time: 3600 ns
+run 100 ns
+# KERNEL: stopped at time: 3700 ns
+run 100 ns
+# KERNEL: stopped at time: 3800 ns
+run 100 ns
+# KERNEL: stopped at time: 3900 ns
+run 100 ns
+# KERNEL: stopped at time: 4 us
+run 100 ns
+# KERNEL: stopped at time: 4100 ns
+run 100 ns
+# KERNEL: stopped at time: 4200 ns
+run 100 ns
+# KERNEL: stopped at time: 4300 ns
+run 100 ns
+# KERNEL: stopped at time: 4400 ns
+run 100 ns
+# KERNEL: stopped at time: 4500 ns
+run 100 ns
+# KERNEL: stopped at time: 4600 ns
+run 100 ns
+# KERNEL: stopped at time: 4700 ns
+run 100 ns
+run 100 ns
+# KERNEL: stopped at time: 4800 ns
+run 100 ns
+# KERNEL: stopped at time: 4900 ns
+run 100 ns
+# KERNEL: stopped at time: 5 us
+run 100 ns
+# KERNEL: stopped at time: 5100 ns
+run 100 ns
+run 100 ns
+# KERNEL: stopped at time: 5200 ns
+run 100 ns
+# KERNEL: stopped at time: 5300 ns
+run 100 ns
+# KERNEL: stopped at time: 5400 ns
+run 100 ns
+# KERNEL: stopped at time: 5500 ns
+run 100 ns
+# KERNEL: stopped at time: 5600 ns
+run 100 ns
+# KERNEL: stopped at time: 5700 ns
+run 100 ns
+# KERNEL: stopped at time: 5800 ns
+run 100 ns
+# KERNEL: stopped at time: 5900 ns
+run 100 ns
+# KERNEL: stopped at time: 6 us
+run 100 ns
+# KERNEL: stopped at time: 6100 ns
+run 100 ns
+# KERNEL: stopped at time: 6200 ns
+run 100 ns
+run 100 ns
+# KERNEL: stopped at time: 6300 ns
+run 100 ns
+# KERNEL: stopped at time: 6400 ns
+run 100 ns
+# KERNEL: stopped at time: 6500 ns
+run 100 ns
+# KERNEL: stopped at time: 6600 ns
+run 100 ns
+# KERNEL: stopped at time: 6700 ns
+run 100 ns
+# KERNEL: stopped at time: 6800 ns
+run 100 ns
+# KERNEL: stopped at time: 6900 ns
+run 100 ns
+# KERNEL: stopped at time: 7 us
+run 100 ns
+# KERNEL: stopped at time: 7100 ns
+run 100 ns
+# KERNEL: stopped at time: 7200 ns
+run 100 ns
+# KERNEL: stopped at time: 7300 ns
+run 100 ns
+# KERNEL: stopped at time: 7400 ns
+run 100 ns
+# KERNEL: stopped at time: 7500 ns
+run 100 ns
+# KERNEL: stopped at time: 7600 ns
+run 100 ns
+# KERNEL: stopped at time: 7700 ns
+run 100 ns
+# KERNEL: stopped at time: 7800 ns
+run 100 ns
+# KERNEL: stopped at time: 7900 ns
+run 100 ns
+# KERNEL: stopped at time: 8 us
+run 100 ns
+# KERNEL: stopped at time: 8100 ns
+run 100 ns
+# KERNEL: stopped at time: 8200 ns
+run 100 ns
+# KERNEL: stopped at time: 8300 ns
+run 100 ns
+# KERNEL: stopped at time: 8400 ns
+run 100 ns
+# KERNEL: stopped at time: 8500 ns
+run 100 ns
+# KERNEL: stopped at time: 8600 ns
+run 100 ns
+# KERNEL: stopped at time: 8700 ns
+run 100 ns
+# KERNEL: stopped at time: 8800 ns
+run 100 ns
+# KERNEL: stopped at time: 8900 ns
+run 100 ns
+# KERNEL: stopped at time: 9 us
+run 100 ns
+# KERNEL: stopped at time: 9100 ns
+run 100 ns
+# KERNEL: stopped at time: 9200 ns
+run 100 ns
+# KERNEL: stopped at time: 9300 ns
+run 100 ns
+# KERNEL: stopped at time: 9400 ns
+run 100 ns
+# KERNEL: stopped at time: 9500 ns
+run 100 ns
+# KERNEL: stopped at time: 9600 ns
+run 100 ns
+# KERNEL: stopped at time: 9700 ns
+run 100 ns
+run 100 ns
+# KERNEL: stopped at time: 9800 ns
+run 100 ns
+# KERNEL: stopped at time: 9900 ns
+run 100 ns
+# KERNEL: stopped at time: 10 us
+run 100 ns
+# KERNEL: stopped at time: 10100 ns
+run 100 ns
+# KERNEL: stopped at time: 10200 ns
+run 100 ns
+# KERNEL: stopped at time: 10300 ns
+run 100 ns
+# KERNEL: stopped at time: 10400 ns
+run 100 ns
+# KERNEL: stopped at time: 10500 ns
+run 100 ns
+# KERNEL: stopped at time: 10600 ns
+run 100 ns
+# KERNEL: stopped at time: 10700 ns
+run 100 ns
+# KERNEL: stopped at time: 10800 ns
+run 100 ns
+# KERNEL: stopped at time: 10900 ns
+run 100 ns
+# KERNEL: stopped at time: 11 us
+run 100 ns
+# KERNEL: stopped at time: 11100 ns
+run 100 ns
+# KERNEL: stopped at time: 11200 ns
+run 100 ns
+# KERNEL: stopped at time: 11300 ns
+run 100 ns
+# KERNEL: stopped at time: 11400 ns
+run 100 ns
+# KERNEL: stopped at time: 11500 ns
+run 100 ns
+# KERNEL: stopped at time: 11600 ns
+run 100 ns
+# KERNEL: stopped at time: 11700 ns
+run 100 ns
+# KERNEL: stopped at time: 11800 ns
+run 100 ns
+# KERNEL: stopped at time: 11900 ns
+run 100 ns
+# KERNEL: stopped at time: 12 us
+run 100 ns
+# KERNEL: stopped at time: 12100 ns
+run 100 ns
+run 100 ns
+# KERNEL: stopped at time: 12200 ns
+run 100 ns
+# KERNEL: stopped at time: 12300 ns
+run 100 ns
+# KERNEL: stopped at time: 12400 ns
+run 100 ns
+run 100 ns
+# KERNEL: stopped at time: 12500 ns
+run 100 ns
+# KERNEL: stopped at time: 12600 ns
+run 100 ns
+# KERNEL: stopped at time: 12700 ns
+run 100 ns
+# KERNEL: stopped at time: 12800 ns
+run 100 ns
+# KERNEL: stopped at time: 12900 ns
+run 100 ns
+# KERNEL: stopped at time: 13 us
+run 100 ns
+# KERNEL: stopped at time: 13100 ns
+run 100 ns
+# KERNEL: stopped at time: 13200 ns
+run 100 ns
+# KERNEL: stopped at time: 13300 ns
+run 100 ns
+# KERNEL: stopped at time: 13400 ns
+run 100 ns
+# KERNEL: stopped at time: 13500 ns
+run 100 ns
+# KERNEL: stopped at time: 13600 ns
+run 100 ns
+# KERNEL: stopped at time: 13700 ns
+run 100 ns
+# KERNEL: stopped at time: 13800 ns
+run 100 ns
+# KERNEL: stopped at time: 13900 ns
+run 100 ns
+# KERNEL: stopped at time: 14 us
+run 100 ns
+# KERNEL: stopped at time: 14100 ns
+run 100 ns
+# KERNEL: stopped at time: 14200 ns
+run 100 ns
+# KERNEL: stopped at time: 14300 ns
+run 100 ns
+# KERNEL: stopped at time: 14400 ns
+run 100 ns
+# KERNEL: stopped at time: 14500 ns
+run 100 ns
+# KERNEL: stopped at time: 14600 ns
+run 100 ns
+# KERNEL: stopped at time: 14700 ns
+run 100 ns
+# KERNEL: stopped at time: 14800 ns
+run 100 ns
+# KERNEL: stopped at time: 14900 ns
+run 100 ns
+# KERNEL: stopped at time: 15 us
+run 100 ns
+# KERNEL: stopped at time: 15100 ns
+run 100 ns
+# KERNEL: stopped at time: 15200 ns
+run 100 ns
+# KERNEL: stopped at time: 15300 ns
+acom -O3 -work MPFSM_stack_sorting_design -2002  $dsn/src/Stack.vhd $dsn/src/MRAM.vhd $dsn/src/Commands.vhd $dsn/src/Controller.vhd $dsn/src/MROM.vhd $dsn/src/Datapath.vhd $dsn/src/MicroProcessor.vhd $dsn/src/FSM.asf $dsn/src/TestBench/microprocessor_TB.vhd
 # Compile...
+# Loading State Diagram data...
+# Generating F:\Dropbox\Magistracy\POCP\practice\MPFSM_stack_sorting\MPFSM_stack_sorting_design\compile\FSM.vhd from F:\Dropbox\Magistracy\POCP\practice\MPFSM_stack_sorting\MPFSM_stack_sorting_design\src\FSM.asf
+# Synthesis attributes will be generated for Synopsys FPGA Express
+# Warning: FSM2HDL_4028 FSM.asf : Attribute ENUM_ENCODING is not supported for Symbolic encoding.
+# Warning: FSM2HDL_3027 FSM.asf : There is no exit from state HALT
+# Generating interface file...
+# HDL code generation completed. 0 error(s), 2 warning(s)
+# Double-click on error/warning line to see the source of error/warning.
 # Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
 # File: F:\Dropbox\Magistracy\POCP\practice\MPFSM_stack_sorting\MPFSM_stack_sorting_design\src\Stack.vhd
 # Compile Entity "Stack"
@@ -23,11 +378,27 @@ acom -O3 -work MPFSM_stack_sorting_design -2002  $dsn/src/Stack.vhd $dsn/src/MRA
 # File: F:\Dropbox\Magistracy\POCP\practice\MPFSM_stack_sorting\MPFSM_stack_sorting_design\src\MicroProcessor.vhd
 # Compile Entity "MicroProcessor"
 # Compile Architecture "Beh" of Entity "MicroProcessor"
+# File: .\FSM.vhd
+# Error: COMP96_0010: FSM.asf(FSM.vhd) : (62, 11): Invalid literal.
+# Error: COMP96_0010: FSM.asf(FSM.vhd) : (63, 11): Invalid literal.
+# Error: COMP96_0010: FSM.asf(FSM.vhd) : (97, 11): Invalid literal.
+# Compile Entity "FSM"
+# Compile Architecture "FSM_arch" of Entity "FSM"
+# Error: COMP96_0022: FSM.asf(FSM.vhd) : (35, 105): Identifier or character literal expected.
+# Error: COMP96_0015: FSM.asf(FSM.vhd) : (58, 16): '<=' expected.
+# Error: COMP96_0015: FSM.asf(FSM.vhd) : (61, 7): '<=' expected.
+# Error: COMP96_0019: FSM.asf(FSM.vhd) : (70, 17): Keyword 'then' expected.
+# Error: COMP96_0019: FSM.asf(FSM.vhd) : (72, 5): Keyword 'end' expected.
+# Error: COMP96_0019: FSM.asf(FSM.vhd) : (73, 6): Keyword 'case' expected.
+# Error: COMP96_0019: FSM.asf(FSM.vhd) : (75, 4): Keyword 'end' expected.
+# Error: COMP96_0019: FSM.asf(FSM.vhd) : (81, 5): Keyword 'end' expected.
+# Error: COMP96_0016: FSM.asf(FSM.vhd) : (81, 11): Design unit declaration expected.
 # File: F:\Dropbox\Magistracy\POCP\practice\MPFSM_stack_sorting\MPFSM_stack_sorting_design\src\TestBench\microprocessor_TB.vhd
 # Compile Entity "microprocessor_tb"
 # Compile Architecture "TB_ARCHITECTURE" of Entity "microprocessor_tb"
 # Compile Configuration "TESTBENCH_FOR_microprocessor"
-# Compile success 0 Errors 0 Warnings  Analysis time :  0.7 [s]
+# Compile failure 12 Errors 0 Warnings  Analysis time :  0.3 [s]
+#  Simulation has been stopped
 # ELBREAD: Elaboration process.
 # ELBREAD: Elaboration time 0.0 [s].
 asim -O5 +access +r +m+microprocessor_tb microprocessor_tb TB_ARCHITECTURE
@@ -47,253 +418,12 @@ asim -O5 +access +r +m+microprocessor_tb microprocessor_tb TB_ARCHITECTURE
 # SLP: Finished : 0.0 [s]
 # ELAB2: Elaboration final pass complete - time: 0.0 [s].
 # KERNEL: Kernel process initialization done.
-# Allocation: Simulator allocated 6214 kB (elbread=1023 elab2=5097 kernel=93 sdf=0)
+# Allocation: Simulator allocated 6221 kB (elbread=1023 elab2=5104 kernel=93 sdf=0)
 # KERNEL: ASDB file was created in location F:\Dropbox\Magistracy\POCP\practice\MPFSM_stack_sorting\MPFSM_stack_sorting_design\src\wave.asdb
-#  20:42, Monday, May 9, 2016
+#  23:50, Tuesday, May 10, 2016
 #  Simulation has been initialized
 #  Selected Top-Level: microprocessor_tb (TB_ARCHITECTURE)
-# 89 signal(s) traced.
-# wave -rec *
-run 100 ns
-# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /microprocessor_tb/UUT/UMRAM,  Process: line__66.
-# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /microprocessor_tb/UUT/UMROM,  Process: line__98.
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /microprocessor_tb/UUT/UDPATH,  Process: FLAGS.
-# KERNEL: stopped at time: 100 ns
-run 100 ns
-# KERNEL: stopped at time: 200 ns
-run 100 ns
-# KERNEL: stopped at time: 300 ns
-run 100 ns
-# KERNEL: stopped at time: 400 ns
-run 100 ns
-# KERNEL: stopped at time: 500 ns
-run 100 ns
-# KERNEL: stopped at time: 600 ns
-run 100 ns
-# KERNEL: stopped at time: 700 ns
-run 100 ns
-# KERNEL: stopped at time: 800 ns
-run 100 ns
-# KERNEL: stopped at time: 900 ns
-run 100 ns
-# KERNEL: stopped at time: 1 us
-run 100 ns
-# KERNEL: stopped at time: 1100 ns
-run 100 ns
-# KERNEL: stopped at time: 1200 ns
-run 100 ns
-# KERNEL: stopped at time: 1300 ns
-run 100 ns
-# KERNEL: stopped at time: 1400 ns
-run 100 ns
-# KERNEL: stopped at time: 1500 ns
-run 100 ns
-# KERNEL: stopped at time: 1600 ns
-run 100 ns
-# KERNEL: stopped at time: 1700 ns
-run 100 ns
-# KERNEL: stopped at time: 1800 ns
-run 100 ns
-# KERNEL: stopped at time: 1900 ns
-run 100 ns
-# KERNEL: stopped at time: 2 us
-run 100 ns
-# KERNEL: stopped at time: 2100 ns
-run 100 ns
-# KERNEL: stopped at time: 2200 ns
-run 100 ns
-# KERNEL: stopped at time: 2300 ns
-run 100 ns
-# KERNEL: stopped at time: 2400 ns
-run 100 ns
-# KERNEL: stopped at time: 2500 ns
-run 100 ns
-# KERNEL: stopped at time: 2600 ns
-run 100 ns
-# KERNEL: stopped at time: 2700 ns
-run 100 ns
-# KERNEL: stopped at time: 2800 ns
-run 100 ns
-# KERNEL: stopped at time: 2900 ns
-run 100 ns
-# KERNEL: stopped at time: 3 us
-run 100 ns
-# KERNEL: stopped at time: 3100 ns
-run 100 ns
-# KERNEL: stopped at time: 3200 ns
-run 100 ns
-# KERNEL: stopped at time: 3300 ns
-run 100 ns
-# KERNEL: stopped at time: 3400 ns
-run 100 ns
-# KERNEL: stopped at time: 3500 ns
-run 100 ns
-# KERNEL: stopped at time: 3600 ns
-run 100 ns
-# KERNEL: stopped at time: 3700 ns
-run 100 ns
-# KERNEL: stopped at time: 3800 ns
-run 100 ns
-# KERNEL: stopped at time: 3900 ns
-run 100 ns
-# KERNEL: stopped at time: 4 us
-run 100 ns
-# KERNEL: stopped at time: 4100 ns
-run 100 ns
-# KERNEL: stopped at time: 4200 ns
-run 100 ns
-# KERNEL: stopped at time: 4300 ns
-run 100 ns
-# KERNEL: stopped at time: 4400 ns
-run 100 ns
-# KERNEL: stopped at time: 4500 ns
-run 100 ns
-# KERNEL: stopped at time: 4600 ns
-run 100 ns
-# KERNEL: stopped at time: 4700 ns
-run 100 ns
-# KERNEL: stopped at time: 4800 ns
-run 100 ns
-# KERNEL: stopped at time: 4900 ns
-run 100 ns
-# KERNEL: stopped at time: 5 us
-run 100 ns
-# KERNEL: stopped at time: 5100 ns
-run 100 ns
-# KERNEL: stopped at time: 5200 ns
-run 100 ns
-# KERNEL: stopped at time: 5300 ns
-run 100 ns
-# KERNEL: stopped at time: 5400 ns
-run 100 ns
-# KERNEL: stopped at time: 5500 ns
-run 100 ns
-# KERNEL: stopped at time: 5600 ns
-run 100 ns
-# KERNEL: stopped at time: 5700 ns
-run 100 ns
-# KERNEL: stopped at time: 5800 ns
-run 100 ns
-# KERNEL: stopped at time: 5900 ns
-run 100 ns
-# KERNEL: stopped at time: 6 us
-run 100 ns
-# KERNEL: stopped at time: 6100 ns
-run 100 ns
-# KERNEL: stopped at time: 6200 ns
-run 100 ns
-# KERNEL: stopped at time: 6300 ns
-run 100 ns
-# KERNEL: stopped at time: 6400 ns
-run 100 ns
-# KERNEL: stopped at time: 6500 ns
-run 100 ns
-# KERNEL: stopped at time: 6600 ns
-run 100 ns
-# KERNEL: stopped at time: 6700 ns
-run 100 ns
-# KERNEL: stopped at time: 6800 ns
-run 100 ns
-# KERNEL: stopped at time: 6900 ns
-run 100 ns
-# KERNEL: stopped at time: 7 us
-run 100 ns
-# KERNEL: stopped at time: 7100 ns
-run 100 ns
-# KERNEL: stopped at time: 7200 ns
-run 100 ns
-# KERNEL: stopped at time: 7300 ns
-run 100 ns
-# KERNEL: stopped at time: 7400 ns
-run 100 ns
-# KERNEL: stopped at time: 7500 ns
-run 100 ns
-# KERNEL: stopped at time: 7600 ns
-run 100 ns
-# KERNEL: stopped at time: 7700 ns
-run 100 ns
-# KERNEL: stopped at time: 7800 ns
-run 100 ns
-# KERNEL: stopped at time: 7900 ns
-run 100 ns
-# KERNEL: stopped at time: 8 us
-run 100 ns
-# KERNEL: stopped at time: 8100 ns
-run 100 ns
-# KERNEL: stopped at time: 8200 ns
-run 100 ns
-# KERNEL: stopped at time: 8300 ns
-endsim
-# KERNEL: stopped at time: 8300 ns
-#  Simulation has been stopped
-acom -O3 -work MPFSM_stack_sorting_design -2002  $dsn/src/Commands.vhd
-# Compile...
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
-# File: F:\Dropbox\Magistracy\POCP\practice\MPFSM_stack_sorting\MPFSM_stack_sorting_design\src\Commands.vhd
-# Compile Package "commands"
-# Compile success 0 Errors 0 Warnings  Analysis time :  16.0 [ms]
-# Library Manager: Library "mpfsm_stack_sorting_design" contents cleared.
-acom -reorder -O3 -work MPFSM_stack_sorting_design -2002  $dsn/src/Stack.vhd $dsn/src/MRAM.vhd $dsn/src/Commands.vhd $dsn/src/Controller.vhd $dsn/src/MROM.vhd $dsn/src/Datapath.vhd $dsn/src/MicroProcessor.vhd $dsn/src/TestBench/microprocessor_TB.vhd
-# Compile with File Reorder...
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
-# File: F:\Dropbox\Magistracy\POCP\practice\MPFSM_stack_sorting\MPFSM_stack_sorting_design\src\Stack.vhd
-# Compile Entity "Stack"
-# Compile Architecture "Stack_behavioural" of Entity "Stack"
-# File: F:\Dropbox\Magistracy\POCP\practice\MPFSM_stack_sorting\MPFSM_stack_sorting_design\src\MRAM.vhd
-# Compile Entity "MRAM"
-# Compile Architecture "MRAM_Beh" of Entity "MRAM"
-# File: F:\Dropbox\Magistracy\POCP\practice\MPFSM_stack_sorting\MPFSM_stack_sorting_design\src\Commands.vhd
-# Compile Package "commands"
-# File: F:\Dropbox\Magistracy\POCP\practice\MPFSM_stack_sorting\MPFSM_stack_sorting_design\src\Controller.vhd
-# Compile Entity "Controller"
-# Compile Architecture "Controller_Beh" of Entity "Controller"
-# File: F:\Dropbox\Magistracy\POCP\practice\MPFSM_stack_sorting\MPFSM_stack_sorting_design\src\MROM.vhd
-# Compile Entity "MROM"
-# Compile Architecture "Beh_Stack" of Entity "MROM"
-# File: F:\Dropbox\Magistracy\POCP\practice\MPFSM_stack_sorting\MPFSM_stack_sorting_design\src\Datapath.vhd
-# Compile Entity "Datapath"
-# Compile Architecture "Datapath_Beh" of Entity "Datapath"
-# File: F:\Dropbox\Magistracy\POCP\practice\MPFSM_stack_sorting\MPFSM_stack_sorting_design\src\MicroProcessor.vhd
-# Compile Entity "MicroProcessor"
-# Compile Architecture "Beh" of Entity "MicroProcessor"
-# File: F:\Dropbox\Magistracy\POCP\practice\MPFSM_stack_sorting\MPFSM_stack_sorting_design\src\TestBench\microprocessor_TB.vhd
-# Compile Entity "microprocessor_tb"
-# Compile Architecture "TB_ARCHITECTURE" of Entity "microprocessor_tb"
-# Compile Configuration "TESTBENCH_FOR_microprocessor"
-# Top-level unit(s) detected:
-# Configuration => TESTBENCH_FOR_microprocessor
-# Entity => microprocessor_tb
-# Compile success 0 Errors 0 Warnings  Analysis time :  0.6 [s]
-# ELBREAD: Elaboration process.
-# ELBREAD: Elaboration time 0.0 [s].
-# ELBREAD: Elaboration process.
-# ELBREAD: Elaboration time 0.0 [s].
-asim -O5 +access +r +m+microprocessor_tb microprocessor_tb TB_ARCHITECTURE
-# ELBREAD: Elaboration process.
-# ELBREAD: Elaboration time 0.0 [s].
-# asim: Stack memory: 32MB
-# asim: Retval memory: 32MB
-# KERNEL: Main thread initiated.
-# KERNEL: Kernel process initialization phase.
-# KERNEL: Time resolution set to 1ps.
-# ELAB2: Elaboration final pass...
-# ELAB2: Create instances ...
-# ELAB2: Create instances complete.
-# SLP: Started
-# SLP: Elaboration phase ...
-# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
-# SLP: Finished : 0.0 [s]
-# ELAB2: Elaboration final pass complete - time: 0.1 [s].
-# KERNEL: Kernel process initialization done.
-# Allocation: Simulator allocated 6214 kB (elbread=1023 elab2=5097 kernel=93 sdf=0)
-# KERNEL: ASDB file was created in location F:\Dropbox\Magistracy\POCP\practice\MPFSM_stack_sorting\MPFSM_stack_sorting_design\src\wave.asdb
-#  20:54, Monday, May 9, 2016
-#  Simulation has been initialized
-#  Selected Top-Level: microprocessor_tb (TB_ARCHITECTURE)
-# 89 signal(s) traced.
+# 85 signal(s) traced.
 # wave -rec *
 run 100 ns
 # KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
@@ -311,6 +441,15 @@ run 100 ns
 # KERNEL: stopped at time: 400 ns
 run 100 ns
 # KERNEL: stopped at time: 500 ns
+run 100 ns
+# KERNEL: stopped at time: 600 ns
+run 100 ns
+run 100 ns
+# KERNEL: stopped at time: 700 ns
+run 100 ns
+# KERNEL: stopped at time: 800 ns
+run 100 ns
+# KERNEL: stopped at time: 900 ns
 endsim
 #  Simulation has been stopped
 # ELBREAD: Elaboration process.
@@ -332,20 +471,30 @@ asim -O5 +access +r +m+microprocessor_tb microprocessor_tb TB_ARCHITECTURE
 # SLP: Finished : 0.0 [s]
 # ELAB2: Elaboration final pass complete - time: 0.1 [s].
 # KERNEL: Kernel process initialization done.
-# Allocation: Simulator allocated 6214 kB (elbread=1023 elab2=5097 kernel=93 sdf=0)
+# Allocation: Simulator allocated 6221 kB (elbread=1023 elab2=5104 kernel=93 sdf=0)
 # KERNEL: ASDB file was created in location F:\Dropbox\Magistracy\POCP\practice\MPFSM_stack_sorting\MPFSM_stack_sorting_design\src\wave.asdb
-#  20:56, Monday, May 9, 2016
+#  00:01, Wednesday, May 11, 2016
 #  Simulation has been initialized
 #  Selected Top-Level: microprocessor_tb (TB_ARCHITECTURE)
-# add wave -noreg {/microprocessor_tb/UUT/UMRAM/RAM}
-# add wave -noreg {/microprocessor_tb/UUT/UMRAM/input}
-# add wave -noreg {/microprocessor_tb/UUT/UMRAM/output}
-# add wave -noreg {/microprocessor_tb/UUT/UMRAM/clk}
-# add wave -noreg {/microprocessor_tb/UUT/UMRAM/read_write}
-# add wave -noreg {/microprocessor_tb/UUT/UMRAM/address}
-# add wave -noreg {/microprocessor_tb/UUT/UMRAM/data_input}
-# add wave -noreg {/microprocessor_tb/UUT/UMRAM/data_output}
-# 8 signal(s) traced.
+# add wave -noreg {/microprocessor_tb/UUT/rom_read_enabled}
+# add wave -noreg {/microprocessor_tb/UUT/rom_address}
+# add wave -noreg {/microprocessor_tb/UUT/rom_data_out}
+# add wave -noreg {/microprocessor_tb/UUT/ram_rw}
+# add wave -noreg {/microprocessor_tb/UUT/ram_addr}
+# add wave -noreg {/microprocessor_tb/UUT/ram_din}
+# add wave -noreg {/microprocessor_tb/UUT/ram_dout}
+# add wave -noreg {/microprocessor_tb/UUT/dp_op}
+# add wave -noreg {/microprocessor_tb/UUT/dp_ot}
+# add wave -noreg {/microprocessor_tb/UUT/dp_en}
+# add wave -noreg {/microprocessor_tb/UUT/dp_res}
+# add wave -noreg {/microprocessor_tb/UUT/dp_zf}
+# add wave -noreg {/microprocessor_tb/UUT/dp_sbf}
+# add wave -noreg {/microprocessor_tb/UUT/dp_stop}
+# add wave -noreg {/microprocessor_tb/UUT/clk}
+# add wave -noreg {/microprocessor_tb/UUT/rst}
+# add wave -noreg {/microprocessor_tb/UUT/start}
+# add wave -noreg {/microprocessor_tb/UUT/stop}
+# 18 signal(s) traced.
 run 100 ns
 # KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
 # KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /microprocessor_tb/UUT/UMRAM,  Process: line__49.
@@ -364,774 +513,4 @@ run 100 ns
 # KERNEL: stopped at time: 500 ns
 run 100 ns
 # KERNEL: stopped at time: 600 ns
-run 100 ns
-# KERNEL: stopped at time: 700 ns
-run 100 ns
-# KERNEL: stopped at time: 800 ns
-run 100 ns
-# KERNEL: stopped at time: 900 ns
-run 100 ns
-# KERNEL: stopped at time: 1 us
-run 100 ns
-# KERNEL: stopped at time: 1100 ns
-run 100 ns
-# KERNEL: stopped at time: 1200 ns
-run 100 ns
-# KERNEL: stopped at time: 1300 ns
-run 100 ns
-# KERNEL: stopped at time: 1400 ns
-run 100 ns
-# KERNEL: stopped at time: 1500 ns
-run 100 ns
-# KERNEL: stopped at time: 1600 ns
-run 100 ns
-# KERNEL: stopped at time: 1700 ns
-run 100 ns
-# KERNEL: stopped at time: 1800 ns
-run 100 ns
-# KERNEL: stopped at time: 1900 ns
-run 100 ns
-# KERNEL: stopped at time: 2 us
-run 100 ns
-# KERNEL: stopped at time: 2100 ns
-run 100 ns
-# KERNEL: stopped at time: 2200 ns
-run 100 ns
-# KERNEL: stopped at time: 2300 ns
-run 100 ns
-# KERNEL: stopped at time: 2400 ns
-run 100 ns
-# KERNEL: stopped at time: 2500 ns
-run 100 ns
-# KERNEL: stopped at time: 2600 ns
-run 100 ns
-# KERNEL: stopped at time: 2700 ns
-run 100 ns
-# KERNEL: stopped at time: 2800 ns
-run 100 ns
-# KERNEL: stopped at time: 2900 ns
-run 100 ns
-# KERNEL: stopped at time: 3 us
-run 100 ns
-# KERNEL: stopped at time: 3100 ns
-run 100 ns
-# KERNEL: stopped at time: 3200 ns
-run 100 ns
-# KERNEL: stopped at time: 3300 ns
-run 100 ns
-# KERNEL: stopped at time: 3400 ns
-run 100 ns
-# KERNEL: stopped at time: 3500 ns
-run 100 ns
-# KERNEL: stopped at time: 3600 ns
-run 100 ns
-# KERNEL: stopped at time: 3700 ns
-run 100 ns
-# KERNEL: stopped at time: 3800 ns
-run 100 ns
-# KERNEL: stopped at time: 3900 ns
-run 100 ns
-# KERNEL: stopped at time: 4 us
-run 100 ns
-# KERNEL: stopped at time: 4100 ns
-run 100 ns
-# KERNEL: stopped at time: 4200 ns
-run 100 ns
-# KERNEL: stopped at time: 4300 ns
-run 100 ns
-# KERNEL: stopped at time: 4400 ns
-run 100 ns
-# KERNEL: stopped at time: 4500 ns
-run 100 ns
-# KERNEL: stopped at time: 4600 ns
-run 100 ns
-# KERNEL: stopped at time: 4700 ns
-run 100 ns
-# KERNEL: stopped at time: 4800 ns
-run 100 ns
-# KERNEL: stopped at time: 4900 ns
-run 100 ns
-# KERNEL: stopped at time: 5 us
-run 100 ns
-# KERNEL: stopped at time: 5100 ns
-run 100 ns
-# KERNEL: stopped at time: 5200 ns
-run 100 ns
-# KERNEL: stopped at time: 5300 ns
-run 100 ns
-# KERNEL: stopped at time: 5400 ns
-run 100 ns
-# KERNEL: stopped at time: 5500 ns
-run 100 ns
-# KERNEL: stopped at time: 5600 ns
-run 100 ns
-# KERNEL: stopped at time: 5700 ns
-run 100 ns
-# KERNEL: stopped at time: 5800 ns
-run 100 ns
-# KERNEL: stopped at time: 5900 ns
-run 100 ns
-# KERNEL: stopped at time: 6 us
-run 100 ns
-# KERNEL: stopped at time: 6100 ns
-run 100 ns
-# KERNEL: stopped at time: 6200 ns
-run 100 ns
-# KERNEL: stopped at time: 6300 ns
-run 100 ns
-# KERNEL: stopped at time: 6400 ns
-run 100 ns
-# KERNEL: stopped at time: 6500 ns
-run 100 ns
-# KERNEL: stopped at time: 6600 ns
-run 100 ns
-# KERNEL: stopped at time: 6700 ns
-run 100 ns
-# KERNEL: stopped at time: 6800 ns
-run 100 ns
-# KERNEL: stopped at time: 6900 ns
-run 100 ns
-# KERNEL: stopped at time: 7 us
-run 100 ns
-# KERNEL: stopped at time: 7100 ns
-run 100 ns
-# KERNEL: stopped at time: 7200 ns
-run 100 ns
-# KERNEL: stopped at time: 7300 ns
-run 100 ns
-# KERNEL: stopped at time: 7400 ns
-run 100 ns
-# KERNEL: stopped at time: 7500 ns
-run 100 ns
-# KERNEL: stopped at time: 7600 ns
-run 100 ns
-# KERNEL: stopped at time: 7700 ns
-run 100 ns
-# KERNEL: stopped at time: 7800 ns
-run 100 ns
-# KERNEL: stopped at time: 7900 ns
-run 100 ns
-# KERNEL: stopped at time: 8 us
-run 100 ns
-# KERNEL: stopped at time: 8100 ns
-run 100 ns
-# KERNEL: stopped at time: 8200 ns
-run 100 ns
-# KERNEL: stopped at time: 8300 ns
-run 100 ns
-# KERNEL: stopped at time: 8400 ns
-run 100 ns
-# KERNEL: stopped at time: 8500 ns
-run 100 ns
-# KERNEL: stopped at time: 8600 ns
-run 100 ns
-# KERNEL: stopped at time: 8700 ns
-run 100 ns
-# KERNEL: stopped at time: 8800 ns
-run 100 ns
-# KERNEL: stopped at time: 8900 ns
-run 100 ns
-# KERNEL: stopped at time: 9 us
-run 100 ns
-# KERNEL: stopped at time: 9100 ns
-run 100 ns
-# KERNEL: stopped at time: 9200 ns
-run 100 ns
-# KERNEL: stopped at time: 9300 ns
-run 100 ns
-# KERNEL: stopped at time: 9400 ns
-run 100 ns
-# KERNEL: stopped at time: 9500 ns
-run 100 ns
-# KERNEL: stopped at time: 9600 ns
-run 100 ns
-# KERNEL: stopped at time: 9700 ns
-run 100 ns
-# KERNEL: stopped at time: 9800 ns
-run 100 ns
-# KERNEL: stopped at time: 9900 ns
-run 100 ns
-# KERNEL: stopped at time: 10 us
-run 100 ns
-# KERNEL: stopped at time: 10100 ns
-run 100 ns
-# KERNEL: stopped at time: 10200 ns
-run 100 ns
-# KERNEL: stopped at time: 10300 ns
-run 100 ns
-# KERNEL: stopped at time: 10400 ns
-run 100 ns
-# KERNEL: stopped at time: 10500 ns
-run 100 ns
-# KERNEL: stopped at time: 10600 ns
-run 100 ns
-# KERNEL: stopped at time: 10700 ns
-run 100 ns
-# KERNEL: stopped at time: 10800 ns
-run 100 ns
-# KERNEL: stopped at time: 10900 ns
-run 100 ns
-# KERNEL: stopped at time: 11 us
-run 100 ns
-# KERNEL: stopped at time: 11100 ns
-run 100 ns
-# KERNEL: stopped at time: 11200 ns
-run 100 ns
-# KERNEL: stopped at time: 11300 ns
-run 100 ns
-# KERNEL: stopped at time: 11400 ns
-run 100 ns
-# KERNEL: stopped at time: 11500 ns
-run 100 ns
-# KERNEL: stopped at time: 11600 ns
-run 100 ns
-# KERNEL: stopped at time: 11700 ns
-run 100 ns
-# KERNEL: stopped at time: 11800 ns
-run 100 ns
-# KERNEL: stopped at time: 11900 ns
-run 100 ns
-# KERNEL: stopped at time: 12 us
-run 100 ns
-# KERNEL: stopped at time: 12100 ns
-run 100 ns
-# KERNEL: stopped at time: 12200 ns
-run 100 ns
-# KERNEL: stopped at time: 12300 ns
-run 100 ns
-# KERNEL: stopped at time: 12400 ns
-run 100 ns
-# KERNEL: stopped at time: 12500 ns
-run 100 ns
-# KERNEL: stopped at time: 12600 ns
-run 100 ns
-# KERNEL: stopped at time: 12700 ns
-run 100 ns
-# KERNEL: stopped at time: 12800 ns
-run 100 ns
-# KERNEL: stopped at time: 12900 ns
-run 100 ns
-# KERNEL: stopped at time: 13 us
-run 100 ns
-# KERNEL: stopped at time: 13100 ns
-run 100 ns
-# KERNEL: stopped at time: 13200 ns
-run 100 ns
-# KERNEL: stopped at time: 13300 ns
-run 100 ns
-# KERNEL: stopped at time: 13400 ns
-run 100 ns
-# KERNEL: stopped at time: 13500 ns
-run 100 ns
-# KERNEL: stopped at time: 13600 ns
-run 100 ns
-# KERNEL: stopped at time: 13700 ns
-run 100 ns
-# KERNEL: stopped at time: 13800 ns
-run 100 ns
-# KERNEL: stopped at time: 13900 ns
-run 100 ns
-# KERNEL: stopped at time: 14 us
-run 100 ns
-# KERNEL: stopped at time: 14100 ns
-run 100 ns
-# KERNEL: stopped at time: 14200 ns
-run 100 ns
-# KERNEL: stopped at time: 14300 ns
-run 100 ns
-# KERNEL: stopped at time: 14400 ns
-run 100 ns
-# KERNEL: stopped at time: 14500 ns
-run 100 ns
-# KERNEL: stopped at time: 14600 ns
-run 100 ns
-# KERNEL: stopped at time: 14700 ns
-run 100 ns
-# KERNEL: stopped at time: 14800 ns
-run 100 ns
-# KERNEL: stopped at time: 14900 ns
-run 100 ns
-# KERNEL: stopped at time: 15 us
-run 100 ns
-# KERNEL: stopped at time: 15100 ns
-run 100 ns
-# KERNEL: stopped at time: 15200 ns
-run 100 ns
-# KERNEL: stopped at time: 15300 ns
-run 100 ns
-# KERNEL: stopped at time: 15400 ns
-run 100 ns
-# KERNEL: stopped at time: 15500 ns
-run 100 ns
-# KERNEL: stopped at time: 15600 ns
-run 100 ns
-# KERNEL: stopped at time: 15700 ns
-run 100 ns
-# KERNEL: stopped at time: 15800 ns
-run 100 ns
-# KERNEL: stopped at time: 15900 ns
-run 100 ns
-# KERNEL: stopped at time: 16 us
-run 100 ns
-# KERNEL: stopped at time: 16100 ns
-run 100 ns
-# KERNEL: stopped at time: 16200 ns
-run 100 ns
-# KERNEL: stopped at time: 16300 ns
-run 100 ns
-# KERNEL: stopped at time: 16400 ns
-run 100 ns
-# KERNEL: stopped at time: 16500 ns
-run 100 ns
-# KERNEL: stopped at time: 16600 ns
-endsim
-#  Simulation has been stopped
-acom -O3 -work MPFSM_stack_sorting_design -2002  $dsn/src/Stack.vhd $dsn/src/MRAM.vhd $dsn/src/Commands.vhd $dsn/src/Controller.vhd $dsn/src/MROM.vhd $dsn/src/Datapath.vhd $dsn/src/MicroProcessor.vhd $dsn/src/TestBench/microprocessor_TB.vhd
-# Compile...
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
-# File: F:\Dropbox\Magistracy\POCP\practice\MPFSM_stack_sorting\MPFSM_stack_sorting_design\src\Stack.vhd
-# Compile Entity "Stack"
-# Compile Architecture "Stack_behavioural" of Entity "Stack"
-# File: F:\Dropbox\Magistracy\POCP\practice\MPFSM_stack_sorting\MPFSM_stack_sorting_design\src\MRAM.vhd
-# Compile Entity "MRAM"
-# Compile Architecture "MRAM_Beh" of Entity "MRAM"
-# File: F:\Dropbox\Magistracy\POCP\practice\MPFSM_stack_sorting\MPFSM_stack_sorting_design\src\Commands.vhd
-# Compile Package "commands"
-# File: F:\Dropbox\Magistracy\POCP\practice\MPFSM_stack_sorting\MPFSM_stack_sorting_design\src\Controller.vhd
-# Compile Entity "Controller"
-# Compile Architecture "Controller_Beh" of Entity "Controller"
-# File: F:\Dropbox\Magistracy\POCP\practice\MPFSM_stack_sorting\MPFSM_stack_sorting_design\src\MROM.vhd
-# Compile Entity "MROM"
-# Compile Architecture "Beh_Stack" of Entity "MROM"
-# File: F:\Dropbox\Magistracy\POCP\practice\MPFSM_stack_sorting\MPFSM_stack_sorting_design\src\Datapath.vhd
-# Compile Entity "Datapath"
-# Compile Architecture "Datapath_Beh" of Entity "Datapath"
-# File: F:\Dropbox\Magistracy\POCP\practice\MPFSM_stack_sorting\MPFSM_stack_sorting_design\src\MicroProcessor.vhd
-# Compile Entity "MicroProcessor"
-# Compile Architecture "Beh" of Entity "MicroProcessor"
-# File: F:\Dropbox\Magistracy\POCP\practice\MPFSM_stack_sorting\MPFSM_stack_sorting_design\src\TestBench\microprocessor_TB.vhd
-# Compile Entity "microprocessor_tb"
-# Compile Architecture "TB_ARCHITECTURE" of Entity "microprocessor_tb"
-# Compile Configuration "TESTBENCH_FOR_microprocessor"
-# Compile success 0 Errors 0 Warnings  Analysis time :  0.2 [s]
-# ELBREAD: Elaboration process.
-# ELBREAD: Elaboration time 0.0 [s].
-asim -O5 +access +r +m+microprocessor_tb microprocessor_tb TB_ARCHITECTURE
-# ELBREAD: Elaboration process.
-# ELBREAD: Elaboration time 0.0 [s].
-# asim: Stack memory: 32MB
-# asim: Retval memory: 32MB
-# KERNEL: Main thread initiated.
-# KERNEL: Kernel process initialization phase.
-# KERNEL: Time resolution set to 1ps.
-# ELAB2: Elaboration final pass...
-# ELAB2: Create instances ...
-# ELAB2: Create instances complete.
-# SLP: Started
-# SLP: Elaboration phase ...
-# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
-# SLP: Finished : 0.0 [s]
-# ELAB2: Elaboration final pass complete - time: 0.1 [s].
-# KERNEL: Kernel process initialization done.
-# Allocation: Simulator allocated 6214 kB (elbread=1023 elab2=5097 kernel=93 sdf=0)
-# KERNEL: ASDB file was created in location F:\Dropbox\Magistracy\POCP\practice\MPFSM_stack_sorting\MPFSM_stack_sorting_design\src\wave.asdb
-#  20:59, Monday, May 9, 2016
-#  Simulation has been initialized
-#  Selected Top-Level: microprocessor_tb (TB_ARCHITECTURE)
-# add wave -noreg {/microprocessor_tb/UUT/UMRAM/RAM}
-# add wave -noreg {/microprocessor_tb/UUT/UMRAM/input}
-# add wave -noreg {/microprocessor_tb/UUT/UMRAM/output}
-# add wave -noreg {/microprocessor_tb/UUT/UMRAM/clk}
-# add wave -noreg {/microprocessor_tb/UUT/UMRAM/read_write}
-# add wave -noreg {/microprocessor_tb/UUT/UMRAM/address}
-# add wave -noreg {/microprocessor_tb/UUT/UMRAM/data_input}
-# add wave -noreg {/microprocessor_tb/UUT/UMRAM/data_output}
-# 8 signal(s) traced.
-run 100 ns
-# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /microprocessor_tb/UUT/UMRAM,  Process: line__49.
-# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /microprocessor_tb/UUT/UMROM,  Process: line__98.
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /microprocessor_tb/UUT/UDPATH,  Process: FLAGS.
-# KERNEL: stopped at time: 100 ns
-run 100 ns
-# KERNEL: stopped at time: 200 ns
-run 100 ns
-# KERNEL: stopped at time: 300 ns
-run 100 ns
-# KERNEL: stopped at time: 400 ns
-run 100 ns
-# KERNEL: stopped at time: 500 ns
-run 100 ns
-# KERNEL: stopped at time: 600 ns
-run 100 ns
-# KERNEL: stopped at time: 700 ns
-run 100 ns
-# KERNEL: stopped at time: 800 ns
-run 100 ns
-# KERNEL: stopped at time: 900 ns
-run 100 ns
-# KERNEL: stopped at time: 1 us
-run 100 ns
-# KERNEL: stopped at time: 1100 ns
-run 100 ns
-# KERNEL: stopped at time: 1200 ns
-run 100 ns
-# KERNEL: stopped at time: 1300 ns
-run 100 ns
-# KERNEL: stopped at time: 1400 ns
-run 100 ns
-# KERNEL: stopped at time: 1500 ns
-run 100 ns
-# KERNEL: stopped at time: 1600 ns
-run 100 ns
-# KERNEL: stopped at time: 1700 ns
-run 100 ns
-# KERNEL: stopped at time: 1800 ns
-run 100 ns
-# KERNEL: stopped at time: 1900 ns
-run 100 ns
-# KERNEL: stopped at time: 2 us
-run 100 ns
-# KERNEL: stopped at time: 2100 ns
-run 100 ns
-# KERNEL: stopped at time: 2200 ns
-run 100 ns
-# KERNEL: stopped at time: 2300 ns
-run 100 ns
-# KERNEL: stopped at time: 2400 ns
-run 100 ns
-# KERNEL: stopped at time: 2500 ns
-run 100 ns
-# KERNEL: stopped at time: 2600 ns
-run 100 ns
-# KERNEL: stopped at time: 2700 ns
-run 100 ns
-# KERNEL: stopped at time: 2800 ns
-run 100 ns
-# KERNEL: stopped at time: 2900 ns
-run 100 ns
-# KERNEL: stopped at time: 3 us
-run 100 ns
-# KERNEL: stopped at time: 3100 ns
-run 100 ns
-# KERNEL: stopped at time: 3200 ns
-run 100 ns
-# KERNEL: stopped at time: 3300 ns
-run 100 ns
-# KERNEL: stopped at time: 3400 ns
-run 100 ns
-# KERNEL: stopped at time: 3500 ns
-run 100 ns
-# KERNEL: stopped at time: 3600 ns
-run 100 ns
-# KERNEL: stopped at time: 3700 ns
-run 100 ns
-# KERNEL: stopped at time: 3800 ns
-run 100 ns
-# KERNEL: stopped at time: 3900 ns
-run 100 ns
-# KERNEL: stopped at time: 4 us
-run 100 ns
-# KERNEL: stopped at time: 4100 ns
-run 100 ns
-# KERNEL: stopped at time: 4200 ns
-run 100 ns
-# KERNEL: stopped at time: 4300 ns
-run 100 ns
-# KERNEL: stopped at time: 4400 ns
-run 100 ns
-# KERNEL: stopped at time: 4500 ns
-run 100 ns
-# KERNEL: stopped at time: 4600 ns
-run 100 ns
-# KERNEL: stopped at time: 4700 ns
-run 100 ns
-# KERNEL: stopped at time: 4800 ns
-run 100 ns
-# KERNEL: stopped at time: 4900 ns
-run 100 ns
-# KERNEL: stopped at time: 5 us
-run 100 ns
-# KERNEL: stopped at time: 5100 ns
-run 100 ns
-# KERNEL: stopped at time: 5200 ns
-run 100 ns
-# KERNEL: stopped at time: 5300 ns
-run 100 ns
-# KERNEL: stopped at time: 5400 ns
-run 100 ns
-# KERNEL: stopped at time: 5500 ns
-run 100 ns
-# KERNEL: stopped at time: 5600 ns
-run 100 ns
-# KERNEL: stopped at time: 5700 ns
-run 100 ns
-# KERNEL: stopped at time: 5800 ns
-run 100 ns
-# KERNEL: stopped at time: 5900 ns
-run 100 ns
-# KERNEL: stopped at time: 6 us
-run 100 ns
-# KERNEL: stopped at time: 6100 ns
-run 100 ns
-# KERNEL: stopped at time: 6200 ns
-run 100 ns
-# KERNEL: stopped at time: 6300 ns
-run 100 ns
-# KERNEL: stopped at time: 6400 ns
-run 100 ns
-# KERNEL: stopped at time: 6500 ns
-run 100 ns
-# KERNEL: stopped at time: 6600 ns
-run 100 ns
-# KERNEL: stopped at time: 6700 ns
-run 100 ns
-# KERNEL: stopped at time: 6800 ns
-run 100 ns
-# KERNEL: stopped at time: 6900 ns
-run 100 ns
-# KERNEL: stopped at time: 7 us
-run 100 ns
-# KERNEL: stopped at time: 7100 ns
-run 100 ns
-# KERNEL: stopped at time: 7200 ns
-run 100 ns
-# KERNEL: stopped at time: 7300 ns
-run 100 ns
-# KERNEL: stopped at time: 7400 ns
-run 100 ns
-# KERNEL: stopped at time: 7500 ns
-run 100 ns
-# KERNEL: stopped at time: 7600 ns
-run 100 ns
-# KERNEL: stopped at time: 7700 ns
-run 100 ns
-# KERNEL: stopped at time: 7800 ns
-run 100 ns
-# KERNEL: stopped at time: 7900 ns
-run 100 ns
-# KERNEL: stopped at time: 8 us
-run 100 ns
-# KERNEL: stopped at time: 8100 ns
-run 100 ns
-# KERNEL: stopped at time: 8200 ns
-run 100 ns
-# KERNEL: stopped at time: 8300 ns
-run 100 ns
-# KERNEL: stopped at time: 8400 ns
-run 100 ns
-# KERNEL: stopped at time: 8500 ns
-run 100 ns
-# KERNEL: stopped at time: 8600 ns
-run 100 ns
-# KERNEL: stopped at time: 8700 ns
-run 100 ns
-# KERNEL: stopped at time: 8800 ns
-run 100 ns
-# KERNEL: stopped at time: 8900 ns
-run 100 ns
-# KERNEL: stopped at time: 9 us
-run 100 ns
-# KERNEL: stopped at time: 9100 ns
-run 100 ns
-# KERNEL: stopped at time: 9200 ns
-run 100 ns
-# KERNEL: stopped at time: 9300 ns
-run 100 ns
-# KERNEL: stopped at time: 9400 ns
-run 100 ns
-# KERNEL: stopped at time: 9500 ns
-run 100 ns
-# KERNEL: stopped at time: 9600 ns
-run 100 ns
-# KERNEL: stopped at time: 9700 ns
-run 100 ns
-# KERNEL: stopped at time: 9800 ns
-run 100 ns
-# KERNEL: stopped at time: 9900 ns
-run 100 ns
-# KERNEL: stopped at time: 10 us
-run 100 ns
-# KERNEL: stopped at time: 10100 ns
-run 100 ns
-# KERNEL: stopped at time: 10200 ns
-run 100 ns
-# KERNEL: stopped at time: 10300 ns
-run 100 ns
-# KERNEL: stopped at time: 10400 ns
-run 100 ns
-# KERNEL: stopped at time: 10500 ns
-run 100 ns
-# KERNEL: stopped at time: 10600 ns
-run 100 ns
-# KERNEL: stopped at time: 10700 ns
-run 100 ns
-# KERNEL: stopped at time: 10800 ns
-run 100 ns
-# KERNEL: stopped at time: 10900 ns
-run 100 ns
-# KERNEL: stopped at time: 11 us
-run 100 ns
-# KERNEL: stopped at time: 11100 ns
-run 100 ns
-# KERNEL: stopped at time: 11200 ns
-run 100 ns
-# KERNEL: stopped at time: 11300 ns
-run 100 ns
-# KERNEL: stopped at time: 11400 ns
-run 100 ns
-# KERNEL: stopped at time: 11500 ns
-run 100 ns
-# KERNEL: stopped at time: 11600 ns
-run 100 ns
-# KERNEL: stopped at time: 11700 ns
-run 100 ns
-# KERNEL: stopped at time: 11800 ns
-run 100 ns
-# KERNEL: stopped at time: 11900 ns
-run 100 ns
-# KERNEL: stopped at time: 12 us
-run 100 ns
-# KERNEL: stopped at time: 12100 ns
-run 100 ns
-# KERNEL: stopped at time: 12200 ns
-run 100 ns
-# KERNEL: stopped at time: 12300 ns
-run 100 ns
-# KERNEL: stopped at time: 12400 ns
-run 100 ns
-# KERNEL: stopped at time: 12500 ns
-run 100 ns
-# KERNEL: stopped at time: 12600 ns
-run 100 ns
-# KERNEL: stopped at time: 12700 ns
-run 100 ns
-# KERNEL: stopped at time: 12800 ns
-run 100 ns
-# KERNEL: stopped at time: 12900 ns
-run 100 ns
-# KERNEL: stopped at time: 13 us
-run 100 ns
-# KERNEL: stopped at time: 13100 ns
-run 100 ns
-# KERNEL: stopped at time: 13200 ns
-run 100 ns
-# KERNEL: stopped at time: 13300 ns
-run 100 ns
-# KERNEL: stopped at time: 13400 ns
-run 100 ns
-# KERNEL: stopped at time: 13500 ns
-run 100 ns
-# KERNEL: stopped at time: 13600 ns
-run 100 ns
-# KERNEL: stopped at time: 13700 ns
-run 100 ns
-# KERNEL: stopped at time: 13800 ns
-run 100 ns
-# KERNEL: stopped at time: 13900 ns
-run 100 ns
-# KERNEL: stopped at time: 14 us
-run 100 ns
-# KERNEL: stopped at time: 14100 ns
-run 100 ns
-# KERNEL: stopped at time: 14200 ns
-run 100 ns
-# KERNEL: stopped at time: 14300 ns
-run 100 ns
-# KERNEL: stopped at time: 14400 ns
-run 100 ns
-# KERNEL: stopped at time: 14500 ns
-run 100 ns
-# KERNEL: stopped at time: 14600 ns
-run 100 ns
-# KERNEL: stopped at time: 14700 ns
-run 100 ns
-# KERNEL: stopped at time: 14800 ns
-run 100 ns
-# KERNEL: stopped at time: 14900 ns
-run 100 ns
-# KERNEL: stopped at time: 15 us
-run 100 ns
-# KERNEL: stopped at time: 15100 ns
-run 100 ns
-# KERNEL: stopped at time: 15200 ns
-run 100 ns
-# KERNEL: stopped at time: 15300 ns
-run 100 ns
-# KERNEL: stopped at time: 15400 ns
-run 100 ns
-# KERNEL: stopped at time: 15500 ns
-run 100 ns
-# KERNEL: stopped at time: 15600 ns
-run 100 ns
-# KERNEL: stopped at time: 15700 ns
-run 100 ns
-# KERNEL: stopped at time: 15800 ns
-run 100 ns
-# KERNEL: stopped at time: 15900 ns
-run 100 ns
-# KERNEL: stopped at time: 16 us
-run 100 ns
-# KERNEL: stopped at time: 16100 ns
-run 100 ns
-# KERNEL: stopped at time: 16200 ns
-run 100 ns
-# KERNEL: stopped at time: 16300 ns
-run 100 ns
-# KERNEL: stopped at time: 16400 ns
-run 100 ns
-# KERNEL: stopped at time: 16500 ns
-run 100 ns
-# KERNEL: stopped at time: 16600 ns
-run 100 ns
-# KERNEL: stopped at time: 16700 ns
-run 100 ns
-# KERNEL: stopped at time: 16800 ns
-run 100 ns
-# KERNEL: stopped at time: 16900 ns
-run 100 ns
-# KERNEL: stopped at time: 17 us
-run 100 ns
-# KERNEL: stopped at time: 17100 ns
-run 100 ns
-# KERNEL: stopped at time: 17200 ns
-run 100 ns
-# KERNEL: stopped at time: 17300 ns
-run 100 ns
-# KERNEL: stopped at time: 17400 ns
-run 100 ns
-# KERNEL: stopped at time: 17500 ns
-run 100 ns
-# KERNEL: stopped at time: 17600 ns
-run 100 ns
-# KERNEL: stopped at time: 17700 ns
-run 100 ns
-# KERNEL: stopped at time: 17800 ns
-run 100 ns
-# KERNEL: stopped at time: 17900 ns
-run 100 ns
-# KERNEL: stopped at time: 18 us
-run 100 ns
-# KERNEL: stopped at time: 18100 ns
-run 100 ns
-# KERNEL: stopped at time: 18200 ns
-run 100 ns
-# KERNEL: stopped at time: 18300 ns
-run 100 ns
-# KERNEL: stopped at time: 18400 ns
-run 100 ns
-# KERNEL: stopped at time: 18500 ns
-run 100 ns
-# KERNEL: stopped at time: 18600 ns
-run 100 ns
-# KERNEL: stopped at time: 18700 ns
-run 100 ns
-# KERNEL: stopped at time: 18800 ns
-run 100 ns
-# KERNEL: stopped at time: 18900 ns
-run 100 ns
-# KERNEL: stopped at time: 19 us
-endsim
 #  Simulation has been stopped
